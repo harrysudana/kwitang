@@ -27,20 +27,21 @@
 
 // ------------------------------------------------------------------------
 
-/**
- * Create a Directory Map
- *
- * Reads the specified directory and builds an array
- * representation of it.  Sub-folders contained with the
- * directory will be mapped as well.
- *
- * @access	public
- * @param	string	path to source
- * @param	int		depth of directories to traverse (0 = fully recursive, 1 = current dir, etc)
- * @return	array
- */
 if ( ! function_exists('directory_map'))
 {
+	/**
+	 * Create a Directory Map
+	 *
+	 * Reads the specified directory and builds an array
+	 * representation of it.  Sub-folders contained with the
+	 * directory will be mapped as well.
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Directory
+	 * @param	string	path to source
+	 * @param	int		depth of directories to traverse (0 = fully recursive, 1 = current dir, etc)
+	 * @return	array
+	 */
 	function directory_map($source_dir, $directory_depth = 0, $hidden = FALSE)
 	{
 		if ($fp = @opendir($source_dir))

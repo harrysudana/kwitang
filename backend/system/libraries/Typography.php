@@ -20,6 +20,7 @@
  *
  *
  * @access		private
+ * @package		CodeIgniter\Libraries
  * @category	Helpers
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/helpers/

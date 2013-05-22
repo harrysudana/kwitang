@@ -18,6 +18,7 @@
 /**
  * CUBRID Forge Class
  *
+ * @package		CodeIgniter\Database\Drivers\Cubrid
  * @category	Database
  * @author		Esen Sagynov
  * @link		http://codeigniter.com/user_guide/database/

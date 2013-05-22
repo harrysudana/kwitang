@@ -366,13 +366,27 @@ class CI_Unit_test {
  * Helper functions to test boolean true/false
  *
  *
- * @access	private
- * @return	bool
+ * @access		private
+ * @package		CodeIgniter
+ * @subpackage	Libraries
+ * @category	Unit_test
+ * @return		bool
  */
 function is_true($test)
 {
 	return (is_bool($test) AND $test === TRUE) ? TRUE : FALSE;
 }
+
+/**
+ * Helper functions to test boolean true/false
+ *
+ *
+ * @access		private
+ * @package		CodeIgniter
+ * @subpackage	Libraries
+ * @category	Unit_test
+ * @return		bool
+ */
 function is_false($test)
 {
 	return (is_bool($test) AND $test === FALSE) ? TRUE : FALSE;

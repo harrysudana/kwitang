@@ -22,8 +22,7 @@
  * creates dynamically based on whether the active record
  * class is being used or not.
  *
- * @package		CodeIgniter
- * @subpackage	Drivers
+ * @package		CodeIgniter\Database\Drivers\Cubrid
  * @category	Database
  * @author		Esen Sagynov
  * @link		http://codeigniter.com/user_guide/database/

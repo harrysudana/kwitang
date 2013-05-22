@@ -18,6 +18,7 @@
 /**
  * SQLite Utility Class
  *
+ * @package		CodeIgniter\Database\Drivers\Sqlite
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

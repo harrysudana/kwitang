@@ -228,6 +228,13 @@
 	// Load the base controller class
 	require BASEPATH.'core/Controller.php';
 
+	/**
+	 * &get_instance()
+	 *
+	 *
+	 * @package	CodeIgniter\Core\CodeIgniter
+	 * @return	object
+	 */
 	function &get_instance()
 	{
 		return CI_Controller::get_instance();

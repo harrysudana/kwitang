@@ -18,6 +18,7 @@
 /**
  * Oracle Forge Class
  *
+ * @package		CodeIgniter\Database\Drivers\Oci8
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

@@ -18,6 +18,7 @@
 /**
  * Postgre Utility Class
  *
+ * @package		CodeIgniter\Database\Drivers\Postgre
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

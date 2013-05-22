@@ -22,8 +22,6 @@
  * creates dynamically based on whether the active record
  * class is being used or not.
  *
- * @package		CodeIgniter
- * @subpackage  Drivers
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/
@@ -35,6 +33,7 @@
  * This is a modification of the DB_driver class to
  * permit access to oracle databases
  *
+ * @package		CodeIgniter\Database\Drivers\Oci8
  * @author	  Kelly McArdle
  *
  */

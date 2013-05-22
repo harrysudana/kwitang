@@ -27,16 +27,17 @@
 
 // ------------------------------------------------------------------------
 
-/**
- * XSS Filtering
- *
- * @access	public
- * @param	string
- * @param	bool	whether or not the content is an image file
- * @return	string
- */
 if ( ! function_exists('xss_clean'))
 {
+	/**
+	 * XSS Filtering
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Security
+	 * @param	string
+	 * @param	bool	whether or not the content is an image file
+	 * @return	string
+	 */
 	function xss_clean($str, $is_image = FALSE)
 	{
 		$CI =& get_instance();
@@ -46,15 +47,16 @@ if ( ! function_exists('xss_clean'))
 
 // ------------------------------------------------------------------------
 
-/**
- * Sanitize Filename
- *
- * @access	public
- * @param	string
- * @return	string
- */
 if ( ! function_exists('sanitize_filename'))
 {
+	/**
+	 * Sanitize Filename
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Security
+	 * @param	string
+	 * @return	string
+	 */
 	function sanitize_filename($filename)
 	{
 		$CI =& get_instance();
@@ -64,15 +66,16 @@ if ( ! function_exists('sanitize_filename'))
 
 // --------------------------------------------------------------------
 
-/**
- * Hash encode a string
- *
- * @access	public
- * @param	string
- * @return	string
- */
 if ( ! function_exists('do_hash'))
 {
+	/**
+	 * Hash encode a string
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Security
+	 * @param	string
+	 * @return	string
+	 */
 	function do_hash($str, $type = 'sha1')
 	{
 		if ($type == 'sha1')
@@ -88,15 +91,16 @@ if ( ! function_exists('do_hash'))
 
 // ------------------------------------------------------------------------
 
-/**
- * Strip Image Tags
- *
- * @access	public
- * @param	string
- * @return	string
- */
 if ( ! function_exists('strip_image_tags'))
 {
+	/**
+	 * Strip Image Tags
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Security
+	 * @param	string
+	 * @return	string
+	 */
 	function strip_image_tags($str)
 	{
 		$str = preg_replace("#<img\s+.*?src\s*=\s*[\"'](.+?)[\"'].*?\>#", "\\1", $str);
@@ -108,15 +112,16 @@ if ( ! function_exists('strip_image_tags'))
 
 // ------------------------------------------------------------------------
 
-/**
- * Convert PHP tags to entities
- *
- * @access	public
- * @param	string
- * @return	string
- */
 if ( ! function_exists('encode_php_tags'))
 {
+	/**
+	 * Convert PHP tags to entities
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Security
+	 * @param	string
+	 * @return	string
+	 */
 	function encode_php_tags($str)
 	{
 		return str_replace(array('<?php', '<?PHP', '<?', '?>'),  array('&lt;?php', '&lt;?PHP', '&lt;?', '?&gt;'), $str);

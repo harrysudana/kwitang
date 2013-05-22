@@ -18,6 +18,7 @@
 /**
  * MySQL Forge Class
  *
+ * @package		CodeIgniter\Database\Drivers\Mysql
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

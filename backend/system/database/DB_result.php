@@ -22,6 +22,7 @@
  * This class will not be called directly. Rather, the adapter
  * class for the specific database will extend and instantiate it.
  *
+ * @package		CodeIgniter\Database
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

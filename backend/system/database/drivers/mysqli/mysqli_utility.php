@@ -18,6 +18,7 @@
 /**
  * MySQLi Utility Class
  *
+ * @package		CodeIgniter\Database\Drivers\Mysqli
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

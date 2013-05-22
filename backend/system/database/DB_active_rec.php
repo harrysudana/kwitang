@@ -20,8 +20,7 @@
  *
  * This is the platform-independent base Active Record implementation class.
  *
- * @package		CodeIgniter
- * @subpackage	Drivers
+ * @package		CodeIgniter\Database
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

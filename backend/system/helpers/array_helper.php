@@ -27,20 +27,21 @@
 
 // ------------------------------------------------------------------------
 
-/**
- * Element
- *
- * Lets you determine whether an array index is set and whether it has a value.
- * If the element is empty it returns FALSE (or whatever you specify as the default value.)
- *
- * @access	public
- * @param	string
- * @param	array
- * @param	mixed
- * @return	mixed	depends on what the array contains
- */
 if ( ! function_exists('element'))
 {
+	/**
+	 * Element
+	 *
+	 * Lets you determine whether an array index is set and whether it has a value.
+	 * If the element is empty it returns FALSE (or whatever you specify as the default value.)
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Array
+	 * @param	string
+	 * @param	array
+	 * @param	mixed
+	 * @return	mixed	depends on what the array contains
+	 */
 	function element($item, $array, $default = FALSE)
 	{
 		if ( ! isset($array[$item]) OR $array[$item] == "")
@@ -54,15 +55,16 @@ if ( ! function_exists('element'))
 
 // ------------------------------------------------------------------------
 
-/**
- * Random Element - Takes an array as input and returns a random element
- *
- * @access	public
- * @param	array
- * @return	mixed	depends on what the array contains
- */
 if ( ! function_exists('random_element'))
 {
+	/**
+	 * Random Element - Takes an array as input and returns a random element
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Array
+	 * @param	array
+	 * @return	mixed	depends on what the array contains
+	 */
 	function random_element($array)
 	{
 		if ( ! is_array($array))
@@ -76,20 +78,21 @@ if ( ! function_exists('random_element'))
 
 // --------------------------------------------------------------------
 
-/**
- * Elements
- *
- * Returns only the array items specified.  Will return a default value if
- * it is not set.
- *
- * @access	public
- * @param	array
- * @param	array
- * @param	mixed
- * @return	mixed	depends on what the array contains
- */
 if ( ! function_exists('elements'))
 {
+	/**
+	 * Elements
+	 *
+	 * Returns only the array items specified.  Will return a default value if
+	 * it is not set.
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Array
+	 * @param	array
+	 * @param	array
+	 * @param	mixed
+	 * @return	mixed	depends on what the array contains
+	 */
 	function elements($items, $array, $default = FALSE)
 	{
 		$return = array();

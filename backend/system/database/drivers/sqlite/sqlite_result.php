@@ -20,6 +20,7 @@
  *
  * This class extends the parent result class: CI_DB_result
  *
+ * @package		CodeIgniter\Database\Drivers\Sqlite
  * @category	Database
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/database/

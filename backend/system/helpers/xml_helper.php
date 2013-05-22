@@ -27,15 +27,16 @@
 
 // ------------------------------------------------------------------------
 
-/**
- * Convert Reserved XML characters to Entities
- *
- * @access	public
- * @param	string
- * @return	string
- */
 if ( ! function_exists('xml_convert'))
 {
+	/**
+	 * Convert Reserved XML characters to Entities
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Xml
+	 * @param	string
+	 * @return	string
+	 */
 	function xml_convert($str, $protect_all = FALSE)
 	{
 		$temp = '__TEMP_AMPERSANDS__';

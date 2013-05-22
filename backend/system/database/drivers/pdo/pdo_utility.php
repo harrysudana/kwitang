@@ -18,6 +18,7 @@
 /**
  * PDO Utility Class
  *
+ * @package		CodeIgniter\Database\Drivers\Pdo
  * @category	Database
  * @author		EllisLab Dev Team
  * @link		http://codeigniter.com/database/

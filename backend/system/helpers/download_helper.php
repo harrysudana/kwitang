@@ -27,18 +27,19 @@
 
 // ------------------------------------------------------------------------
 
-/**
- * Force Download
- *
- * Generates headers that force a download to happen
- *
- * @access	public
- * @param	string	filename
- * @param	mixed	the data to be downloaded
- * @return	void
- */
 if ( ! function_exists('force_download'))
 {
+	/**
+	 * Force Download
+	 *
+	 * Generates headers that force a download to happen
+	 *
+	 * @access	public
+	 * @package	CodeIgniter\Helpers\Download
+	 * @param	string	filename
+	 * @param	mixed	the data to be downloaded
+	 * @return	void
+	 */
 	function force_download($filename = '', $data = '')
 	{
 		if ($filename == '' OR $data == '')
