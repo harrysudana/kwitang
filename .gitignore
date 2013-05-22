@@ -1,0 +1,3 @@
+upload/*
+upload/!.htaccess
+backend/kwitang/config/database.php
