@@ -129,13 +129,13 @@ class CI_Router {
 		}
 
 		// Load the routes.php file.
-		if (defined('ENVIRONMENT') AND is_file(APPPATH.'config/'.ENVIRONMENT.'/routes.php'))
+		if (defined('ENVIRONMENT') AND is_file(BACK_PATH.'config/'.ENVIRONMENT.'/routes.php'))
 		{
-			include(APPPATH.'config/'.ENVIRONMENT.'/routes.php');
+			include(BACK_PATH.'config/'.ENVIRONMENT.'/routes.php');
 		}
-		elseif (is_file(APPPATH.'config/routes.php'))
+		elseif (is_file(BACK_PATH.'config/routes.php'))
 		{
-			include(APPPATH.'config/routes.php');
+			include(BACK_PATH.'config/routes.php');
 		}
 
 		$this->routes = ( ! isset($route) OR ! is_array($route)) ? array() : $route;

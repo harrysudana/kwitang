@@ -169,8 +169,12 @@ class CI_Input {
 	* @param	bool
 	* @return	string
 	*/
-	function post($index = NULL, $xss_clean = FALSE)
+	function post($index = NULL, $xss_clean = NULL)
 	{
+		if ($xss_clean === NULL) {
+			$xss_clean = $this->_enable_xss;
+		}
+
 		// Check if a field has been provided
 		if ($index === NULL AND ! empty($_POST))
 		{
@@ -615,7 +619,8 @@ class CI_Input {
 		{
 			foreach ($_POST as $key => $val)
 			{
-				$_POST[$this->_clean_input_keys($key)] = $this->_clean_input_data($val);
+				// For POST, disable global xss_clean on config
+				$_POST[$this->_clean_input_keys($key)] = $this->_clean_input_data($val, FALSE);
 			}
 		}
 
@@ -662,14 +667,14 @@ class CI_Input {
 	* @param	string
 	* @return	string
 	*/
-	function _clean_input_data($str)
+	function _clean_input_data($str, $xss_clean = TRUE)
 	{
 		if (is_array($str))
 		{
 			$new_array = array();
 			foreach ($str as $key => $val)
 			{
-				$new_array[$this->_clean_input_keys($key)] = $this->_clean_input_data($val);
+				$new_array[$this->_clean_input_keys($key)] = $this->_clean_input_data($val, $xss_clean);
 			}
 			return $new_array;
 		}
@@ -694,7 +699,7 @@ class CI_Input {
 		$str = remove_invisible_characters($str);
 
 		// Should we filter the input data?
-		if ($this->_enable_xss === TRUE)
+		if ($this->_enable_xss === TRUE && $xss_clean === TRUE)
 		{
 			$str = $this->security->xss_clean($str);
 		}

@@ -270,13 +270,13 @@ if ( ! function_exists('doctype'))
 
 		if ( ! is_array($_doctypes))
 		{
-			if (defined('ENVIRONMENT') AND is_file(APPPATH.'config/'.ENVIRONMENT.'/doctypes.php'))
+			if (defined('ENVIRONMENT') AND is_file(BACK_PATH.'config/'.ENVIRONMENT.'/doctypes.php'))
 			{
-				include(APPPATH.'config/'.ENVIRONMENT.'/doctypes.php');
+				include(BACK_PATH.'config/'.ENVIRONMENT.'/doctypes.php');
 			}
-			elseif (is_file(APPPATH.'config/doctypes.php'))
+			elseif (is_file(BACK_PATH.'config/doctypes.php'))
 			{
-				include(APPPATH.'config/doctypes.php');
+				include(BACK_PATH.'config/doctypes.php');
 			}
 
 			if ( ! is_array($_doctypes))

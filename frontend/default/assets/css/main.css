@@ -1,0 +1,119 @@
+.logo, .logo-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+.logo-text {
+    width: 100%;
+    text-align: center;
+}
+.logo {
+    padding-right: 20px;
+}
+.logo-text h3 {
+    margin-top: 0;
+}
+#news-carousel {
+    margin-bottom: 20px;
+}
+.carousel-inner>.item {
+    height: 380px;
+}
+.carousel-inner>.item img {
+    width: 100%;
+}
+.carousel-caption {
+    background-color: rgb(32,32,32);
+    background-color: rgba(32,32,32, 0.6);
+    padding: 0 12px;
+    bottom: 0;
+}
+.carousel-caption h4 {
+    font-weight: bold;
+}
+.carousel-caption p {
+    display: none;
+}
+.carousel-indicators {
+    left: auto;
+    bottom: auto;
+    right: 10px;
+    top: 10px;
+    text-align: right;
+}
+
+
+.agenda-date {
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin: 0 6px 3px;
+    padding: 3px;
+}
+.agenda-date .datemonth {
+    font-size: 22px;
+}
+.agenda-date .year {
+    letter-spacing: 3px;
+}
+.agenda-time {
+    float: right;
+    font-size: 18px;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 125px;
+    text-align: center;
+}
+.agenda-venue {
+    clear: both;
+    border-top: 1px solid #d2d2d2;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0;
+    line-height: 18px;
+}
+
+li.media {
+    border-bottom: 1px dotted #ddd;
+}
+li.media:last-child {
+    border-bottom: 0;
+}
+li.media-dual:last-child {
+    border-bottom: 1px dotted #ddd;
+}
+.media-dual {
+    float: left;
+    width: 48%;
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.media-dual-video {
+    height: 324px;
+    overflow: hidden;
+}
+.media-dual-video .media-heading {
+    height: 40px;
+    overflow: hidden;
+}
+.media-object {
+    margin: 0 10px 8px 0;
+}
+.media-body small {
+    display: block;
+    border-bottom: 1px dotted #ddd;
+}
+
+.input-search {
+    background-image: url('../img/search-bg.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.dropdown-menu .nav-header a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
