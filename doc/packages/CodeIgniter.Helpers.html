@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \CodeIgniter\Helpers
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Language.html" title="Language">
+            <i class="icon-th"></i> Language
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Html.html" title="Html">
+            <i class="icon-th"></i> Html
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Path.html" title="Path">
+            <i class="icon-th"></i> Path
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Text.html" title="Text">
+            <i class="icon-th"></i> Text
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Inflector.html" title="Inflector">
+            <i class="icon-th"></i> Inflector
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Url.html" title="Url">
+            <i class="icon-th"></i> Url
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Form.html" title="Form">
+            <i class="icon-th"></i> Form
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Number.html" title="Number">
+            <i class="icon-th"></i> Number
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Security.html" title="Security">
+            <i class="icon-th"></i> Security
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Array.html" title="Array">
+            <i class="icon-th"></i> Array
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Smiley.html" title="Smiley">
+            <i class="icon-th"></i> Smiley
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Directory.html" title="Directory">
+            <i class="icon-th"></i> Directory
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Email.html" title="Email">
+            <i class="icon-th"></i> Email
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Capcha.html" title="Capcha">
+            <i class="icon-th"></i> Capcha
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.File.html" title="File">
+            <i class="icon-th"></i> File
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Cookie.html" title="Cookie">
+            <i class="icon-th"></i> Cookie
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Date.html" title="Date">
+            <i class="icon-th"></i> Date
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Typography.html" title="Typography">
+            <i class="icon-th"></i> Typography
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Xml.html" title="Xml">
+            <i class="icon-th"></i> Xml
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.Download.html" title="Download">
+            <i class="icon-th"></i> Download
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/CodeIgniter.Helpers.String.html" title="String">
+            <i class="icon-th"></i> String
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    </ul>
+
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Language.html">Language</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="lang" class="element ajax clickable function">
+        <h1>lang<a href="../namespaces/.html#function_lang">¶</a></h1>
+        <p class="short_description">Lang</p>
+        <div class="details collapse">Fetches a language variable and optionally outputs a form label</div>
+        <a href="../namespaces/.html#function_lang" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Html.html">Html</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="heading" class="element ajax clickable function">
+        <h1>heading<a href="../namespaces/.html#function_heading">¶</a></h1>
+        <p class="short_description">Heading</p>
+        <div class="details collapse">Generates an HTML heading tag.  First param is the data.
+Second param is the size of the heading tag.</div>
+        <a href="../namespaces/.html#function_heading" class="more">« More »</a>
+    </div>
+
+                                        <div id="ul" class="element ajax clickable function">
+        <h1>ul<a href="../namespaces/.html#function_ul">¶</a></h1>
+        <p class="short_description">Unordered List</p>
+        <div class="details collapse">Generates an HTML unordered list from an single or multi-dimensional array.</div>
+        <a href="../namespaces/.html#function_ul" class="more">« More »</a>
+    </div>
+
+                                        <div id="ol" class="element ajax clickable function">
+        <h1>ol<a href="../namespaces/.html#function_ol">¶</a></h1>
+        <p class="short_description">Ordered List</p>
+        <div class="details collapse">Generates an HTML ordered list from an single or multi-dimensional array.</div>
+        <a href="../namespaces/.html#function_ol" class="more">« More »</a>
+    </div>
+
+                                        <div id="_list" class="element ajax clickable function">
+        <h1>_list<a href="../namespaces/.html#function__list">¶</a></h1>
+        <p class="short_description">Generates the list</p>
+        <div class="details collapse">Generates an HTML ordered list from an single or multi-dimensional array.</div>
+        <a href="../namespaces/.html#function__list" class="more">« More »</a>
+    </div>
+
+                                        <div id="br" class="element ajax clickable function">
+        <h1>br<a href="../namespaces/.html#function_br">¶</a></h1>
+        <p class="short_description">Generates HTML BR tags based on number supplied</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_br" class="more">« More »</a>
+    </div>
+
+                                        <div id="img" class="element ajax clickable function">
+        <h1>img<a href="../namespaces/.html#function_img">¶</a></h1>
+        <p class="short_description">Image</p>
+        <div class="details collapse">Generates an &lt;img /&gt; element</div>
+        <a href="../namespaces/.html#function_img" class="more">« More »</a>
+    </div>
+
+                                        <div id="doctype" class="element ajax clickable function">
+        <h1>doctype<a href="../namespaces/.html#function_doctype">¶</a></h1>
+        <p class="short_description">Doctype</p>
+        <div class="details collapse">Generates a page document type declaration
+
+Valid options are xhtml-11, xhtml-strict, xhtml-trans, xhtml-frame,
+html4-strict, html4-trans, and html4-frame.  Values are saved in the
+doctypes config file.</div>
+        <a href="../namespaces/.html#function_doctype" class="more">« More »</a>
+    </div>
+
+                                        <div id="link_tag" class="element ajax clickable function">
+        <h1>link_tag<a href="../namespaces/.html#function_link_tag">¶</a></h1>
+        <p class="short_description">Link</p>
+        <div class="details collapse">Generates link to a CSS file</div>
+        <a href="../namespaces/.html#function_link_tag" class="more">« More »</a>
+    </div>
+
+                                        <div id="meta" class="element ajax clickable function">
+        <h1>meta<a href="../namespaces/.html#function_meta">¶</a></h1>
+        <p class="short_description">Generates meta tags from an array of key/values</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_meta" class="more">« More »</a>
+    </div>
+
+                                        <div id="nbs" class="element ajax clickable function">
+        <h1>nbs<a href="../namespaces/.html#function_nbs">¶</a></h1>
+        <p class="short_description">Generates non-breaking space entities based on number supplied</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_nbs" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Path.html">Path</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="set_realpath" class="element ajax clickable function">
+        <h1>set_realpath<a href="../namespaces/.html#function_set_realpath">¶</a></h1>
+        <p class="short_description">Set Realpath</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_set_realpath" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Text.html">Text</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="word_limiter" class="element ajax clickable function">
+        <h1>word_limiter<a href="../namespaces/.html#function_word_limiter">¶</a></h1>
+        <p class="short_description">Word Limiter</p>
+        <div class="details collapse">Limits a string to X number of words.</div>
+        <a href="../namespaces/.html#function_word_limiter" class="more">« More »</a>
+    </div>
+
+                                        <div id="character_limiter" class="element ajax clickable function">
+        <h1>character_limiter<a href="../namespaces/.html#function_character_limiter">¶</a></h1>
+        <p class="short_description">Character Limiter</p>
+        <div class="details collapse">Limits the string based on the character count.  Preserves complete words
+so the character count may not be exactly as specified.</div>
+        <a href="../namespaces/.html#function_character_limiter" class="more">« More »</a>
+    </div>
+
+                                        <div id="ascii_to_entities" class="element ajax clickable function">
+        <h1>ascii_to_entities<a href="../namespaces/.html#function_ascii_to_entities">¶</a></h1>
+        <p class="short_description">High ASCII to Entities</p>
+        <div class="details collapse">Converts High ascii text and MS Word special characters to character entities</div>
+        <a href="../namespaces/.html#function_ascii_to_entities" class="more">« More »</a>
+    </div>
+
+                                        <div id="entities_to_ascii" class="element ajax clickable function">
+        <h1>entities_to_ascii<a href="../namespaces/.html#function_entities_to_ascii">¶</a></h1>
+        <p class="short_description">Entities to ASCII</p>
+        <div class="details collapse">Converts character entities back to ASCII</div>
+        <a href="../namespaces/.html#function_entities_to_ascii" class="more">« More »</a>
+    </div>
+
+                                        <div id="word_censor" class="element ajax clickable function">
+        <h1>word_censor<a href="../namespaces/.html#function_word_censor">¶</a></h1>
+        <p class="short_description">Word Censoring Function</p>
+        <div class="details collapse">Supply a string and an array of disallowed words and any
+matched words will be converted to #### or to the replacement
+word you&#039;ve submitted.</div>
+        <a href="../namespaces/.html#function_word_censor" class="more">« More »</a>
+    </div>
+
+                                        <div id="highlight_code" class="element ajax clickable function">
+        <h1>highlight_code<a href="../namespaces/.html#function_highlight_code">¶</a></h1>
+        <p class="short_description">Code Highlighter</p>
+        <div class="details collapse">Colorizes code strings</div>
+        <a href="../namespaces/.html#function_highlight_code" class="more">« More »</a>
+    </div>
+
+                                        <div id="highlight_phrase" class="element ajax clickable function">
+        <h1>highlight_phrase<a href="../namespaces/.html#function_highlight_phrase">¶</a></h1>
+        <p class="short_description">Phrase Highlighter</p>
+        <div class="details collapse">Highlights a phrase within a text string</div>
+        <a href="../namespaces/.html#function_highlight_phrase" class="more">« More »</a>
+    </div>
+
+                                        <div id="convert_accented_characters" class="element ajax clickable function">
+        <h1>convert_accented_characters<a href="../namespaces/.html#function_convert_accented_characters">¶</a></h1>
+        <p class="short_description">Convert Accented Foreign Characters to ASCII</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_convert_accented_characters" class="more">« More »</a>
+    </div>
+
+                                        <div id="word_wrap" class="element ajax clickable function">
+        <h1>word_wrap<a href="../namespaces/.html#function_word_wrap">¶</a></h1>
+        <p class="short_description">Word Wrap</p>
+        <div class="details collapse">Wraps text at the specified character.  Maintains the integrity of words.
+Anything placed between {unwrap}{/unwrap} will not be word wrapped, nor
+will URLs.</div>
+        <a href="../namespaces/.html#function_word_wrap" class="more">« More »</a>
+    </div>
+
+                                        <div id="ellipsize" class="element ajax clickable function">
+        <h1>ellipsize<a href="../namespaces/.html#function_ellipsize">¶</a></h1>
+        <p class="short_description">Ellipsize String</p>
+        <div class="details collapse">This function will strip tags from a string, split it at its max_length and ellipsize</div>
+        <a href="../namespaces/.html#function_ellipsize" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Inflector.html">Inflector</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="singular" class="element ajax clickable function">
+        <h1>singular<a href="../namespaces/.html#function_singular">¶</a></h1>
+        <p class="short_description">Singular</p>
+        <div class="details collapse">Takes a plural word and makes it singular</div>
+        <a href="../namespaces/.html#function_singular" class="more">« More »</a>
+    </div>
+
+                                        <div id="plural" class="element ajax clickable function">
+        <h1>plural<a href="../namespaces/.html#function_plural">¶</a></h1>
+        <p class="short_description">Plural</p>
+        <div class="details collapse">Takes a singular word and makes it plural</div>
+        <a href="../namespaces/.html#function_plural" class="more">« More »</a>
+    </div>
+
+                                        <div id="camelize" class="element ajax clickable function">
+        <h1>camelize<a href="../namespaces/.html#function_camelize">¶</a></h1>
+        <p class="short_description">Camelize</p>
+        <div class="details collapse">Takes multiple words separated by spaces or underscores and camelizes them</div>
+        <a href="../namespaces/.html#function_camelize" class="more">« More »</a>
+    </div>
+
+                                        <div id="underscore" class="element ajax clickable function">
+        <h1>underscore<a href="../namespaces/.html#function_underscore">¶</a></h1>
+        <p class="short_description">Underscore</p>
+        <div class="details collapse">Takes multiple words separated by spaces and underscores them</div>
+        <a href="../namespaces/.html#function_underscore" class="more">« More »</a>
+    </div>
+
+                                        <div id="humanize" class="element ajax clickable function">
+        <h1>humanize<a href="../namespaces/.html#function_humanize">¶</a></h1>
+        <p class="short_description">Humanize</p>
+        <div class="details collapse">Takes multiple words separated by underscores and changes them to spaces</div>
+        <a href="../namespaces/.html#function_humanize" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Url.html">Url</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="site_url" class="element ajax clickable function">
+        <h1>site_url<a href="../namespaces/.html#function_site_url">¶</a></h1>
+        <p class="short_description">Site URL</p>
+        <div class="details collapse">Create a local URL based on your basepath. Segments can be passed via the
+first parameter either as a string or an array.</div>
+        <a href="../namespaces/.html#function_site_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="base_url" class="element ajax clickable function">
+        <h1>base_url<a href="../namespaces/.html#function_base_url">¶</a></h1>
+        <p class="short_description">Base URL</p>
+        <div class="details collapse">Create a local URL based on your basepath.
+Segments can be passed in as a string or an array, same as site_url
+or a URL to a file can be passed in, e.g. to an image file.</div>
+        <a href="../namespaces/.html#function_base_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="current_url" class="element ajax clickable function">
+        <h1>current_url<a href="../namespaces/.html#function_current_url">¶</a></h1>
+        <p class="short_description">Current URL</p>
+        <div class="details collapse">Returns the full URL (including segments) of the page where this
+function is placed</div>
+        <a href="../namespaces/.html#function_current_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="uri_string" class="element ajax clickable function">
+        <h1>uri_string<a href="../namespaces/.html#function_uri_string">¶</a></h1>
+        <p class="short_description">URL String</p>
+        <div class="details collapse">Returns the URI segments.</div>
+        <a href="../namespaces/.html#function_uri_string" class="more">« More »</a>
+    </div>
+
+                                        <div id="index_page" class="element ajax clickable function">
+        <h1>index_page<a href="../namespaces/.html#function_index_page">¶</a></h1>
+        <p class="short_description">Index page</p>
+        <div class="details collapse">Returns the &quot;index_page&quot; from your config file</div>
+        <a href="../namespaces/.html#function_index_page" class="more">« More »</a>
+    </div>
+
+                                        <div id="anchor" class="element ajax clickable function">
+        <h1>anchor<a href="../namespaces/.html#function_anchor">¶</a></h1>
+        <p class="short_description">Anchor Link</p>
+        <div class="details collapse">Creates an anchor based on the local URL.</div>
+        <a href="../namespaces/.html#function_anchor" class="more">« More »</a>
+    </div>
+
+                                        <div id="anchor_popup" class="element ajax clickable function">
+        <h1>anchor_popup<a href="../namespaces/.html#function_anchor_popup">¶</a></h1>
+        <p class="short_description">Anchor Link - Pop-up version</p>
+        <div class="details collapse">Creates an anchor based on the local URL. The link
+opens a new window based on the attributes specified.</div>
+        <a href="../namespaces/.html#function_anchor_popup" class="more">« More »</a>
+    </div>
+
+                                        <div id="mailto" class="element ajax clickable function">
+        <h1>mailto<a href="../namespaces/.html#function_mailto">¶</a></h1>
+        <p class="short_description">Mailto Link</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_mailto" class="more">« More »</a>
+    </div>
+
+                                        <div id="safe_mailto" class="element ajax clickable function">
+        <h1>safe_mailto<a href="../namespaces/.html#function_safe_mailto">¶</a></h1>
+        <p class="short_description">Encoded Mailto Link</p>
+        <div class="details collapse">Create a spam-protected mailto link written in Javascript</div>
+        <a href="../namespaces/.html#function_safe_mailto" class="more">« More »</a>
+    </div>
+
+                                        <div id="auto_link" class="element ajax clickable function">
+        <h1>auto_link<a href="../namespaces/.html#function_auto_link">¶</a></h1>
+        <p class="short_description">Auto-linker</p>
+        <div class="details collapse">Automatically links URL and Email addresses.
+Note: There&#039;s a bit of extra code here to deal with
+URLs or emails that end in a period.  We&#039;ll strip these
+off and add them after the link.</div>
+        <a href="../namespaces/.html#function_auto_link" class="more">« More »</a>
+    </div>
+
+                                        <div id="prep_url" class="element ajax clickable function">
+        <h1>prep_url<a href="../namespaces/.html#function_prep_url">¶</a></h1>
+        <p class="short_description">Prep URL</p>
+        <div class="details collapse">Simply adds the http:// part if no scheme is included</div>
+        <a href="../namespaces/.html#function_prep_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="url_title" class="element ajax clickable function">
+        <h1>url_title<a href="../namespaces/.html#function_url_title">¶</a></h1>
+        <p class="short_description">Create URL Title</p>
+        <div class="details collapse">Takes a &quot;title&quot; string as input and creates a
+human-friendly URL string with a &quot;separator&quot; string
+as the word separator.</div>
+        <a href="../namespaces/.html#function_url_title" class="more">« More »</a>
+    </div>
+
+                                        <div id="redirect" class="element ajax clickable function">
+        <h1>redirect<a href="../namespaces/.html#function_redirect">¶</a></h1>
+        <p class="short_description">Header Redirect</p>
+        <div class="details collapse">Header redirect in two flavors
+For very fine grained control over headers, you could use the Output
+Library&#039;s set_header() function.</div>
+        <a href="../namespaces/.html#function_redirect" class="more">« More »</a>
+    </div>
+
+                                        <div id="_parse_attributes" class="element ajax clickable function">
+        <h1>_parse_attributes<a href="../namespaces/.html#function__parse_attributes">¶</a></h1>
+        <p class="short_description">Parse out the attributes</p>
+        <div class="details collapse">Some of the functions use this</div>
+        <a href="../namespaces/.html#function__parse_attributes" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Form.html">Form</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="form_open" class="element ajax clickable function">
+        <h1>form_open<a href="../namespaces/.html#function_form_open">¶</a></h1>
+        <p class="short_description">Form Declaration</p>
+        <div class="details collapse">Creates the opening portion of the form.</div>
+        <a href="../namespaces/.html#function_form_open" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_open_multipart" class="element ajax clickable function">
+        <h1>form_open_multipart<a href="../namespaces/.html#function_form_open_multipart">¶</a></h1>
+        <p class="short_description">Form Declaration - Multipart type</p>
+        <div class="details collapse">Creates the opening portion of the form, but with &quot;multipart/form-data&quot;.</div>
+        <a href="../namespaces/.html#function_form_open_multipart" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_hidden" class="element ajax clickable function">
+        <h1>form_hidden<a href="../namespaces/.html#function_form_hidden">¶</a></h1>
+        <p class="short_description">Hidden Input Field</p>
+        <div class="details collapse">Generates hidden fields.  You can pass a simple key/value string or an associative
+array with multiple values.</div>
+        <a href="../namespaces/.html#function_form_hidden" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_input" class="element ajax clickable function">
+        <h1>form_input<a href="../namespaces/.html#function_form_input">¶</a></h1>
+        <p class="short_description">Text Input Field</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_input" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_password" class="element ajax clickable function">
+        <h1>form_password<a href="../namespaces/.html#function_form_password">¶</a></h1>
+        <p class="short_description">Password Field</p>
+        <div class="details collapse">Identical to the input function but adds the &quot;password&quot; type</div>
+        <a href="../namespaces/.html#function_form_password" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_upload" class="element ajax clickable function">
+        <h1>form_upload<a href="../namespaces/.html#function_form_upload">¶</a></h1>
+        <p class="short_description">Upload Field</p>
+        <div class="details collapse">Identical to the input function but adds the &quot;file&quot; type</div>
+        <a href="../namespaces/.html#function_form_upload" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_textarea" class="element ajax clickable function">
+        <h1>form_textarea<a href="../namespaces/.html#function_form_textarea">¶</a></h1>
+        <p class="short_description">Textarea field</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_textarea" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_multiselect" class="element ajax clickable function">
+        <h1>form_multiselect<a href="../namespaces/.html#function_form_multiselect">¶</a></h1>
+        <p class="short_description">Multi-select menu</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_multiselect" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_dropdown" class="element ajax clickable function">
+        <h1>form_dropdown<a href="../namespaces/.html#function_form_dropdown">¶</a></h1>
+        <p class="short_description">Drop-down Menu</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_dropdown" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_checkbox" class="element ajax clickable function">
+        <h1>form_checkbox<a href="../namespaces/.html#function_form_checkbox">¶</a></h1>
+        <p class="short_description">Checkbox Field</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_checkbox" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_radio" class="element ajax clickable function">
+        <h1>form_radio<a href="../namespaces/.html#function_form_radio">¶</a></h1>
+        <p class="short_description">Radio Button</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_radio" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_submit" class="element ajax clickable function">
+        <h1>form_submit<a href="../namespaces/.html#function_form_submit">¶</a></h1>
+        <p class="short_description">Submit Button</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_submit" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_reset" class="element ajax clickable function">
+        <h1>form_reset<a href="../namespaces/.html#function_form_reset">¶</a></h1>
+        <p class="short_description">Reset Button</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_reset" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_button" class="element ajax clickable function">
+        <h1>form_button<a href="../namespaces/.html#function_form_button">¶</a></h1>
+        <p class="short_description">Form Button</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_button" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_label" class="element ajax clickable function">
+        <h1>form_label<a href="../namespaces/.html#function_form_label">¶</a></h1>
+        <p class="short_description">Form Label Tag</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_label" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_fieldset" class="element ajax clickable function">
+        <h1>form_fieldset<a href="../namespaces/.html#function_form_fieldset">¶</a></h1>
+        <p class="short_description">Fieldset Tag</p>
+        <div class="details collapse">Used to produce &lt;fieldset&gt;&lt;legend&gt;text&lt;/legend&gt;.  To close fieldset
+use form_fieldset_close()</div>
+        <a href="../namespaces/.html#function_form_fieldset" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_fieldset_close" class="element ajax clickable function">
+        <h1>form_fieldset_close<a href="../namespaces/.html#function_form_fieldset_close">¶</a></h1>
+        <p class="short_description">Fieldset Close Tag</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_fieldset_close" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_close" class="element ajax clickable function">
+        <h1>form_close<a href="../namespaces/.html#function_form_close">¶</a></h1>
+        <p class="short_description">Form Close Tag</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_form_close" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_prep" class="element ajax clickable function">
+        <h1>form_prep<a href="../namespaces/.html#function_form_prep">¶</a></h1>
+        <p class="short_description">Form Prep</p>
+        <div class="details collapse">Formats text so that it can be safely placed in a form field in the event it has HTML tags.</div>
+        <a href="../namespaces/.html#function_form_prep" class="more">« More »</a>
+    </div>
+
+                                        <div id="set_value" class="element ajax clickable function">
+        <h1>set_value<a href="../namespaces/.html#function_set_value">¶</a></h1>
+        <p class="short_description">Form Value</p>
+        <div class="details collapse">Grabs a value from the POST array for the specified field so you can
+re-populate an input field or textarea.  If Form Validation
+is active it retrieves the info from the validation class</div>
+        <a href="../namespaces/.html#function_set_value" class="more">« More »</a>
+    </div>
+
+                                        <div id="set_select" class="element ajax clickable function">
+        <h1>set_select<a href="../namespaces/.html#function_set_select">¶</a></h1>
+        <p class="short_description">Set Select</p>
+        <div class="details collapse">Let&#039;s you set the selected value of a &lt;select&gt; menu via data in the POST array.
+If Form Validation is active it retrieves the info from the validation class</div>
+        <a href="../namespaces/.html#function_set_select" class="more">« More »</a>
+    </div>
+
+                                        <div id="set_checkbox" class="element ajax clickable function">
+        <h1>set_checkbox<a href="../namespaces/.html#function_set_checkbox">¶</a></h1>
+        <p class="short_description">Set Checkbox</p>
+        <div class="details collapse">Let&#039;s you set the selected value of a checkbox via the value in the POST array.
+If Form Validation is active it retrieves the info from the validation class</div>
+        <a href="../namespaces/.html#function_set_checkbox" class="more">« More »</a>
+    </div>
+
+                                        <div id="set_radio" class="element ajax clickable function">
+        <h1>set_radio<a href="../namespaces/.html#function_set_radio">¶</a></h1>
+        <p class="short_description">Set Radio</p>
+        <div class="details collapse">Let&#039;s you set the selected value of a radio field via info in the POST array.
+If Form Validation is active it retrieves the info from the validation class</div>
+        <a href="../namespaces/.html#function_set_radio" class="more">« More »</a>
+    </div>
+
+                                        <div id="form_error" class="element ajax clickable function">
+        <h1>form_error<a href="../namespaces/.html#function_form_error">¶</a></h1>
+        <p class="short_description">Form Error</p>
+        <div class="details collapse">Returns the error for a specific form field.  This is a helper for the
+form validation class.</div>
+        <a href="../namespaces/.html#function_form_error" class="more">« More »</a>
+    </div>
+
+                                        <div id="validation_errors" class="element ajax clickable function">
+        <h1>validation_errors<a href="../namespaces/.html#function_validation_errors">¶</a></h1>
+        <p class="short_description">Validation Error String</p>
+        <div class="details collapse">Returns all the errors associated with a form submission.  This is a helper
+function for the form validation class.</div>
+        <a href="../namespaces/.html#function_validation_errors" class="more">« More »</a>
+    </div>
+
+                                        <div id="_parse_form_attributes" class="element ajax clickable function">
+        <h1>_parse_form_attributes<a href="../namespaces/.html#function__parse_form_attributes">¶</a></h1>
+        <p class="short_description">Parse the form attributes</p>
+        <div class="details collapse">Helper function used by some of the form helpers</div>
+        <a href="../namespaces/.html#function__parse_form_attributes" class="more">« More »</a>
+    </div>
+
+                                        <div id="_attributes_to_string" class="element ajax clickable function">
+        <h1>_attributes_to_string<a href="../namespaces/.html#function__attributes_to_string">¶</a></h1>
+        <p class="short_description">Attributes To String</p>
+        <div class="details collapse">Helper function used by some of the form helpers</div>
+        <a href="../namespaces/.html#function__attributes_to_string" class="more">« More »</a>
+    </div>
+
+                                        <div id="_get_validation_object" class="element ajax clickable function">
+        <h1>_get_validation_object<a href="../namespaces/.html#function__get_validation_object">¶</a></h1>
+        <p class="short_description">Validation Object</p>
+        <div class="details collapse">Determines what the form validation class was instantiated as, fetches
+the object and returns it.</div>
+        <a href="../namespaces/.html#function__get_validation_object" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Number.html">Number</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="byte_format" class="element ajax clickable function">
+        <h1>byte_format<a href="../namespaces/.html#function_byte_format">¶</a></h1>
+        <p class="short_description">Formats a numbers as bytes, based on size, and adds the appropriate suffix</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_byte_format" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Security.html">Security</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="xss_clean" class="element ajax clickable function">
+        <h1>xss_clean<a href="../namespaces/.html#function_xss_clean">¶</a></h1>
+        <p class="short_description">XSS Filtering</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_xss_clean" class="more">« More »</a>
+    </div>
+
+                                        <div id="sanitize_filename" class="element ajax clickable function">
+        <h1>sanitize_filename<a href="../namespaces/.html#function_sanitize_filename">¶</a></h1>
+        <p class="short_description">Sanitize Filename</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_sanitize_filename" class="more">« More »</a>
+    </div>
+
+                                        <div id="do_hash" class="element ajax clickable function">
+        <h1>do_hash<a href="../namespaces/.html#function_do_hash">¶</a></h1>
+        <p class="short_description">Hash encode a string</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_do_hash" class="more">« More »</a>
+    </div>
+
+                                        <div id="strip_image_tags" class="element ajax clickable function">
+        <h1>strip_image_tags<a href="../namespaces/.html#function_strip_image_tags">¶</a></h1>
+        <p class="short_description">Strip Image Tags</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_strip_image_tags" class="more">« More »</a>
+    </div>
+
+                                        <div id="encode_php_tags" class="element ajax clickable function">
+        <h1>encode_php_tags<a href="../namespaces/.html#function_encode_php_tags">¶</a></h1>
+        <p class="short_description">Convert PHP tags to entities</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_encode_php_tags" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Array.html">Array</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="element" class="element ajax clickable function">
+        <h1>element<a href="../namespaces/.html#function_element">¶</a></h1>
+        <p class="short_description">Element</p>
+        <div class="details collapse">Lets you determine whether an array index is set and whether it has a value.
+If the element is empty it returns FALSE (or whatever you specify as the default value.)</div>
+        <a href="../namespaces/.html#function_element" class="more">« More »</a>
+    </div>
+
+                                        <div id="random_element" class="element ajax clickable function">
+        <h1>random_element<a href="../namespaces/.html#function_random_element">¶</a></h1>
+        <p class="short_description">Random Element - Takes an array as input and returns a random element</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_random_element" class="more">« More »</a>
+    </div>
+
+                                        <div id="elements" class="element ajax clickable function">
+        <h1>elements<a href="../namespaces/.html#function_elements">¶</a></h1>
+        <p class="short_description">Elements</p>
+        <div class="details collapse">Returns only the array items specified.  Will return a default value if
+it is not set.</div>
+        <a href="../namespaces/.html#function_elements" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Smiley.html">Smiley</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="smiley_js" class="element ajax clickable function">
+        <h1>smiley_js<a href="../namespaces/.html#function_smiley_js">¶</a></h1>
+        <p class="short_description">Smiley Javascript</p>
+        <div class="details collapse">Returns the javascript required for the smiley insertion.  Optionally takes
+an array of aliases to loosely couple the smiley array to the view.</div>
+        <a href="../namespaces/.html#function_smiley_js" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_clickable_smileys" class="element ajax clickable function">
+        <h1>get_clickable_smileys<a href="../namespaces/.html#function_get_clickable_smileys">¶</a></h1>
+        <p class="short_description">Get Clickable Smileys</p>
+        <div class="details collapse">Returns an array of image tag links that can be clicked to be inserted
+into a form field.</div>
+        <a href="../namespaces/.html#function_get_clickable_smileys" class="more">« More »</a>
+    </div>
+
+                                        <div id="parse_smileys" class="element ajax clickable function">
+        <h1>parse_smileys<a href="../namespaces/.html#function_parse_smileys">¶</a></h1>
+        <p class="short_description">Parse Smileys</p>
+        <div class="details collapse">Takes a string as input and swaps any contained smileys for the actual image</div>
+        <a href="../namespaces/.html#function_parse_smileys" class="more">« More »</a>
+    </div>
+
+                                        <div id="_get_smiley_array" class="element ajax clickable function">
+        <h1>_get_smiley_array<a href="../namespaces/.html#function__get_smiley_array">¶</a></h1>
+        <p class="short_description">Get Smiley Array</p>
+        <div class="details collapse">Fetches the config/smiley.php file</div>
+        <a href="../namespaces/.html#function__get_smiley_array" class="more">« More »</a>
+    </div>
+
+                                        <div id="js_insert_smiley" class="element ajax clickable function">
+        <h1>js_insert_smiley<a href="../namespaces/.html#function_js_insert_smiley">¶</a></h1>
+        <p class="short_description">JS Insert Smiley</p>
+        <div class="details collapse">Generates the javascript function needed to insert smileys into a form field
+
+DEPRECATED as of version 1.7.2, use smiley_js instead</div>
+        <a href="../namespaces/.html#function_js_insert_smiley" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Directory.html">Directory</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="directory_map" class="element ajax clickable function">
+        <h1>directory_map<a href="../namespaces/.html#function_directory_map">¶</a></h1>
+        <p class="short_description">Create a Directory Map</p>
+        <div class="details collapse">Reads the specified directory and builds an array
+representation of it.  Sub-folders contained with the
+directory will be mapped as well.</div>
+        <a href="../namespaces/.html#function_directory_map" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Email.html">Email</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="valid_email" class="element ajax clickable function">
+        <h1>valid_email<a href="../namespaces/.html#function_valid_email">¶</a></h1>
+        <p class="short_description">Validate email address</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_valid_email" class="more">« More »</a>
+    </div>
+
+                                        <div id="send_email" class="element ajax clickable function">
+        <h1>send_email<a href="../namespaces/.html#function_send_email">¶</a></h1>
+        <p class="short_description">Send an email</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_send_email" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Capcha.html">Capcha</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="create_captcha" class="element ajax clickable function">
+        <h1>create_captcha<a href="../namespaces/.html#function_create_captcha">¶</a></h1>
+        <p class="short_description">Create CAPTCHA</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_create_captcha" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.File.html">File</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="read_file" class="element ajax clickable function">
+        <h1>read_file<a href="../namespaces/.html#function_read_file">¶</a></h1>
+        <p class="short_description">Read File</p>
+        <div class="details collapse">Opens the file specfied in the path and returns it as a string.</div>
+        <a href="../namespaces/.html#function_read_file" class="more">« More »</a>
+    </div>
+
+                                        <div id="write_file" class="element ajax clickable function">
+        <h1>write_file<a href="../namespaces/.html#function_write_file">¶</a></h1>
+        <p class="short_description">Write File</p>
+        <div class="details collapse">Writes data to the file specified in the path.
+Creates a new file if non-existent.</div>
+        <a href="../namespaces/.html#function_write_file" class="more">« More »</a>
+    </div>
+
+                                        <div id="delete_files" class="element ajax clickable function">
+        <h1>delete_files<a href="../namespaces/.html#function_delete_files">¶</a></h1>
+        <p class="short_description">Delete Files</p>
+        <div class="details collapse">Deletes all files contained in the supplied directory path.
+Files must be writable or owned by the system in order to be deleted.
+If the second parameter is set to TRUE, any directories contained
+within the supplied base directory will be nuked as well.</div>
+        <a href="../namespaces/.html#function_delete_files" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_filenames" class="element ajax clickable function">
+        <h1>get_filenames<a href="../namespaces/.html#function_get_filenames">¶</a></h1>
+        <p class="short_description">Get Filenames</p>
+        <div class="details collapse">Reads the specified directory and builds an array containing the filenames.
+Any sub-folders contained within the specified path are read as well.</div>
+        <a href="../namespaces/.html#function_get_filenames" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_dir_file_info" class="element ajax clickable function">
+        <h1>get_dir_file_info<a href="../namespaces/.html#function_get_dir_file_info">¶</a></h1>
+        <p class="short_description">Get Directory File Information</p>
+        <div class="details collapse">Reads the specified directory and builds an array containing the filenames,
+filesize, dates, and permissions
+
+Any sub-folders contained within the specified path are read as well.</div>
+        <a href="../namespaces/.html#function_get_dir_file_info" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_file_info" class="element ajax clickable function">
+        <h1>get_file_info<a href="../namespaces/.html#function_get_file_info">¶</a></h1>
+        <p class="short_description">Get File Info</p>
+        <div class="details collapse">Given a file and path, returns the name, path, size, date modified
+Second parameter allows you to explicitly declare what information you want returned
+Options are: name, server_path, size, date, readable, writable, executable, fileperms
+Returns FALSE if the file cannot be found.</div>
+        <a href="../namespaces/.html#function_get_file_info" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_mime_by_extension" class="element ajax clickable function">
+        <h1>get_mime_by_extension<a href="../namespaces/.html#function_get_mime_by_extension">¶</a></h1>
+        <p class="short_description">Get Mime by Extension</p>
+        <div class="details collapse">Translates a file extension into a mime type based on config/mimes.php.
+Returns FALSE if it can&#039;t determine the type, or open the mime config file
+
+Note: this is NOT an accurate way of determining file mime types, and is here strictly as a convenience
+It should NOT be trusted, and should certainly NOT be used for security</div>
+        <a href="../namespaces/.html#function_get_mime_by_extension" class="more">« More »</a>
+    </div>
+
+                                        <div id="symbolic_permissions" class="element ajax clickable function">
+        <h1>symbolic_permissions<a href="../namespaces/.html#function_symbolic_permissions">¶</a></h1>
+        <p class="short_description">Symbolic Permissions</p>
+        <div class="details collapse">Takes a numeric value representing a file&#039;s permissions and returns
+standard symbolic notation representing that value</div>
+        <a href="../namespaces/.html#function_symbolic_permissions" class="more">« More »</a>
+    </div>
+
+                                        <div id="octal_permissions" class="element ajax clickable function">
+        <h1>octal_permissions<a href="../namespaces/.html#function_octal_permissions">¶</a></h1>
+        <p class="short_description">Octal Permissions</p>
+        <div class="details collapse">Takes a numeric value representing a file&#039;s permissions and returns
+a three character string representing the file&#039;s octal permissions</div>
+        <a href="../namespaces/.html#function_octal_permissions" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Cookie.html">Cookie</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="set_cookie" class="element ajax clickable function">
+        <h1>set_cookie<a href="../namespaces/.html#function_set_cookie">¶</a></h1>
+        <p class="short_description">Set cookie</p>
+        <div class="details collapse">Accepts six parameter, or you can submit an associative
+array in the first parameter containing all the values.</div>
+        <a href="../namespaces/.html#function_set_cookie" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_cookie" class="element ajax clickable function">
+        <h1>get_cookie<a href="../namespaces/.html#function_get_cookie">¶</a></h1>
+        <p class="short_description">Fetch an item from the COOKIE array</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_cookie" class="more">« More »</a>
+    </div>
+
+                                        <div id="delete_cookie" class="element ajax clickable function">
+        <h1>delete_cookie<a href="../namespaces/.html#function_delete_cookie">¶</a></h1>
+        <p class="short_description">Delete a COOKIE</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_delete_cookie" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Date.html">Date</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="now" class="element ajax clickable function">
+        <h1>now<a href="../namespaces/.html#function_now">¶</a></h1>
+        <p class="short_description">Get &quot;now&quot; time</p>
+        <div class="details collapse">Returns time() or its GMT equivalent based on the config file preference</div>
+        <a href="../namespaces/.html#function_now" class="more">« More »</a>
+    </div>
+
+                                        <div id="mdate" class="element ajax clickable function">
+        <h1>mdate<a href="../namespaces/.html#function_mdate">¶</a></h1>
+        <p class="short_description">Convert MySQL Style Datecodes</p>
+        <div class="details collapse">This function is identical to PHPs date() function,
+except that it allows date codes to be formatted using
+the MySQL style, where each code letter is preceded
+with a percent sign:  %Y %m %d etc...
+
+The benefit of doing dates this way is that you don&#039;t
+have to worry about escaping your text letters that
+match the date codes.</div>
+        <a href="../namespaces/.html#function_mdate" class="more">« More »</a>
+    </div>
+
+                                        <div id="standard_date" class="element ajax clickable function">
+        <h1>standard_date<a href="../namespaces/.html#function_standard_date">¶</a></h1>
+        <p class="short_description">Standard Date</p>
+        <div class="details collapse">Returns a date formatted according to the submitted standard.</div>
+        <a href="../namespaces/.html#function_standard_date" class="more">« More »</a>
+    </div>
+
+                                        <div id="timespan" class="element ajax clickable function">
+        <h1>timespan<a href="../namespaces/.html#function_timespan">¶</a></h1>
+        <p class="short_description">Timespan</p>
+        <div class="details collapse">Returns a span of seconds in this format:
+10 days 14 hours 36 minutes 47 seconds</div>
+        <a href="../namespaces/.html#function_timespan" class="more">« More »</a>
+    </div>
+
+                                        <div id="days_in_month" class="element ajax clickable function">
+        <h1>days_in_month<a href="../namespaces/.html#function_days_in_month">¶</a></h1>
+        <p class="short_description">Number of days in a month</p>
+        <div class="details collapse">Takes a month/year as input and returns the number of days
+for the given month/year. Takes leap years into consideration.</div>
+        <a href="../namespaces/.html#function_days_in_month" class="more">« More »</a>
+    </div>
+
+                                        <div id="local_to_gmt" class="element ajax clickable function">
+        <h1>local_to_gmt<a href="../namespaces/.html#function_local_to_gmt">¶</a></h1>
+        <p class="short_description">Converts a local Unix timestamp to GMT</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_local_to_gmt" class="more">« More »</a>
+    </div>
+
+                                        <div id="gmt_to_local" class="element ajax clickable function">
+        <h1>gmt_to_local<a href="../namespaces/.html#function_gmt_to_local">¶</a></h1>
+        <p class="short_description">Converts GMT time to a localized value</p>
+        <div class="details collapse">Takes a Unix timestamp (in GMT) as input, and returns
+at the local value based on the timezone and DST setting
+submitted</div>
+        <a href="../namespaces/.html#function_gmt_to_local" class="more">« More »</a>
+    </div>
+
+                                        <div id="mysql_to_unix" class="element ajax clickable function">
+        <h1>mysql_to_unix<a href="../namespaces/.html#function_mysql_to_unix">¶</a></h1>
+        <p class="short_description">Converts a MySQL Timestamp to Unix</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_mysql_to_unix" class="more">« More »</a>
+    </div>
+
+                                        <div id="unix_to_human" class="element ajax clickable function">
+        <h1>unix_to_human<a href="../namespaces/.html#function_unix_to_human">¶</a></h1>
+        <p class="short_description">Unix to &quot;Human&quot;</p>
+        <div class="details collapse">Formats Unix timestamp to the following prototype: 2006-08-21 11:35 PM</div>
+        <a href="../namespaces/.html#function_unix_to_human" class="more">« More »</a>
+    </div>
+
+                                        <div id="human_to_unix" class="element ajax clickable function">
+        <h1>human_to_unix<a href="../namespaces/.html#function_human_to_unix">¶</a></h1>
+        <p class="short_description">Convert &quot;human&quot; date to GMT</p>
+        <div class="details collapse">Reverses the above process</div>
+        <a href="../namespaces/.html#function_human_to_unix" class="more">« More »</a>
+    </div>
+
+                                        <div id="timezone_menu" class="element ajax clickable function">
+        <h1>timezone_menu<a href="../namespaces/.html#function_timezone_menu">¶</a></h1>
+        <p class="short_description">Timezone Menu</p>
+        <div class="details collapse">Generates a drop-down menu of timezones.</div>
+        <a href="../namespaces/.html#function_timezone_menu" class="more">« More »</a>
+    </div>
+
+                                        <div id="timezones" class="element ajax clickable function">
+        <h1>timezones<a href="../namespaces/.html#function_timezones">¶</a></h1>
+        <p class="short_description">Timezones</p>
+        <div class="details collapse">Returns an array of timezones.  This is a helper function
+for various other ones in this library</div>
+        <a href="../namespaces/.html#function_timezones" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Typography.html">Typography</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="nl2br_except_pre" class="element ajax clickable function">
+        <h1>nl2br_except_pre<a href="../namespaces/.html#function_nl2br_except_pre">¶</a></h1>
+        <p class="short_description">Convert newlines to HTML line breaks except within PRE tags</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_nl2br_except_pre" class="more">« More »</a>
+    </div>
+
+                                        <div id="auto_typography" class="element ajax clickable function">
+        <h1>auto_typography<a href="../namespaces/.html#function_auto_typography">¶</a></h1>
+        <p class="short_description">Auto Typography Wrapper Function</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_auto_typography" class="more">« More »</a>
+    </div>
+
+                                        <div id="entity_decode" class="element ajax clickable function">
+        <h1>entity_decode<a href="../namespaces/.html#function_entity_decode">¶</a></h1>
+        <p class="short_description">HTML Entities Decode</p>
+        <div class="details collapse">This function is a replacement for html_entity_decode()</div>
+        <a href="../namespaces/.html#function_entity_decode" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Xml.html">Xml</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="xml_convert" class="element ajax clickable function">
+        <h1>xml_convert<a href="../namespaces/.html#function_xml_convert">¶</a></h1>
+        <p class="short_description">Convert Reserved XML characters to Entities</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_xml_convert" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Download.html">Download</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="force_download" class="element ajax clickable function">
+        <h1>force_download<a href="../namespaces/.html#function_force_download">¶</a></h1>
+        <p class="short_description">Force Download</p>
+        <div class="details collapse">Generates headers that force a download to happen</div>
+        <a href="../namespaces/.html#function_force_download" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.String.html">String</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="trim_slashes" class="element ajax clickable function">
+        <h1>trim_slashes<a href="../namespaces/.html#function_trim_slashes">¶</a></h1>
+        <p class="short_description">Trim Slashes</p>
+        <div class="details collapse">Removes any leading/trailing slashes from a string:
+
+/this/that/theother/
+
+becomes:
+
+this/that/theother</div>
+        <a href="../namespaces/.html#function_trim_slashes" class="more">« More »</a>
+    </div>
+
+                                        <div id="strip_slashes" class="element ajax clickable function">
+        <h1>strip_slashes<a href="../namespaces/.html#function_strip_slashes">¶</a></h1>
+        <p class="short_description">Strip Slashes</p>
+        <div class="details collapse">Removes slashes contained in a string or in an array</div>
+        <a href="../namespaces/.html#function_strip_slashes" class="more">« More »</a>
+    </div>
+
+                                        <div id="strip_quotes" class="element ajax clickable function">
+        <h1>strip_quotes<a href="../namespaces/.html#function_strip_quotes">¶</a></h1>
+        <p class="short_description">Strip Quotes</p>
+        <div class="details collapse">Removes single and double quotes from a string</div>
+        <a href="../namespaces/.html#function_strip_quotes" class="more">« More »</a>
+    </div>
+
+                                        <div id="quotes_to_entities" class="element ajax clickable function">
+        <h1>quotes_to_entities<a href="../namespaces/.html#function_quotes_to_entities">¶</a></h1>
+        <p class="short_description">Quotes to Entities</p>
+        <div class="details collapse">Converts single and double quotes to entities</div>
+        <a href="../namespaces/.html#function_quotes_to_entities" class="more">« More »</a>
+    </div>
+
+                                        <div id="reduce_double_slashes" class="element ajax clickable function">
+        <h1>reduce_double_slashes<a href="../namespaces/.html#function_reduce_double_slashes">¶</a></h1>
+        <p class="short_description">Reduce Double Slashes</p>
+        <div class="details collapse">Converts double slashes in a string to a single slash,
+except those found in http://
+
+http://www.some-site.com//index.php
+
+becomes:
+
+http://www.some-site.com/index.php</div>
+        <a href="../namespaces/.html#function_reduce_double_slashes" class="more">« More »</a>
+    </div>
+
+                                        <div id="reduce_multiples" class="element ajax clickable function">
+        <h1>reduce_multiples<a href="../namespaces/.html#function_reduce_multiples">¶</a></h1>
+        <p class="short_description">Reduce Multiples</p>
+        <div class="details collapse">Reduces multiple instances of a particular character.  Example:
+
+Fred, Bill,, Joe, Jimmy
+
+becomes:
+
+Fred, Bill, Joe, Jimmy</div>
+        <a href="../namespaces/.html#function_reduce_multiples" class="more">« More »</a>
+    </div>
+
+                                        <div id="random_string" class="element ajax clickable function">
+        <h1>random_string<a href="../namespaces/.html#function_random_string">¶</a></h1>
+        <p class="short_description">Create a Random String</p>
+        <div class="details collapse">Useful for generating passwords or hashes.</div>
+        <a href="../namespaces/.html#function_random_string" class="more">« More »</a>
+    </div>
+
+                                        <div id="increment_string" class="element ajax clickable function">
+        <h1>increment_string<a href="../namespaces/.html#function_increment_string">¶</a></h1>
+        <p class="short_description">Add&#039;s _1 to a string or increment the ending number to allow _2, _3, etc</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_increment_string" class="more">« More »</a>
+    </div>
+
+                                        <div id="alternator" class="element ajax clickable function">
+        <h1>alternator<a href="../namespaces/.html#function_alternator">¶</a></h1>
+        <p class="short_description">Alternator</p>
+        <div class="details collapse">Allows strings to be alternated.  See docs...</div>
+        <a href="../namespaces/.html#function_alternator" class="more">« More »</a>
+    </div>
+
+                                        <div id="repeater" class="element ajax clickable function">
+        <h1>repeater<a href="../namespaces/.html#function_repeater">¶</a></h1>
+        <p class="short_description">Repeater function</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_repeater" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:45:26 +0700.<br/>
+    </footer>
+    </body>
+</html>

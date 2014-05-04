@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    KwitangCMS Documentation &raquo; \CI_Session
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Session Constructor">
+            <span class="description">Session Constructor</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sess_read" title="sess_read :: Fetch the current session data if it exists">
+            <span class="description">Fetch the current session data if it exists</span><pre>sess_read</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sess_write" title="sess_write :: Write the session data">
+            <span class="description">Write the session data</span><pre>sess_write</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sess_create" title="sess_create :: Create a new session">
+            <span class="description">Create a new session</span><pre>sess_create</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sess_update" title="sess_update :: Update an existing session">
+            <span class="description">Update an existing session</span><pre>sess_update</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sess_destroy" title="sess_destroy :: Destroy the current session">
+            <span class="description">Destroy the current session</span><pre>sess_destroy</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_userdata" title="userdata :: Fetch a specific item from the session array">
+            <span class="description">Fetch a specific item from the session array</span><pre>userdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_all_userdata" title="all_userdata :: Fetch all session data">
+            <span class="description">Fetch all session data</span><pre>all_userdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_userdata" title="set_userdata :: Add or change data in the &quot;userdata&quot; array">
+            <span class="description">Add or change data in the &quot;userdata&quot; array</span><pre>set_userdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_unset_userdata" title="unset_userdata :: Delete a session variable from the &quot;userdata&quot; array">
+            <span class="description">Delete a session variable from the &quot;userdata&quot; array</span><pre>unset_userdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_flashdata" title="set_flashdata :: Add or change flashdata, only available
+until the next request">
+            <span class="description">Add or change flashdata, only available
+until the next request</span><pre>set_flashdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_keep_flashdata" title="keep_flashdata :: Keeps existing flashdata available to next request.">
+            <span class="description">Keeps existing flashdata available to next request.</span><pre>keep_flashdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_flashdata" title="flashdata :: Fetch a specific flashdata item from the session array">
+            <span class="description">Fetch a specific flashdata item from the session array</span><pre>flashdata</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__flashdata_mark" title="_flashdata_mark :: Identifies flashdata as &#039;old&#039; for removal
+when _flashdata_sweep() runs.">
+            <span class="description">Identifies flashdata as &#039;old&#039; for removal
+when _flashdata_sweep() runs.</span><pre>_flashdata_mark</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__flashdata_sweep" title="_flashdata_sweep :: Removes all flashdata marked as &#039;old&#039;">
+            <span class="description">Removes all flashdata marked as &#039;old&#039;</span><pre>_flashdata_sweep</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__get_time" title="_get_time :: Get the &quot;now&quot; time">
+            <span class="description">Get the &quot;now&quot; time</span><pre>_get_time</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__set_cookie" title="_set_cookie :: Write the session cookie">
+            <span class="description">Write the session cookie</span><pre>_set_cookie</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__serialize" title="_serialize :: Serialize an array">
+            <span class="description">Serialize an array</span><pre>_serialize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__unserialize" title="_unserialize :: Unserialize">
+            <span class="description">Unserialize</span><pre>_unserialize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method__sess_gc" title="_sess_gc :: Garbage collection">
+            <span class="description">Garbage collection</span><pre>_sess_gc</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>CI_Session</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Session Class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>CodeIgniter</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        subpackage
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Libraries</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        category
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Sessions</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>ExpressionEngine Dev Team</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        link
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p><a href="http://codeigniter.com/user_guide/libraries/sessions.html">http://codeigniter.com/user_guide/libraries/sessions.html</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Session Constructor</h2>
+                            <pre>__construct($params = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The constructor runs the session routines automatically
+whenever the class is instantiated.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_sess_read"></a>
+                        <div class="element clickable method public  method_sess_read" data-toggle="collapse" data-target=".method_sess_read .collapse">
+                            <h2>Fetch the current session data if it exists</h2>
+                            <pre>sess_read() : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_sess_write"></a>
+                        <div class="element clickable method public  method_sess_write" data-toggle="collapse" data-target=".method_sess_write .collapse">
+                            <h2>Write the session data</h2>
+                            <pre>sess_write() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_sess_create"></a>
+                        <div class="element clickable method public  method_sess_create" data-toggle="collapse" data-target=".method_sess_create .collapse">
+                            <h2>Create a new session</h2>
+                            <pre>sess_create() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_sess_update"></a>
+                        <div class="element clickable method public  method_sess_update" data-toggle="collapse" data-target=".method_sess_update .collapse">
+                            <h2>Update an existing session</h2>
+                            <pre>sess_update() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_sess_destroy"></a>
+                        <div class="element clickable method public  method_sess_destroy" data-toggle="collapse" data-target=".method_sess_destroy .collapse">
+                            <h2>Destroy the current session</h2>
+                            <pre>sess_destroy() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_userdata"></a>
+                        <div class="element clickable method public  method_userdata" data-toggle="collapse" data-target=".method_userdata .collapse">
+                            <h2>Fetch a specific item from the session array</h2>
+                            <pre>userdata($item) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$item</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_all_userdata"></a>
+                        <div class="element clickable method public  method_all_userdata" data-toggle="collapse" data-target=".method_all_userdata .collapse">
+                            <h2>Fetch all session data</h2>
+                            <pre>all_userdata() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_userdata"></a>
+                        <div class="element clickable method public  method_set_userdata" data-toggle="collapse" data-target=".method_set_userdata .collapse">
+                            <h2>Add or change data in the &quot;userdata&quot; array</h2>
+                            <pre>set_userdata($newdata = array(), $newval = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newdata</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newval</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_unset_userdata"></a>
+                        <div class="element clickable method public  method_unset_userdata" data-toggle="collapse" data-target=".method_unset_userdata .collapse">
+                            <h2>Delete a session variable from the &quot;userdata&quot; array</h2>
+                            <pre>unset_userdata($newdata = array()) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>array</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newdata</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_flashdata"></a>
+                        <div class="element clickable method public  method_set_flashdata" data-toggle="collapse" data-target=".method_set_flashdata .collapse">
+                            <h2>Add or change flashdata, only available
+until the next request</h2>
+                            <pre>set_flashdata($newdata = array(), $newval = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newdata</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newval</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_keep_flashdata"></a>
+                        <div class="element clickable method public  method_keep_flashdata" data-toggle="collapse" data-target=".method_keep_flashdata .collapse">
+                            <h2>Keeps existing flashdata available to next request.</h2>
+                            <pre>keep_flashdata($key) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_flashdata"></a>
+                        <div class="element clickable method public  method_flashdata" data-toggle="collapse" data-target=".method_flashdata .collapse">
+                            <h2>Fetch a specific flashdata item from the session array</h2>
+                            <pre>flashdata($key) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__flashdata_mark"></a>
+                        <div class="element clickable method public  method__flashdata_mark" data-toggle="collapse" data-target=".method__flashdata_mark .collapse">
+                            <h2>Identifies flashdata as &#039;old&#039; for removal
+when _flashdata_sweep() runs.</h2>
+                            <pre>_flashdata_mark() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__flashdata_sweep"></a>
+                        <div class="element clickable method public  method__flashdata_sweep" data-toggle="collapse" data-target=".method__flashdata_sweep .collapse">
+                            <h2>Removes all flashdata marked as &#039;old&#039;</h2>
+                            <pre>_flashdata_sweep() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__get_time"></a>
+                        <div class="element clickable method public  method__get_time" data-toggle="collapse" data-target=".method__get_time .collapse">
+                            <h2>Get the &quot;now&quot; time</h2>
+                            <pre>_get_time() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__set_cookie"></a>
+                        <div class="element clickable method public  method__set_cookie" data-toggle="collapse" data-target=".method__set_cookie .collapse">
+                            <h2>Write the session cookie</h2>
+                            <pre>_set_cookie($cookie_data = NULL) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cookie_data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__serialize"></a>
+                        <div class="element clickable method public  method__serialize" data-toggle="collapse" data-target=".method__serialize .collapse">
+                            <h2>Serialize an array</h2>
+                            <pre>_serialize($data) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This function first converts any slashes found in the array to a temporary
+marker, so when it gets unserialized the slashes will be preserved</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__unserialize"></a>
+                        <div class="element clickable method public  method__unserialize" data-toggle="collapse" data-target=".method__unserialize .collapse">
+                            <h2>Unserialize</h2>
+                            <pre>_unserialize($data) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This function unserializes a data string, then converts any
+temporary slash markers back to actual slashes</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__sess_gc"></a>
+                        <div class="element clickable method public  method__sess_gc" data-toggle="collapse" data-target=".method__sess_gc .collapse">
+                            <h2>Garbage collection</h2>
+                            <pre>_sess_gc() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This deletes expired session rows from database
+if the probability percentage is met</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_sess_encrypt_cookie"> </a>
+                            <div class="element clickable property  public property_sess_encrypt_cookie" data-toggle="collapse" data-target=".property_sess_encrypt_cookie .collapse">
+                                <h2>sess_encrypt_cookie</h2>
+                                <pre>sess_encrypt_cookie : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_use_database"> </a>
+                            <div class="element clickable property  public property_sess_use_database" data-toggle="collapse" data-target=".property_sess_use_database .collapse">
+                                <h2>sess_use_database</h2>
+                                <pre>sess_use_database : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_table_name"> </a>
+                            <div class="element clickable property  public property_sess_table_name" data-toggle="collapse" data-target=".property_sess_table_name .collapse">
+                                <h2>sess_table_name</h2>
+                                <pre>sess_table_name : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_expiration"> </a>
+                            <div class="element clickable property  public property_sess_expiration" data-toggle="collapse" data-target=".property_sess_expiration .collapse">
+                                <h2>sess_expiration</h2>
+                                <pre>sess_expiration : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_expire_on_close"> </a>
+                            <div class="element clickable property  public property_sess_expire_on_close" data-toggle="collapse" data-target=".property_sess_expire_on_close .collapse">
+                                <h2>sess_expire_on_close</h2>
+                                <pre>sess_expire_on_close : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_match_ip"> </a>
+                            <div class="element clickable property  public property_sess_match_ip" data-toggle="collapse" data-target=".property_sess_match_ip .collapse">
+                                <h2>sess_match_ip</h2>
+                                <pre>sess_match_ip : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_match_useragent"> </a>
+                            <div class="element clickable property  public property_sess_match_useragent" data-toggle="collapse" data-target=".property_sess_match_useragent .collapse">
+                                <h2>sess_match_useragent</h2>
+                                <pre>sess_match_useragent : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_cookie_name"> </a>
+                            <div class="element clickable property  public property_sess_cookie_name" data-toggle="collapse" data-target=".property_sess_cookie_name .collapse">
+                                <h2>sess_cookie_name</h2>
+                                <pre>sess_cookie_name : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cookie_prefix"> </a>
+                            <div class="element clickable property  public property_cookie_prefix" data-toggle="collapse" data-target=".property_cookie_prefix .collapse">
+                                <h2>cookie_prefix</h2>
+                                <pre>cookie_prefix : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cookie_path"> </a>
+                            <div class="element clickable property  public property_cookie_path" data-toggle="collapse" data-target=".property_cookie_path .collapse">
+                                <h2>cookie_path</h2>
+                                <pre>cookie_path : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cookie_domain"> </a>
+                            <div class="element clickable property  public property_cookie_domain" data-toggle="collapse" data-target=".property_cookie_domain .collapse">
+                                <h2>cookie_domain</h2>
+                                <pre>cookie_domain : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cookie_secure"> </a>
+                            <div class="element clickable property  public property_cookie_secure" data-toggle="collapse" data-target=".property_cookie_secure .collapse">
+                                <h2>cookie_secure</h2>
+                                <pre>cookie_secure : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sess_time_to_update"> </a>
+                            <div class="element clickable property  public property_sess_time_to_update" data-toggle="collapse" data-target=".property_sess_time_to_update .collapse">
+                                <h2>sess_time_to_update</h2>
+                                <pre>sess_time_to_update : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_encryption_key"> </a>
+                            <div class="element clickable property  public property_encryption_key" data-toggle="collapse" data-target=".property_encryption_key .collapse">
+                                <h2>encryption_key</h2>
+                                <pre>encryption_key : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_flashdata_key"> </a>
+                            <div class="element clickable property  public property_flashdata_key" data-toggle="collapse" data-target=".property_flashdata_key .collapse">
+                                <h2>flashdata_key</h2>
+                                <pre>flashdata_key : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_time_reference"> </a>
+                            <div class="element clickable property  public property_time_reference" data-toggle="collapse" data-target=".property_time_reference .collapse">
+                                <h2>time_reference</h2>
+                                <pre>time_reference : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_gc_probability"> </a>
+                            <div class="element clickable property  public property_gc_probability" data-toggle="collapse" data-target=".property_gc_probability .collapse">
+                                <h2>gc_probability</h2>
+                                <pre>gc_probability : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_userdata"> </a>
+                            <div class="element clickable property  public property_userdata" data-toggle="collapse" data-target=".property_userdata .collapse">
+                                <h2>userdata</h2>
+                                <pre>userdata : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_CI"> </a>
+                            <div class="element clickable property  public property_CI" data-toggle="collapse" data-target=".property_CI .collapse">
+                                <h2>CI</h2>
+                                <pre>CI : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_now"> </a>
+                            <div class="element clickable property  public property_now" data-toggle="collapse" data-target=".property_now .collapse">
+                                <h2>now</h2>
+                                <pre>now : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\CI_Session"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/CI_Session.html">CI_Session</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:45:51 +0700.<br/>
+    </footer>
+    </body>
+</html>

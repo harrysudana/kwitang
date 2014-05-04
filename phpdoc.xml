@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title>KwitangCMS Documentation</title>
+  <parser>
+    <target>doc-cache</target>
+    <markers>
+      <item>TODO</item>
+      <item>FIXME</item>
+    </markers>
+    <extensions>
+      <extension>php</extension>
+    </extensions>
+  </parser>
+  <transformer>
+    <target>doc</target>
+  </transformer>
+  <transformations>
+    <template name="responsive-twig" />
+  </transformations>
+  <files>
+    <directory>backend/system</directory>
+    <directory>backend/kwitang</directory>
+    <directory>backend/content_type</directory>
+  </files>
+</phpdoc>

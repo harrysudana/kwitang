@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \CodeIgniter\Helpers\Date
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Helpers.Date.html">Date</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="now" class="element ajax clickable function">
+        <h1>now<a href="../namespaces/.html#function_now">¶</a></h1>
+        <p class="short_description">Get &quot;now&quot; time</p>
+        <div class="details collapse">Returns time() or its GMT equivalent based on the config file preference</div>
+        <a href="../namespaces/.html#function_now" class="more">« More »</a>
+    </div>
+
+                                        <div id="mdate" class="element ajax clickable function">
+        <h1>mdate<a href="../namespaces/.html#function_mdate">¶</a></h1>
+        <p class="short_description">Convert MySQL Style Datecodes</p>
+        <div class="details collapse">This function is identical to PHPs date() function,
+except that it allows date codes to be formatted using
+the MySQL style, where each code letter is preceded
+with a percent sign:  %Y %m %d etc...
+
+The benefit of doing dates this way is that you don&#039;t
+have to worry about escaping your text letters that
+match the date codes.</div>
+        <a href="../namespaces/.html#function_mdate" class="more">« More »</a>
+    </div>
+
+                                        <div id="standard_date" class="element ajax clickable function">
+        <h1>standard_date<a href="../namespaces/.html#function_standard_date">¶</a></h1>
+        <p class="short_description">Standard Date</p>
+        <div class="details collapse">Returns a date formatted according to the submitted standard.</div>
+        <a href="../namespaces/.html#function_standard_date" class="more">« More »</a>
+    </div>
+
+                                        <div id="timespan" class="element ajax clickable function">
+        <h1>timespan<a href="../namespaces/.html#function_timespan">¶</a></h1>
+        <p class="short_description">Timespan</p>
+        <div class="details collapse">Returns a span of seconds in this format:
+10 days 14 hours 36 minutes 47 seconds</div>
+        <a href="../namespaces/.html#function_timespan" class="more">« More »</a>
+    </div>
+
+                                        <div id="days_in_month" class="element ajax clickable function">
+        <h1>days_in_month<a href="../namespaces/.html#function_days_in_month">¶</a></h1>
+        <p class="short_description">Number of days in a month</p>
+        <div class="details collapse">Takes a month/year as input and returns the number of days
+for the given month/year. Takes leap years into consideration.</div>
+        <a href="../namespaces/.html#function_days_in_month" class="more">« More »</a>
+    </div>
+
+                                        <div id="local_to_gmt" class="element ajax clickable function">
+        <h1>local_to_gmt<a href="../namespaces/.html#function_local_to_gmt">¶</a></h1>
+        <p class="short_description">Converts a local Unix timestamp to GMT</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_local_to_gmt" class="more">« More »</a>
+    </div>
+
+                                        <div id="gmt_to_local" class="element ajax clickable function">
+        <h1>gmt_to_local<a href="../namespaces/.html#function_gmt_to_local">¶</a></h1>
+        <p class="short_description">Converts GMT time to a localized value</p>
+        <div class="details collapse">Takes a Unix timestamp (in GMT) as input, and returns
+at the local value based on the timezone and DST setting
+submitted</div>
+        <a href="../namespaces/.html#function_gmt_to_local" class="more">« More »</a>
+    </div>
+
+                                        <div id="mysql_to_unix" class="element ajax clickable function">
+        <h1>mysql_to_unix<a href="../namespaces/.html#function_mysql_to_unix">¶</a></h1>
+        <p class="short_description">Converts a MySQL Timestamp to Unix</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_mysql_to_unix" class="more">« More »</a>
+    </div>
+
+                                        <div id="unix_to_human" class="element ajax clickable function">
+        <h1>unix_to_human<a href="../namespaces/.html#function_unix_to_human">¶</a></h1>
+        <p class="short_description">Unix to &quot;Human&quot;</p>
+        <div class="details collapse">Formats Unix timestamp to the following prototype: 2006-08-21 11:35 PM</div>
+        <a href="../namespaces/.html#function_unix_to_human" class="more">« More »</a>
+    </div>
+
+                                        <div id="human_to_unix" class="element ajax clickable function">
+        <h1>human_to_unix<a href="../namespaces/.html#function_human_to_unix">¶</a></h1>
+        <p class="short_description">Convert &quot;human&quot; date to GMT</p>
+        <div class="details collapse">Reverses the above process</div>
+        <a href="../namespaces/.html#function_human_to_unix" class="more">« More »</a>
+    </div>
+
+                                        <div id="timezone_menu" class="element ajax clickable function">
+        <h1>timezone_menu<a href="../namespaces/.html#function_timezone_menu">¶</a></h1>
+        <p class="short_description">Timezone Menu</p>
+        <div class="details collapse">Generates a drop-down menu of timezones.</div>
+        <a href="../namespaces/.html#function_timezone_menu" class="more">« More »</a>
+    </div>
+
+                                        <div id="timezones" class="element ajax clickable function">
+        <h1>timezones<a href="../namespaces/.html#function_timezones">¶</a></h1>
+        <p class="short_description">Timezones</p>
+        <div class="details collapse">Returns an array of timezones.  This is a helper function
+for various other ones in this library</div>
+        <a href="../namespaces/.html#function_timezones" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:45:28 +0700.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    KwitangCMS Documentation &raquo; \Kwitang
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: ">
+            <span class="description"></span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public">
+        <a href="#method_feList" title="feList :: Ambil semua nama frontend">
+            <span class="description">Ambil semua nama frontend</span><pre>feList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_feViewList" title="feViewList :: Ambil semua nama view dari sebuah frontend">
+            <span class="description">Ambil semua nama view dari sebuah frontend</span><pre>feViewList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_feView" title="feView :: Menampilkan view dari front end">
+            <span class="description">Menampilkan view dari front end</span><pre>feView</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctIsInstalled" title="ctIsInstalled :: Periksa apakah Tipe-konten sudah di pasang">
+            <span class="description">Periksa apakah Tipe-konten sudah di pasang</span><pre>ctIsInstalled</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctList" title="ctList :: Ambil semua nama tipe-konten, dari frontend dan backend.">
+            <span class="description">Ambil semua nama tipe-konten, dari frontend dan backend.</span><pre>ctList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctControllerList" title="ctControllerList :: Ambil semua nama kontroller dari sebuah tipe-konten.">
+            <span class="description">Ambil semua nama kontroller dari sebuah tipe-konten.</span><pre>ctControllerList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctController" title="ctController :: Load/Muat kontroller dari sebuah tipe-konten,">
+            <span class="description">Load/Muat kontroller dari sebuah tipe-konten,</span><pre>ctController</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctModelList" title="ctModelList :: Ambil semua nama model dari sebuah tipe-konten.">
+            <span class="description">Ambil semua nama model dari sebuah tipe-konten.</span><pre>ctModelList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctModel" title="ctModel :: Load/Muat model dari sebuah tipe-konten,">
+            <span class="description">Load/Muat model dari sebuah tipe-konten,</span><pre>ctModel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctViewList" title="ctViewList :: Ambil semua nama view dari sebuah tipe-konten.">
+            <span class="description">Ambil semua nama view dari sebuah tipe-konten.</span><pre>ctViewList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_ctView" title="ctView :: Menampilkan view dari tipe konten.">
+            <span class="description">Menampilkan view dari tipe konten.</span><pre>ctView</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_authenticate" title="authenticate :: Cek apakah user sudah login">
+            <span class="description">Cek apakah user sudah login</span><pre>authenticate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_validateUser" title="validateUser :: Periksa keabsahan user, Lakukan proses login jika tidak ditemukan
+masalah">
+            <span class="description">Periksa keabsahan user, Lakukan proses login jika tidak ditemukan
+masalah</span><pre>validateUser</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_logout" title="logout :: Keluar dari Sistem, atau menghapus session aktif">
+            <span class="description">Keluar dari Sistem, atau menghapus session aktif</span><pre>logout</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_currentUser" title="currentUser :: Ambil data user yang sedang login">
+            <span class="description">Ambil data user yang sedang login</span><pre>currentUser</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_checkPrivilege" title="checkPrivilege :: Check wheter user has privilege to a structure.">
+            <span class="description">Check wheter user has privilege to a structure.</span><pre>checkPrivilege</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_userLog" title="userLog :: Menyimpan catatan (log) aktifitas">
+            <span class="description">Menyimpan catatan (log) aktifitas</span><pre>userLog</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_systemLog" title="systemLog :: menyimpan catatan (log) yang berkaitan dengan masalah sistem">
+            <span class="description">menyimpan catatan (log) yang berkaitan dengan masalah sistem</span><pre>systemLog</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_assetUrl" title="assetUrl :: Membuat URL ke file asset.">
+            <span class="description">Membuat URL ke file asset.</span><pre>assetUrl</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_timeGmt" title="timeGmt :: Mengambil waktu GMT">
+            <span class="description">Mengambil waktu GMT</span><pre>timeGmt</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_visitorCounter" title="visitorCounter :: Web Counter">
+            <span class="description">Web Counter</span><pre>visitorCounter</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                <li class="method private">
+                            <a href="#method___listFolders" title="__listFolders :: Susun array berupa daftar nama file dari folder yang diberikan.">
+                                <span class="description">Susun array berupa daftar nama file dari folder yang diberikan.</span><pre>__listFolders</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method___listFiles" title="__listFiles :: Susun array berupa daftar nama file dari folder yang diberikan.">
+                                <span class="description">Susun array berupa daftar nama file dari folder yang diberikan.</span><pre>__listFiles</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method___rawPrivilege" title="__rawPrivilege :: Ambil data roles_detail berdasarkan ID sebuah role">
+                                <span class="description">Ambil data roles_detail berdasarkan ID sebuah role</span><pre>__rawPrivilege</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method___buildToken" title="__buildToken :: Membuat login token">
+                                <span class="description">Membuat login token</span><pre>__buildToken</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method___readToken" title="__readToken :: Membuat login token">
+                                <span class="description">Membuat login token</span><pre>__readToken</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Kwitang</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Library Kwitang, menyediakan fungsi dasar bagi Kwitang CMS</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>Hal yang ditangani oleh Library ini adalah:</p>
+<ul>
+<li>FrontEnd</li>
+<li>Tipe-Konten</li>
+<li>Authentication &amp; Authorization</li>
+</ul>
+<p>Struktur Folder:</p>
+<pre>
+[install_folder]         => ROOT_PATH
+  + frontend             => FRONT_PATH == ROOT_PATH + FRONT_FOLDER
+    + [frontend_name]
+      - assets
+      - views
+      - content_type
+        - NAME_OF_CT
+          - assets
+          - controller
+          - models
+          - views
+  + backend
+    + content_type       => KWITANG_CT_PATH
+      + NAME_OF_CT
+        - assets
+        - controller
+        - models
+        - views
+    + kwitang
+    + system
+</pre>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Kwitang\Libraries</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Iyan Kushardiansah <a href="mailto:iyank4@gamil.com">iyank4@gamil.com</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>__construct</h2>
+                            <pre>__construct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___listFolders"></a>
+                        <div class="element clickable method private  method___listFolders" data-toggle="collapse" data-target=".method___listFolders .collapse">
+                            <h2>Susun array berupa daftar nama file dari folder yang diberikan.</h2>
+                            <pre>__listFolders($root_folder) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Format array yang di kembalikan:</p>
+<pre>
+array('Nama_Folder1'=>'Nama_Folder1', 'Nama_Folder2'=>'Nama_Folder2')
+</pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$root_folder</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___listFiles"></a>
+                        <div class="element clickable method private  method___listFiles" data-toggle="collapse" data-target=".method___listFiles .collapse">
+                            <h2>Susun array berupa daftar nama file dari folder yang diberikan.</h2>
+                            <pre>__listFiles($root_folder, $recrusive = true, $file_ext = &#039;php&#039;, $deep = 1) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>default $recrusive = true, akan mengambil nama file pada folder di
+bawahnya</p>
+<p>Format array yang di kembalikan:</p>
+<pre>
+array('Nama_File' => 'Nama_File',
+       'Nama_Folder' => array('Nama_File' => 'Nama_File'))
+</pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$root_folder</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$recrusive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file_ext</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$deep</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___rawPrivilege"></a>
+                        <div class="element clickable method private  method___rawPrivilege" data-toggle="collapse" data-target=".method___rawPrivilege .collapse">
+                            <h2>Ambil data roles_detail berdasarkan ID sebuah role</h2>
+                            <pre>__rawPrivilege($role_id = null) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Data dari fungsi ini akan digunakan pada fungsi checkPrivilege()</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$role_id</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___buildToken"></a>
+                        <div class="element clickable method private  method___buildToken" data-toggle="collapse" data-target=".method___buildToken .collapse">
+                            <h2>Membuat login token</h2>
+                            <pre>__buildToken($username, $login_time, $valid_day, $token = null, $serial = 1) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$login_time</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$valid_day</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$token</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$serial</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___readToken"></a>
+                        <div class="element clickable method private  method___readToken" data-toggle="collapse" data-target=".method___readToken .collapse">
+                            <h2>Membuat login token</h2>
+                            <pre>__readToken($login_token) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$login_token</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_feList"></a>
+                        <div class="element clickable method public  method_feList" data-toggle="collapse" data-target=".method_feList .collapse">
+                            <h2>Ambil semua nama frontend</h2>
+                            <pre>feList() : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_feViewList"></a>
+                        <div class="element clickable method public  method_feViewList" data-toggle="collapse" data-target=".method_feViewList .collapse">
+                            <h2>Ambil semua nama view dari sebuah frontend</h2>
+                            <pre>feViewList($frontend = null) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$frontend</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_feView"></a>
+                        <div class="element clickable method public  method_feView" data-toggle="collapse" data-target=".method_feView .collapse">
+                            <h2>Menampilkan view dari front end</h2>
+                            <pre>feView($view_filename, $vars = null, $frontend = null) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view_filename</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$vars</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$frontend</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctIsInstalled"></a>
+                        <div class="element clickable method public  method_ctIsInstalled" data-toggle="collapse" data-target=".method_ctIsInstalled .collapse">
+                            <h2>Periksa apakah Tipe-konten sudah di pasang</h2>
+                            <pre>ctIsInstalled($ct_name) : Boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ct_name</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Boolean</code><p><p>true jika telah diinstall sempurna (semua tabel ada)</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctList"></a>
+                        <div class="element clickable method public  method_ctList" data-toggle="collapse" data-target=".method_ctList .collapse">
+                            <h2>Ambil semua nama tipe-konten, dari frontend dan backend.</h2>
+                            <pre>ctList($only_installed = true, $frontend = null) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Nilai yang dikembalikan berupa array('frontend' => ? , 'backend' => ?)
+dimana isinya berupa array dari nama tipe-konten yang ada.</p>
+<p>Jika dipanggil tanpa parameter, akan mengambil tipe-koten dari frontend
+yang sedang digunakan, Jika ingin mengambil dari frontend lain, isi
+parameter $frontend dengan nama frontend yang dikehendaki.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$only_installed</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$frontend</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctControllerList"></a>
+                        <div class="element clickable method public  method_ctControllerList" data-toggle="collapse" data-target=".method_ctControllerList .collapse">
+                            <h2>Ambil semua nama kontroller dari sebuah tipe-konten.</h2>
+                            <pre>ctControllerList($content_type, $frontend = null) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Jika dipanggil tanpa parameter $frontend, akan mengambil dari frontend
+yang sedang digunakan, Jika ingin mengambil dari frontend lain, isi
+parameter $frontend dengan nama frontend yang dikehendaki.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$frontend</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctController"></a>
+                        <div class="element clickable method public  method_ctController" data-toggle="collapse" data-target=".method_ctController .collapse">
+                            <h2>Load/Muat kontroller dari sebuah tipe-konten,</h2>
+                            <pre>ctController($content_type, $controller = null) : Object|false</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Nama kelas kontroller harus sama persis dengan nama filenya,
+misal untuk kelas <code>CamelCase</code> nama filenya harus <code>CamelCase.php</code></p>
+<p>Cari di frontend, jika tidak ditemukan maka akan mencari di backend.</p>
+<p>Jika Nama kontroller tidak di isi, akan mengambil kontroller yang
+namanya sama dengan nama tipe-konten</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$controller</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Object|false</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctModelList"></a>
+                        <div class="element clickable method public  method_ctModelList" data-toggle="collapse" data-target=".method_ctModelList .collapse">
+                            <h2>Ambil semua nama model dari sebuah tipe-konten.</h2>
+                            <pre>ctModelList($content_type, $frontend = null) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Jika dipanggil tanpa parameter $frontend, akan mengambil dari frontend
+yang sedang digunakan, Jika ingin mengambil dari frontend lain, isi
+parameter $frontend dengan nama frontend yang dikehendaki.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$frontend</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctModel"></a>
+                        <div class="element clickable method public  method_ctModel" data-toggle="collapse" data-target=".method_ctModel .collapse">
+                            <h2>Load/Muat model dari sebuah tipe-konten,</h2>
+                            <pre>ctModel($content_type, $model = null) : Object|false</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Nama kelas model harus sama persis dengan nama filenya,
+misal untuk kelas <code>CamelCase</code> nama filenya harus <code>CamelCase.php</code></p>
+<p>Cari di frontend, jika tidak ditemukan maka akan mencari di backend.</p>
+<p>Jika Nama model tidak di isi, akan mengambil model yang namanya sama
+dengan nama tipe-konten</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$model</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Object|false</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctViewList"></a>
+                        <div class="element clickable method public  method_ctViewList" data-toggle="collapse" data-target=".method_ctViewList .collapse">
+                            <h2>Ambil semua nama view dari sebuah tipe-konten.</h2>
+                            <pre>ctViewList($content_type, $frontend = null) : Array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Jika dipanggil tanpa parameter $frontend, akan mengambil dari frontend
+yang sedang digunakan, Jika ingin mengambil dari frontend lain, isi
+parameter $frontend dengan nama frontend yang dikehendaki.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$frontend</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_ctView"></a>
+                        <div class="element clickable method public  method_ctView" data-toggle="collapse" data-target=".method_ctView .collapse">
+                            <h2>Menampilkan view dari tipe konten.</h2>
+                            <pre>ctView($content_type, $view_name, $var = null, $return = false) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view_name</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$var</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_authenticate"></a>
+                        <div class="element clickable method public  method_authenticate" data-toggle="collapse" data-target=".method_authenticate .collapse">
+                            <h2>Cek apakah user sudah login</h2>
+                            <pre>authenticate() : Boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>Boolean</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_validateUser"></a>
+                        <div class="element clickable method public  method_validateUser" data-toggle="collapse" data-target=".method_validateUser .collapse">
+                            <h2>Periksa keabsahan user, Lakukan proses login jika tidak ditemukan
+masalah</h2>
+                            <pre>validateUser($username, $password, $persistent = true) : Boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$password</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$persistent</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Boolean</code><p><p>return true jika sukses login</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_logout"></a>
+                        <div class="element clickable method public  method_logout" data-toggle="collapse" data-target=".method_logout .collapse">
+                            <h2>Keluar dari Sistem, atau menghapus session aktif</h2>
+                            <pre>logout($all_session = false, $username = null, $token = null) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$all_session</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$token</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_currentUser"></a>
+                        <div class="element clickable method public  method_currentUser" data-toggle="collapse" data-target=".method_currentUser .collapse">
+                            <h2>Ambil data user yang sedang login</h2>
+                            <pre>currentUser() : Object|null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Jika belum login, akan mengembalikan nilai null</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>Object|null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_checkPrivilege"></a>
+                        <div class="element clickable method public  method_checkPrivilege" data-toggle="collapse" data-target=".method_checkPrivilege .collapse">
+                            <h2>Check wheter user has privilege to a structure.</h2>
+                            <pre>checkPrivilege($structure, $priv_asked, $username = &#039;&#039;, $equality = false) : Boolean|null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Will return true if user has privilege equal or higer than asked,
+except if $equality set to true.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$structure</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$priv_asked</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$equality</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Boolean|null</code><p><p>true=Has privileges, false=No, null=User not exist</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_userLog"></a>
+                        <div class="element clickable method public  method_userLog" data-toggle="collapse" data-target=".method_userLog .collapse">
+                            <h2>Menyimpan catatan (log) aktifitas</h2>
+                            <pre>userLog($subject, $event, $message) : Boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>$subject : 'auth',  $sct_title
+$event   : 'login,  'add', 'update', 'delete', 'login'</p>
+<p>Untuk catatan yang tidak berkaitan dengan pengguna, gunakan systemLog()</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subject</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$event</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Boolean</code><p><p>true jika sukses menyimpan log</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_systemLog"></a>
+                        <div class="element clickable method public  method_systemLog" data-toggle="collapse" data-target=".method_systemLog .collapse">
+                            <h2>menyimpan catatan (log) yang berkaitan dengan masalah sistem</h2>
+                            <pre>systemLog($event, $message, $subject = &#039;system&#039;) : Boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$event</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subject</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Boolean</code><p><p>true jika sukses menyimpan log</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_assetUrl"></a>
+                        <div class="element clickable method public  method_assetUrl" data-toggle="collapse" data-target=".method_assetUrl .collapse">
+                            <h2>Membuat URL ke file asset.</h2>
+                            <pre>assetUrl($file_uri = &#039;&#039;, $param = true, $add_mtime = null) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Secara otomatis ditambahkan ?v=<code>filemtime($file)</code> dibelakang url, untuk
+menghindari masalah cache di browser.</p>
+<p>Anda dapat menonaktifkan penambahan filemtime ini dengan menyetel
+konfigurasi 'asset_add_mtime' menjadi false. Namun Jika kemudian fungsi
+ini dipanggil dengan parameter $add_mtime, maka konfigurasi tadi akan
+diabaikan.</p>
+<p>Setel @param === false agar tidak mengambil dari FRONT_FOLDER
+Setel $param = Nama tipe-konten, untuk mengambil berkas dari folder
+assets pada tipe-konten tersebut.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file_uri</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$param</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$add_mtime</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_timeGmt"></a>
+                        <div class="element clickable method public  method_timeGmt" data-toggle="collapse" data-target=".method_timeGmt .collapse">
+                            <h2>Mengambil waktu GMT</h2>
+                            <pre>timeGmt() : int</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_visitorCounter"></a>
+                        <div class="element clickable method public  method_visitorCounter" data-toggle="collapse" data-target=".method_visitorCounter .collapse">
+                            <h2>Web Counter</h2>
+                            <pre>visitorCounter($do_count = false) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$do_count</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_CI"> </a>
+                            <div class="element clickable property  private property_CI" data-toggle="collapse" data-target=".property_CI .collapse">
+                                <h2>CI</h2>
+                                <pre>CI : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_current_user"> </a>
+                            <div class="element clickable property  private property_current_user" data-toggle="collapse" data-target=".property_current_user .collapse">
+                                <h2>current_user</h2>
+                                <pre>current_user : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_raw_privileges"> </a>
+                            <div class="element clickable property  private property_raw_privileges" data-toggle="collapse" data-target=".property_raw_privileges .collapse">
+                                <h2>raw_privileges</h2>
+                                <pre>raw_privileges : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_counter_file"> </a>
+                            <div class="element clickable property  private property_counter_file" data-toggle="collapse" data-target=".property_counter_file .collapse">
+                                <h2>counter_file</h2>
+                                <pre>counter_file : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_version"> </a>
+                            <div class="element clickable property  public property_version" data-toggle="collapse" data-target=".property_version .collapse">
+                                <h2>version</h2>
+                                <pre>version : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_frontend"> </a>
+                            <div class="element clickable property  public property_frontend" data-toggle="collapse" data-target=".property_frontend .collapse">
+                                <h2>frontend</h2>
+                                <pre>frontend : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_timezone"> </a>
+                            <div class="element clickable property  public property_timezone" data-toggle="collapse" data-target=".property_timezone .collapse">
+                                <h2>timezone</h2>
+                                <pre>timezone : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_lang"> </a>
+                            <div class="element clickable property  public property_lang" data-toggle="collapse" data-target=".property_lang .collapse">
+                                <h2>lang</h2>
+                                <pre>lang : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Kwitang"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Kwitang.html">Kwitang</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:46:15 +0700.<br/>
+    </footer>
+    </body>
+</html>

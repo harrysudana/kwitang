@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \CodeIgniter\Core\Common
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.html">CodeIgniter</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Core.html">Core</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/CodeIgniter.Core.Common.html">Common</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="is_php" class="element ajax clickable function">
+        <h1>is_php<a href="../namespaces/.html#function_is_php">¶</a></h1>
+        <p class="short_description">Determines if the current version of PHP is greater then the supplied value</p>
+        <div class="details collapse">Since there are a few places where we conditionally test for PHP &gt; 5
+we&#039;ll set a static variable.</div>
+        <a href="../namespaces/.html#function_is_php" class="more">« More »</a>
+    </div>
+
+                                        <div id="is_really_writable" class="element ajax clickable function">
+        <h1>is_really_writable<a href="../namespaces/.html#function_is_really_writable">¶</a></h1>
+        <p class="short_description">Tests for file writability</p>
+        <div class="details collapse">is_writable() returns TRUE on Windows servers when you really can&#039;t write to
+the file, based on the read-only attribute.  is_writable() is also unreliable
+on Unix servers if safe_mode is on.</div>
+        <a href="../namespaces/.html#function_is_really_writable" class="more">« More »</a>
+    </div>
+
+                                        <div id="load_class" class="element ajax clickable function">
+        <h1>load_class<a href="../namespaces/.html#function_load_class">¶</a></h1>
+        <p class="short_description">Class registry</p>
+        <div class="details collapse">This function acts as a singleton.  If the requested class does not
+exist it is instantiated and set to a static variable.  If it has
+previously been instantiated the variable is returned.</div>
+        <a href="../namespaces/.html#function_load_class" class="more">« More »</a>
+    </div>
+
+                                        <div id="is_loaded" class="element ajax clickable function">
+        <h1>is_loaded<a href="../namespaces/.html#function_is_loaded">¶</a></h1>
+        <p class="short_description">Keeps track of which libraries have been loaded.  This function is
+called by the load_class() function above</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_is_loaded" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_config" class="element ajax clickable function">
+        <h1>get_config<a href="../namespaces/.html#function_get_config">¶</a></h1>
+        <p class="short_description">Loads the main config.php file</p>
+        <div class="details collapse">This function lets us grab the config file even if the Config class
+hasn&#039;t been instantiated yet</div>
+        <a href="../namespaces/.html#function_get_config" class="more">« More »</a>
+    </div>
+
+                                        <div id="config_item" class="element ajax clickable function">
+        <h1>config_item<a href="../namespaces/.html#function_config_item">¶</a></h1>
+        <p class="short_description">Returns the specified config item</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_config_item" class="more">« More »</a>
+    </div>
+
+                                        <div id="show_error" class="element ajax clickable function">
+        <h1>show_error<a href="../namespaces/.html#function_show_error">¶</a></h1>
+        <p class="short_description">Error Handler</p>
+        <div class="details collapse">This function lets us invoke the exception class and
+display errors using the standard error template located
+in application/errors/errors.php
+This function will send the error page directly to the
+browser and exit.</div>
+        <a href="../namespaces/.html#function_show_error" class="more">« More »</a>
+    </div>
+
+                                        <div id="show_404" class="element ajax clickable function">
+        <h1>show_404<a href="../namespaces/.html#function_show_404">¶</a></h1>
+        <p class="short_description">404 Page Handler</p>
+        <div class="details collapse">This function is similar to the show_error() function above
+However, instead of the standard error template it displays
+404 errors.</div>
+        <a href="../namespaces/.html#function_show_404" class="more">« More »</a>
+    </div>
+
+                                        <div id="log_message" class="element ajax clickable function">
+        <h1>log_message<a href="../namespaces/.html#function_log_message">¶</a></h1>
+        <p class="short_description">Error Logging Interface</p>
+        <div class="details collapse">We use this as a simple mechanism to access the logging
+class and send messages to be logged.</div>
+        <a href="../namespaces/.html#function_log_message" class="more">« More »</a>
+    </div>
+
+                                        <div id="set_status_header" class="element ajax clickable function">
+        <h1>set_status_header<a href="../namespaces/.html#function_set_status_header">¶</a></h1>
+        <p class="short_description">Set HTTP Status Header</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_set_status_header" class="more">« More »</a>
+    </div>
+
+                                        <div id="_exception_handler" class="element ajax clickable function">
+        <h1>_exception_handler<a href="../namespaces/.html#function__exception_handler">¶</a></h1>
+        <p class="short_description">Exception Handler</p>
+        <div class="details collapse">This is the custom exception handler that is declaired at the top
+of Codeigniter.php.  The main reason we use this is to permit
+PHP errors to be logged in our own log files since the user may
+not have access to server logs. Since this function
+effectively intercepts PHP errors, however, we also need
+to display errors based on the current error_reporting level.
+We do that with the use of a PHP error template.</div>
+        <a href="../namespaces/.html#function__exception_handler" class="more">« More »</a>
+    </div>
+
+                                        <div id="remove_invisible_characters" class="element ajax clickable function">
+        <h1>remove_invisible_characters<a href="../namespaces/.html#function_remove_invisible_characters">¶</a></h1>
+        <p class="short_description">Remove Invisible Characters</p>
+        <div class="details collapse">This prevents sandwiching null characters
+between ascii characters, like Java\0script.</div>
+        <a href="../namespaces/.html#function_remove_invisible_characters" class="more">« More »</a>
+    </div>
+
+                                        <div id="html_escape" class="element ajax clickable function">
+        <h1>html_escape<a href="../namespaces/.html#function_html_escape">¶</a></h1>
+        <p class="short_description">Returns HTML escaped variable</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_html_escape" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:45:27 +0700.<br/>
+    </footer>
+    </body>
+</html>

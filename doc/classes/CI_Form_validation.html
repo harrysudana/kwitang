@@ -1,0 +1,2540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    KwitangCMS Documentation &raquo; \CI_Form_validation
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Constructor">
+            <span class="description">Constructor</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_rules" title="set_rules :: Set Rules">
+            <span class="description">Set Rules</span><pre>set_rules</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_message" title="set_message :: Set Error Message">
+            <span class="description">Set Error Message</span><pre>set_message</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_error_delimiters" title="set_error_delimiters :: Set The Error Delimiter">
+            <span class="description">Set The Error Delimiter</span><pre>set_error_delimiters</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_error" title="error :: Get Error Message">
+            <span class="description">Get Error Message</span><pre>error</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_error_string" title="error_string :: Error String">
+            <span class="description">Error String</span><pre>error_string</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_run" title="run :: Run the Validator">
+            <span class="description">Run the Validator</span><pre>run</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_set_value" title="set_value :: Get the value from a form">
+            <span class="description">Get the value from a form</span><pre>set_value</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_select" title="set_select :: Set Select">
+            <span class="description">Set Select</span><pre>set_select</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_radio" title="set_radio :: Set Radio">
+            <span class="description">Set Radio</span><pre>set_radio</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set_checkbox" title="set_checkbox :: Set Checkbox">
+            <span class="description">Set Checkbox</span><pre>set_checkbox</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_required" title="required :: Required">
+            <span class="description">Required</span><pre>required</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_regex_match" title="regex_match :: Performs a Regular Expression match test.">
+            <span class="description">Performs a Regular Expression match test.</span><pre>regex_match</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_matches" title="matches :: Match one field to another">
+            <span class="description">Match one field to another</span><pre>matches</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is_unique" title="is_unique :: Match one field to another">
+            <span class="description">Match one field to another</span><pre>is_unique</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_min_length" title="min_length :: Minimum Length">
+            <span class="description">Minimum Length</span><pre>min_length</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_max_length" title="max_length :: Max Length">
+            <span class="description">Max Length</span><pre>max_length</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_exact_length" title="exact_length :: Exact Length">
+            <span class="description">Exact Length</span><pre>exact_length</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_valid_email" title="valid_email :: Valid Email">
+            <span class="description">Valid Email</span><pre>valid_email</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_valid_emails" title="valid_emails :: Valid Emails">
+            <span class="description">Valid Emails</span><pre>valid_emails</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_valid_ip" title="valid_ip :: Validate IP Address">
+            <span class="description">Validate IP Address</span><pre>valid_ip</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_alpha" title="alpha :: Alpha">
+            <span class="description">Alpha</span><pre>alpha</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_alpha_numeric" title="alpha_numeric :: Alpha-numeric">
+            <span class="description">Alpha-numeric</span><pre>alpha_numeric</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_alpha_dash" title="alpha_dash :: Alpha-numeric with underscores and dashes">
+            <span class="description">Alpha-numeric with underscores and dashes</span><pre>alpha_dash</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_numeric" title="numeric :: Numeric">
+            <span class="description">Numeric</span><pre>numeric</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is_numeric" title="is_numeric :: Is Numeric">
+            <span class="description">Is Numeric</span><pre>is_numeric</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_integer" title="integer :: Integer">
+            <span class="description">Integer</span><pre>integer</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_decimal" title="decimal :: Decimal number">
+            <span class="description">Decimal number</span><pre>decimal</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_greater_than" title="greater_than :: Greather than">
+            <span class="description">Greather than</span><pre>greater_than</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_less_than" title="less_than :: Less than">
+            <span class="description">Less than</span><pre>less_than</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is_natural" title="is_natural :: Is a Natural number  (0,1,2,3, etc.)">
+            <span class="description">Is a Natural number  (0,1,2,3, etc.)</span><pre>is_natural</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is_natural_no_zero" title="is_natural_no_zero :: Is a Natural number, but not a zero  (1,2,3, etc.)">
+            <span class="description">Is a Natural number, but not a zero  (1,2,3, etc.)</span><pre>is_natural_no_zero</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_valid_base64" title="valid_base64 :: Valid Base64">
+            <span class="description">Valid Base64</span><pre>valid_base64</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_prep_for_form" title="prep_for_form :: Prep data for form">
+            <span class="description">Prep data for form</span><pre>prep_for_form</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_prep_url" title="prep_url :: Prep URL">
+            <span class="description">Prep URL</span><pre>prep_url</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_strip_image_tags" title="strip_image_tags :: Strip Image Tags">
+            <span class="description">Strip Image Tags</span><pre>strip_image_tags</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_xss_clean" title="xss_clean :: XSS Clean">
+            <span class="description">XSS Clean</span><pre>xss_clean</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_encode_php_tags" title="encode_php_tags :: Convert PHP tags to entities">
+            <span class="description">Convert PHP tags to entities</span><pre>encode_php_tags</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                        <li class="method protected">
+                            <a href="#method__reduce_array" title="_reduce_array :: Traverse a multidimensional $_POST array index until the data is found">
+                                <span class="description">Traverse a multidimensional $_POST array index until the data is found</span><pre>_reduce_array</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__reset_post_array" title="_reset_post_array :: Re-populate the _POST array with our finalized and processed data">
+                                <span class="description">Re-populate the _POST array with our finalized and processed data</span><pre>_reset_post_array</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__execute" title="_execute :: Executes the Validation routines">
+                                <span class="description">Executes the Validation routines</span><pre>_execute</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__translate_fieldname" title="_translate_fieldname :: Translate a field name">
+                                <span class="description">Translate a field name</span><pre>_translate_fieldname</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>CI_Form_validation</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Form Validation Class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>CodeIgniter</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        subpackage
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Libraries</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        category
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Validation</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>ExpressionEngine Dev Team</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        link
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p><a href="http://codeigniter.com/user_guide/libraries/form_validation.html">http://codeigniter.com/user_guide/libraries/form_validation.html</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Constructor</h2>
+                            <pre>__construct($rules = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rules</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_rules"></a>
+                        <div class="element clickable method public  method_set_rules" data-toggle="collapse" data-target=".method_set_rules .collapse">
+                            <h2>Set Rules</h2>
+                            <pre>set_rules($field, $label = &#039;&#039;, $rules = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This function takes an array of field names and validation
+rules as input, validates the info, and stores it</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$label</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rules</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_message"></a>
+                        <div class="element clickable method public  method_set_message" data-toggle="collapse" data-target=".method_set_message .collapse">
+                            <h2>Set Error Message</h2>
+                            <pre>set_message($lang, $val = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Lets users set their own error messages on the fly.  Note:  The key
+name has to match the  function name that it corresponds to.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$lang</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$val</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_error_delimiters"></a>
+                        <div class="element clickable method public  method_set_error_delimiters" data-toggle="collapse" data-target=".method_set_error_delimiters .collapse">
+                            <h2>Set The Error Delimiter</h2>
+                            <pre>set_error_delimiters($prefix = &#039;&lt;p&gt;&#039;, $suffix = &#039;&lt;/p&gt;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Permits a prefix/suffix to be added to each error message</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$suffix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_error"></a>
+                        <div class="element clickable method public  method_error" data-toggle="collapse" data-target=".method_error .collapse">
+                            <h2>Get Error Message</h2>
+                            <pre>error($field = &#039;&#039;, $prefix = &#039;&#039;, $suffix = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Gets the error message associated with a particular field</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$suffix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_error_string"></a>
+                        <div class="element clickable method public  method_error_string" data-toggle="collapse" data-target=".method_error_string .collapse">
+                            <h2>Error String</h2>
+                            <pre>error_string($prefix = &#039;&#039;, $suffix = &#039;&#039;) : \str</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns the error messages as a string, wrapped in the error delimiters</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$suffix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\str</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_run"></a>
+                        <div class="element clickable method public  method_run" data-toggle="collapse" data-target=".method_run .collapse">
+                            <h2>Run the Validator</h2>
+                            <pre>run($group = &#039;&#039;) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This function does all the work.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$group</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__reduce_array"></a>
+                        <div class="element clickable method protected  method__reduce_array" data-toggle="collapse" data-target=".method__reduce_array .collapse">
+                            <h2>Traverse a multidimensional $_POST array index until the data is found</h2>
+                            <pre>_reduce_array($array, $keys, $i) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$array</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$keys</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$i</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__reset_post_array"></a>
+                        <div class="element clickable method protected  method__reset_post_array" data-toggle="collapse" data-target=".method__reset_post_array .collapse">
+                            <h2>Re-populate the _POST array with our finalized and processed data</h2>
+                            <pre>_reset_post_array() : null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__execute"></a>
+                        <div class="element clickable method protected  method__execute" data-toggle="collapse" data-target=".method__execute .collapse">
+                            <h2>Executes the Validation routines</h2>
+                            <pre>_execute($row, $rules, $postdata = NULL, $cycles) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$row</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rules</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$postdata</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cycles</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__translate_fieldname"></a>
+                        <div class="element clickable method protected  method__translate_fieldname" data-toggle="collapse" data-target=".method__translate_fieldname .collapse">
+                            <h2>Translate a field name</h2>
+                            <pre>_translate_fieldname($fieldname) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fieldname</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_value"></a>
+                        <div class="element clickable method public  method_set_value" data-toggle="collapse" data-target=".method_set_value .collapse">
+                            <h2>Get the value from a form</h2>
+                            <pre>set_value($field = &#039;&#039;, $default = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Permits you to repopulate a form field with the value it was submitted
+with, or, if that value doesn't exist, with the default</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_select"></a>
+                        <div class="element clickable method public  method_set_select" data-toggle="collapse" data-target=".method_set_select .collapse">
+                            <h2>Set Select</h2>
+                            <pre>set_select($field = &#039;&#039;, $value = &#039;&#039;, $default = FALSE) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Enables pull-down lists to be set to the value the user
+selected in the event of an error</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_radio"></a>
+                        <div class="element clickable method public  method_set_radio" data-toggle="collapse" data-target=".method_set_radio .collapse">
+                            <h2>Set Radio</h2>
+                            <pre>set_radio($field = &#039;&#039;, $value = &#039;&#039;, $default = FALSE) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Enables radio buttons to be set to the value the user
+selected in the event of an error</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_set_checkbox"></a>
+                        <div class="element clickable method public  method_set_checkbox" data-toggle="collapse" data-target=".method_set_checkbox .collapse">
+                            <h2>Set Checkbox</h2>
+                            <pre>set_checkbox($field = &#039;&#039;, $value = &#039;&#039;, $default = FALSE) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Enables checkboxes to be set to the value the user
+selected in the event of an error</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_required"></a>
+                        <div class="element clickable method public  method_required" data-toggle="collapse" data-target=".method_required .collapse">
+                            <h2>Required</h2>
+                            <pre>required($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_regex_match"></a>
+                        <div class="element clickable method public  method_regex_match" data-toggle="collapse" data-target=".method_regex_match .collapse">
+                            <h2>Performs a Regular Expression match test.</h2>
+                            <pre>regex_match($str, $regex) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$regex</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_matches"></a>
+                        <div class="element clickable method public  method_matches" data-toggle="collapse" data-target=".method_matches .collapse">
+                            <h2>Match one field to another</h2>
+                            <pre>matches($str, $field) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is_unique"></a>
+                        <div class="element clickable method public  method_is_unique" data-toggle="collapse" data-target=".method_is_unique .collapse">
+                            <h2>Match one field to another</h2>
+                            <pre>is_unique($str, $field) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_min_length"></a>
+                        <div class="element clickable method public  method_min_length" data-toggle="collapse" data-target=".method_min_length .collapse">
+                            <h2>Minimum Length</h2>
+                            <pre>min_length($str, $val) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$val</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_max_length"></a>
+                        <div class="element clickable method public  method_max_length" data-toggle="collapse" data-target=".method_max_length .collapse">
+                            <h2>Max Length</h2>
+                            <pre>max_length($str, $val) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$val</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_exact_length"></a>
+                        <div class="element clickable method public  method_exact_length" data-toggle="collapse" data-target=".method_exact_length .collapse">
+                            <h2>Exact Length</h2>
+                            <pre>exact_length($str, $val) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$val</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_valid_email"></a>
+                        <div class="element clickable method public  method_valid_email" data-toggle="collapse" data-target=".method_valid_email .collapse">
+                            <h2>Valid Email</h2>
+                            <pre>valid_email($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_valid_emails"></a>
+                        <div class="element clickable method public  method_valid_emails" data-toggle="collapse" data-target=".method_valid_emails .collapse">
+                            <h2>Valid Emails</h2>
+                            <pre>valid_emails($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_valid_ip"></a>
+                        <div class="element clickable method public  method_valid_ip" data-toggle="collapse" data-target=".method_valid_ip .collapse">
+                            <h2>Validate IP Address</h2>
+                            <pre>valid_ip($ip, $which = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ip</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$which</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_alpha"></a>
+                        <div class="element clickable method public  method_alpha" data-toggle="collapse" data-target=".method_alpha .collapse">
+                            <h2>Alpha</h2>
+                            <pre>alpha($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_alpha_numeric"></a>
+                        <div class="element clickable method public  method_alpha_numeric" data-toggle="collapse" data-target=".method_alpha_numeric .collapse">
+                            <h2>Alpha-numeric</h2>
+                            <pre>alpha_numeric($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_alpha_dash"></a>
+                        <div class="element clickable method public  method_alpha_dash" data-toggle="collapse" data-target=".method_alpha_dash .collapse">
+                            <h2>Alpha-numeric with underscores and dashes</h2>
+                            <pre>alpha_dash($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_numeric"></a>
+                        <div class="element clickable method public  method_numeric" data-toggle="collapse" data-target=".method_numeric .collapse">
+                            <h2>Numeric</h2>
+                            <pre>numeric($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is_numeric"></a>
+                        <div class="element clickable method public  method_is_numeric" data-toggle="collapse" data-target=".method_is_numeric .collapse">
+                            <h2>Is Numeric</h2>
+                            <pre>is_numeric($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_integer"></a>
+                        <div class="element clickable method public  method_integer" data-toggle="collapse" data-target=".method_integer .collapse">
+                            <h2>Integer</h2>
+                            <pre>integer($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_decimal"></a>
+                        <div class="element clickable method public  method_decimal" data-toggle="collapse" data-target=".method_decimal .collapse">
+                            <h2>Decimal number</h2>
+                            <pre>decimal($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_greater_than"></a>
+                        <div class="element clickable method public  method_greater_than" data-toggle="collapse" data-target=".method_greater_than .collapse">
+                            <h2>Greather than</h2>
+                            <pre>greater_than($str, $min) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$min</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_less_than"></a>
+                        <div class="element clickable method public  method_less_than" data-toggle="collapse" data-target=".method_less_than .collapse">
+                            <h2>Less than</h2>
+                            <pre>less_than($str, $max) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$max</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is_natural"></a>
+                        <div class="element clickable method public  method_is_natural" data-toggle="collapse" data-target=".method_is_natural .collapse">
+                            <h2>Is a Natural number  (0,1,2,3, etc.)</h2>
+                            <pre>is_natural($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is_natural_no_zero"></a>
+                        <div class="element clickable method public  method_is_natural_no_zero" data-toggle="collapse" data-target=".method_is_natural_no_zero .collapse">
+                            <h2>Is a Natural number, but not a zero  (1,2,3, etc.)</h2>
+                            <pre>is_natural_no_zero($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_valid_base64"></a>
+                        <div class="element clickable method public  method_valid_base64" data-toggle="collapse" data-target=".method_valid_base64 .collapse">
+                            <h2>Valid Base64</h2>
+                            <pre>valid_base64($str) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Tests a string for characters outside of the Base64 alphabet
+as defined by RFC 2045 <a href="http://www.faqs.org/rfcs/rfc2045">http://www.faqs.org/rfcs/rfc2045</a></p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_prep_for_form"></a>
+                        <div class="element clickable method public  method_prep_for_form" data-toggle="collapse" data-target=".method_prep_for_form .collapse">
+                            <h2>Prep data for form</h2>
+                            <pre>prep_for_form($data = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This function allows HTML to be safely shown in a form.
+Special characters are converted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_prep_url"></a>
+                        <div class="element clickable method public  method_prep_url" data-toggle="collapse" data-target=".method_prep_url .collapse">
+                            <h2>Prep URL</h2>
+                            <pre>prep_url($str = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_strip_image_tags"></a>
+                        <div class="element clickable method public  method_strip_image_tags" data-toggle="collapse" data-target=".method_strip_image_tags .collapse">
+                            <h2>Strip Image Tags</h2>
+                            <pre>strip_image_tags($str) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_xss_clean"></a>
+                        <div class="element clickable method public  method_xss_clean" data-toggle="collapse" data-target=".method_xss_clean .collapse">
+                            <h2>XSS Clean</h2>
+                            <pre>xss_clean($str) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_encode_php_tags"></a>
+                        <div class="element clickable method public  method_encode_php_tags" data-toggle="collapse" data-target=".method_encode_php_tags .collapse">
+                            <h2>Convert PHP tags to entities</h2>
+                            <pre>encode_php_tags($str) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_CI"> </a>
+                            <div class="element clickable property  protected property_CI" data-toggle="collapse" data-target=".property_CI .collapse">
+                                <h2>CI</h2>
+                                <pre>CI : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__field_data"> </a>
+                            <div class="element clickable property  protected property__field_data" data-toggle="collapse" data-target=".property__field_data .collapse">
+                                <h2>_field_data</h2>
+                                <pre>_field_data : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__config_rules"> </a>
+                            <div class="element clickable property  protected property__config_rules" data-toggle="collapse" data-target=".property__config_rules .collapse">
+                                <h2>_config_rules</h2>
+                                <pre>_config_rules : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__error_array"> </a>
+                            <div class="element clickable property  protected property__error_array" data-toggle="collapse" data-target=".property__error_array .collapse">
+                                <h2>_error_array</h2>
+                                <pre>_error_array : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__error_messages"> </a>
+                            <div class="element clickable property  protected property__error_messages" data-toggle="collapse" data-target=".property__error_messages .collapse">
+                                <h2>_error_messages</h2>
+                                <pre>_error_messages : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__error_prefix"> </a>
+                            <div class="element clickable property  protected property__error_prefix" data-toggle="collapse" data-target=".property__error_prefix .collapse">
+                                <h2>_error_prefix</h2>
+                                <pre>_error_prefix : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__error_suffix"> </a>
+                            <div class="element clickable property  protected property__error_suffix" data-toggle="collapse" data-target=".property__error_suffix .collapse">
+                                <h2>_error_suffix</h2>
+                                <pre>_error_suffix : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_error_string"> </a>
+                            <div class="element clickable property  protected property_error_string" data-toggle="collapse" data-target=".property_error_string .collapse">
+                                <h2>error_string</h2>
+                                <pre>error_string : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__safe_form_data"> </a>
+                            <div class="element clickable property  protected property__safe_form_data" data-toggle="collapse" data-target=".property__safe_form_data .collapse">
+                                <h2>_safe_form_data</h2>
+                                <pre>_safe_form_data : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\CI_Form_validation"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/CI_Form_validation.html">CI_Form_validation</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:45:58 +0700.<br/>
+    </footer>
+    </body>
+</html>

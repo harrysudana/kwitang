@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Kwitang
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">KwitangCMS Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+        <li>
+        <a href="../packages/Kwitang.Controllers.html" title="Controllers">
+            <i class="icon-th"></i> Controllers
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Kwitang.Helpers.html" title="Helpers">
+            <i class="icon-th"></i> Helpers
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+        <li>
+        <a href="../packages/Kwitang.Helpers.KwitangFe.html" title="KwitangFe">
+            <i class="icon-th"></i> KwitangFe
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Kwitang.Helpers.Kwitang.html" title="Kwitang">
+            <i class="icon-th"></i> Kwitang
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Kwitang.Models.html" title="Models">
+            <i class="icon-th"></i> Models
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Kwitang.Core.html" title="Core">
+            <i class="icon-th"></i> Core
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Kwitang.Libraries.html" title="Libraries">
+            <i class="icon-th"></i> Libraries
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    </ul>
+
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Controllers.html">Controllers</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="Rss" class="element ajax clickable class">
+        <h1>Rss<a href="../classes/Rss.html">¶</a></h1>
+        <p class="short_description">RSS Feed Generator</p>
+        <div class="details collapse">This class object is the super class that every library in
+CodeIgniter will be assigned to.</div>
+        <a href="../classes/Rss.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="App" class="element ajax clickable class">
+        <h1>App<a href="../classes/App.html">¶</a></h1>
+        <p class="short_description">FronteEnd Controller</p>
+        <div class="details collapse">This class object is the super class that every library in
+CodeIgniter will be assigned to.</div>
+        <a href="../classes/App.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="V" class="element ajax clickable class">
+        <h1>V<a href="../classes/V.html">¶</a></h1>
+        <p class="short_description">V - the custom view controller.</p>
+        <div class="details collapse">This class object is the super class that every library in
+CodeIgniter will be assigned to.</div>
+        <a href="../classes/V.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Auth" class="element ajax clickable class">
+        <h1>Auth<a href="../classes/Auth.html">¶</a></h1>
+        <p class="short_description">Authentication Controller</p>
+        <div class="details collapse">This class object is the super class that every library in
+CodeIgniter will be assigned to.</div>
+        <a href="../classes/Auth.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="User" class="element ajax clickable class">
+        <h1>User<a href="../classes/User.html">¶</a></h1>
+        <p class="short_description">Authentication Controller</p>
+        <div class="details collapse">This class object is the super class that every library in
+CodeIgniter will be assigned to.</div>
+        <a href="../classes/User.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Admin" class="element ajax clickable class">
+        <h1>Admin<a href="../classes/Admin.html">¶</a></h1>
+        <p class="short_description">Admin Interface Controller</p>
+        <div class="details collapse">This class object is the super class that every library in
+CodeIgniter will be assigned to.</div>
+        <a href="../classes/Admin.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Helpers.html">Helpers</a>
+    </li>
+
+    </ul>
+
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Helpers.KwitangFe.html">KwitangFe</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="klang_default" class="element ajax clickable function">
+        <h1>klang_default<a href="../namespaces/.html#function_klang_default">¶</a></h1>
+        <p class="short_description">Get default language code, return &#039;&#039; isfnot set</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_klang_default" class="more">« More »</a>
+    </div>
+
+                                        <div id="structure_url" class="element ajax clickable function">
+        <h1>structure_url<a href="../namespaces/.html#function_structure_url">¶</a></h1>
+        <p class="short_description">Format URL Kwitang CMS untuk halaman struktur
+app/channel/[structure_name]</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_structure_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="content_url" class="element ajax clickable function">
+        <h1>content_url<a href="../namespaces/.html#function_content_url">¶</a></h1>
+        <p class="short_description">Format URL Kwitang CMS untuk konten
+app/read/sct_name/content_id/[slug]</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_content_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="view_url" class="element ajax clickable function">
+        <h1>view_url<a href="../namespaces/.html#function_view_url">¶</a></h1>
+        <p class="short_description">Format URL Kwitang CMS untuk view</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_view_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="custom_url" class="element ajax clickable function">
+        <h1>custom_url<a href="../namespaces/.html#function_custom_url">¶</a></h1>
+        <p class="short_description">Build URL to view file, with additional user supplied URI</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_custom_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="index_url" class="element ajax clickable function">
+        <h1>index_url<a href="../namespaces/.html#function_index_url">¶</a></h1>
+        <p class="short_description">Format URL Kwitang CMS untuk halaman index
+app/read/sct_name/page/[page_number]/[item_perpage]</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_index_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="archive_url" class="element ajax clickable function">
+        <h1>archive_url<a href="../namespaces/.html#function_archive_url">¶</a></h1>
+        <p class="short_description">Build URL for acces archive page</p>
+        <div class="details collapse">URL:
+
+app/archive/[sct_name]/[year-month-day|year-month|year]/[page_number]/[item_perpage]</div>
+        <a href="../namespaces/.html#function_archive_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="print_widget" class="element ajax clickable function">
+        <h1>print_widget<a href="../namespaces/.html#function_print_widget">¶</a></h1>
+        <p class="short_description">Tampilkan widget</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_print_widget" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_structure" class="element ajax clickable function">
+        <h1>get_structure<a href="../namespaces/.html#function_get_structure">¶</a></h1>
+        <p class="short_description">Ambill data struktur</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_structure" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_structure_sct" class="element ajax clickable function">
+        <h1>get_structure_sct<a href="../namespaces/.html#function_get_structure_sct">¶</a></h1>
+        <p class="short_description">Ambil SCT (subkategori) dari debuah struktur</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_structure_sct" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_content" class="element ajax clickable function">
+        <h1>get_content<a href="../namespaces/.html#function_get_content">¶</a></h1>
+        <p class="short_description">Ambil konten tunggal</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_content" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_content_page" class="element ajax clickable function">
+        <h1>get_content_page<a href="../namespaces/.html#function_get_content_page">¶</a></h1>
+        <p class="short_description">Ambil data konten per halaman</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_content_page" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_menu" class="element ajax clickable function">
+        <h1>get_menu<a href="../namespaces/.html#function_get_menu">¶</a></h1>
+        <p class="short_description">Ambil data menu</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_menu" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_breadcrumb" class="element ajax clickable function">
+        <h1>get_breadcrumb<a href="../namespaces/.html#function_get_breadcrumb">¶</a></h1>
+        <p class="short_description">Hasilkan struktur breadcrumb ke sebuah struktur yang diberikan</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_breadcrumb" class="more">« More »</a>
+    </div>
+
+                                        <div id="load_lang" class="element ajax clickable function">
+        <h1>load_lang<a href="../namespaces/.html#function_load_lang">¶</a></h1>
+        <p class="short_description">Muat terjemahan, jika ada.</p>
+        <div class="details collapse">Terjemahan untuk bahasa yang sedang digunakan akan di ambil secara
+otomatis, jadi Anda tidak perlu memuat terjemahan untuk bahasa yang
+sedang digunakan (memanggil fungsi ini dari front end)
+
+Jika frontend menggunakan fungsi t() untuk mengambil terjemahan, dan
+bahasa utama tidak sesuai dengan yang diharapkan, Anda dapat memaksa
+untuk mengubah bahasa utama dengan menambahkan parameter
+$forced_default_lang sesuai dengan yang di maksud oleh fungsi t(). Dan
+tempatkan fungsi ini `load_lang($lang, &#039;kode&#039;)` sebelum fungsi t()
+
+$forced_default_lang hanya berdampak pada fungsi t()</div>
+        <a href="../namespaces/.html#function_load_lang" class="more">« More »</a>
+    </div>
+
+                                        <div id="_t" class="element ajax clickable function">
+        <h1>_t<a href="../namespaces/.html#function__t">¶</a></h1>
+        <p class="short_description">Ambil terjemahan dari koleksi bahasa di front end</p>
+        <div class="details collapse">Sebaiknya gunakan fungsi ini dalam pembuatan front end, namun jika Anda
+cukup PeDe dengan setting bahasa pada instalasi CMS ini, dan bahasa
+utama tidak akan diubah di kemudian hari silakan gunakan fungsi t()</div>
+        <a href="../namespaces/.html#function__t" class="more">« More »</a>
+    </div>
+
+                                        <div id="t" class="element ajax clickable function">
+        <h1>t<a href="../namespaces/.html#function_t">¶</a></h1>
+        <p class="short_description">Ambil terjemahan berdasarkan String dalam bahasa utama</p>
+        <div class="details collapse">Koleksi terjemahan dalama bahasa utama harus lebih lengkap dari bahasa
+lainnya, jika suatu terjemahan yang diminta terdapat pada bahasa lain
+namun tidak ada pada bahasa utama, maka tidak akan didapatkan hasil yang
+diinginkan</div>
+        <a href="../namespaces/.html#function_t" class="more">« More »</a>
+    </div>
+
+                                        <div id="view_path" class="element ajax clickable function">
+        <h1>view_path<a href="../namespaces/.html#function_view_path">¶</a></h1>
+        <p class="short_description">Ambil path ke folder views frontend yang sedang digunakan</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_view_path" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_sct" class="element ajax clickable function">
+        <h1>get_sct<a href="../namespaces/.html#function_get_sct">¶</a></h1>
+        <p class="short_description">Get SCT Object</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_sct" class="more">« More »</a>
+    </div>
+
+                                        <div id="get_sct_config" class="element ajax clickable function">
+        <h1>get_sct_config<a href="../namespaces/.html#function_get_sct_config">¶</a></h1>
+        <p class="short_description">Get SCT Config for $keyname, if $keyname is not set, will return all
+configs in array</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_get_sct_config" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Helpers.html">Helpers</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Helpers.Kwitang.html">Kwitang</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="user_log" class="element ajax clickable function">
+        <h1>user_log<a href="../namespaces/.html#function_user_log">¶</a></h1>
+        <p class="short_description">Menulis catatan log, wrapper method userLog() dari library Kwitang</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_user_log" class="more">« More »</a>
+    </div>
+
+                                        <div id="asset_url" class="element ajax clickable function">
+        <h1>asset_url<a href="../namespaces/.html#function_asset_url">¶</a></h1>
+        <p class="short_description">Buat URL asset, wrapper method asseturl() dari library Kwitang</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_asset_url" class="more">« More »</a>
+    </div>
+
+                                        <div id="kconfig" class="element ajax clickable function">
+        <h1>kconfig<a href="../namespaces/.html#function_kconfig">¶</a></h1>
+        <p class="short_description">Ambil Konfigurasi berdasarkan namanya</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kconfig" class="more">« More »</a>
+    </div>
+
+                                        <div id="user_config" class="element ajax clickable function">
+        <h1>user_config<a href="../namespaces/.html#function_user_config">¶</a></h1>
+        <p class="short_description">Get User Config</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_user_config" class="more">« More »</a>
+    </div>
+
+                                        <div id="kdate" class="element ajax clickable function">
+        <h1>kdate<a href="../namespaces/.html#function_kdate">¶</a></h1>
+        <p class="short_description">Format tanggal sessuai konfigurasi,</p>
+        <div class="details collapse">Untuk konversi ke local/GMT silakan gunakan from_gmt() dan to_gmt()</div>
+        <a href="../namespaces/.html#function_kdate" class="more">« More »</a>
+    </div>
+
+                                        <div id="from_gmt" class="element ajax clickable function">
+        <h1>from_gmt<a href="../namespaces/.html#function_from_gmt">¶</a></h1>
+        <p class="short_description">Ubah tanggal dari GMT ke waktu &#039;lokal&#039; (sesuai setting timezone di CMS)</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_from_gmt" class="more">« More »</a>
+    </div>
+
+                                        <div id="to_gmt" class="element ajax clickable function">
+        <h1>to_gmt<a href="../namespaces/.html#function_to_gmt">¶</a></h1>
+        <p class="short_description">Ubah tanggal dari &#039;lokal&#039; ke GMT (&#039;lokal&#039; = sesuai setting timezone di cms)</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_to_gmt" class="more">« More »</a>
+    </div>
+
+                                        <div id="time_gmt" class="element ajax clickable function">
+        <h1>time_gmt<a href="../namespaces/.html#function_time_gmt">¶</a></h1>
+        <p class="short_description">Ambil waktu GMT</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_time_gmt" class="more">« More »</a>
+    </div>
+
+                                        <div id="kaddslashes" class="element ajax clickable function">
+        <h1>kaddslashes<a href="../namespaces/.html#function_kaddslashes">¶</a></h1>
+        <p class="short_description">Sanitize string for save to database</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kaddslashes" class="more">« More »</a>
+    </div>
+
+                                        <div id="kserialize" class="element ajax clickable function">
+        <h1>kserialize<a href="../namespaces/.html#function_kserialize">¶</a></h1>
+        <p class="short_description">Serialize data untuk disimpan pada database.</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kserialize" class="more">« More »</a>
+    </div>
+
+                                        <div id="kstripslashes" class="element ajax clickable function">
+        <h1>kstripslashes<a href="../namespaces/.html#function_kstripslashes">¶</a></h1>
+        <p class="short_description">Remove slashes</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kstripslashes" class="more">« More »</a>
+    </div>
+
+                                        <div id="kunserialize" class="element ajax clickable function">
+        <h1>kunserialize<a href="../namespaces/.html#function_kunserialize">¶</a></h1>
+        <p class="short_description">Unserialize data.</p>
+        <div class="details collapse">Gunakan untuk unserialize data yg diambil dari database.</div>
+        <a href="../namespaces/.html#function_kunserialize" class="more">« More »</a>
+    </div>
+
+                                        <div id="kbyte_size" class="element ajax clickable function">
+        <h1>kbyte_size<a href="../namespaces/.html#function_kbyte_size">¶</a></h1>
+        <p class="short_description">Ubah size dalam Byte ke bentuk yang lebih mudah dibaca (KB, MB, GB dll)</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kbyte_size" class="more">« More »</a>
+    </div>
+
+                                        <div id="kuser" class="element ajax clickable function">
+        <h1>kuser<a href="../namespaces/.html#function_kuser">¶</a></h1>
+        <p class="short_description">Ambil data user yang sedang login</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kuser" class="more">« More »</a>
+    </div>
+
+                                        <div id="priv" class="element ajax clickable function">
+        <h1>priv<a href="../namespaces/.html#function_priv">¶</a></h1>
+        <p class="short_description">Check privilege of logged in user to a structure. Return true if
+user has equal or more higher privilege.</p>
+        <div class="details collapse">But if $equality is set to true, will return true only if checked
+privilege is equal with their privilege.
+
+The privilege level is:
+- view
+- posting
+- approve
+- manage</div>
+        <a href="../namespaces/.html#function_priv" class="more">« More »</a>
+    </div>
+
+                                        <div id="is_admin" class="element ajax clickable function">
+        <h1>is_admin<a href="../namespaces/.html#function_is_admin">¶</a></h1>
+        <p class="short_description">Cek apakah user yang sedang login adalah Admin</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_is_admin" class="more">« More »</a>
+    </div>
+
+                                        <div id="is_author" class="element ajax clickable function">
+        <h1>is_author<a href="../namespaces/.html#function_is_author">¶</a></h1>
+        <p class="short_description">Cek apakah user yang sedang login adalah Author</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_is_author" class="more">« More »</a>
+    </div>
+
+                                        <div id="is_member" class="element ajax clickable function">
+        <h1>is_member<a href="../namespaces/.html#function_is_member">¶</a></h1>
+        <p class="short_description">Cek apakah user yang sedang login adalah Member</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_is_member" class="more">« More »</a>
+    </div>
+
+                                        <div id="var_lang" class="element ajax clickable function">
+        <h1>var_lang<a href="../namespaces/.html#function_var_lang">¶</a></h1>
+        <p class="short_description">Ambil teks salah satu bahasa dari sebuah variabel</p>
+        <div class="details collapse">Digunakan pada Structure-&gt;title dan Structure-&gt;description
+keduanya disimpan dalam bentuk serialized, dan gunakan fungsi ini untuk
+membacanya.</div>
+        <a href="../namespaces/.html#function_var_lang" class="more">« More »</a>
+    </div>
+
+                                        <div id="ksetcookie" class="element ajax clickable function">
+        <h1>ksetcookie<a href="../namespaces/.html#function_ksetcookie">¶</a></h1>
+        <p class="short_description">Set the cookie</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_ksetcookie" class="more">« More »</a>
+    </div>
+
+                                        <div id="kgetcookie" class="element ajax clickable function">
+        <h1>kgetcookie<a href="../namespaces/.html#function_kgetcookie">¶</a></h1>
+        <p class="short_description">Set the cookie</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_kgetcookie" class="more">« More »</a>
+    </div>
+
+                                        <div id="error404" class="element ajax clickable function">
+        <h1>error404<a href="../namespaces/.html#function_error404">¶</a></h1>
+        <p class="short_description">Redirect to 404 error page.</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_error404" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+        
+            
+    
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Models.html">Models</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="Menu_detail" class="element ajax clickable class">
+        <h1>Menu_detail<a href="../classes/Menu_detail.html">¶</a></h1>
+        <p class="short_description">Menu detail model, front end menu</p>
+        <div class="details collapse"></div>
+        <a href="../classes/Menu_detail.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Users" class="element ajax clickable class">
+        <h1>Users<a href="../classes/Users.html">¶</a></h1>
+        <p class="short_description">Model data pengguna</p>
+        <div class="details collapse"></div>
+        <a href="../classes/Users.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Menu" class="element ajax clickable class">
+        <h1>Menu<a href="../classes/Menu.html">¶</a></h1>
+        <p class="short_description">Menu model, front end menu</p>
+        <div class="details collapse"></div>
+        <a href="../classes/Menu.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Roles" class="element ajax clickable class">
+        <h1>Roles<a href="../classes/Roles.html">¶</a></h1>
+        <p class="short_description">Manage Roles data</p>
+        <div class="details collapse"></div>
+        <a href="../classes/Roles.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Structure" class="element ajax clickable class">
+        <h1>Structure<a href="../classes/Structure.html">¶</a></h1>
+        <p class="short_description">Structure model, Skeleton for organizing content</p>
+        <div class="details collapse"></div>
+        <a href="../classes/Structure.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Roles_detail" class="element ajax clickable class">
+        <h1>Roles_detail<a href="../classes/Roles_detail.html">¶</a></h1>
+        <p class="short_description">Roles detail model</p>
+        <div class="details collapse"></div>
+        <a href="../classes/Roles_detail.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="KConfig" class="element ajax clickable class">
+        <h1>KConfig<a href="../classes/KConfig.html">¶</a></h1>
+        <p class="short_description">Konfigurasi CMS</p>
+        <div class="details collapse"></div>
+        <a href="../classes/KConfig.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Core.html">Core</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="MY_CI_DB_mysql_forge" class="element ajax clickable class">
+        <h1>MY_CI_DB_mysql_forge<a href="../classes/MY_CI_DB_mysql_forge.html">¶</a></h1>
+        <p class="short_description">MySQL Forge Class Force MYISAM</p>
+        <div class="details collapse"></div>
+        <a href="../classes/MY_CI_DB_mysql_forge.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="MY_CI_DB_mysqli_forge" class="element ajax clickable class">
+        <h1>MY_CI_DB_mysqli_forge<a href="../classes/MY_CI_DB_mysqli_forge.html">¶</a></h1>
+        <p class="short_description">MySQL Forge Class Force MYISAM</p>
+        <div class="details collapse"></div>
+        <a href="../classes/MY_CI_DB_mysqli_forge.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="MY_Loader" class="element ajax clickable class">
+        <h1>MY_Loader<a href="../classes/MY_Loader.html">¶</a></h1>
+        <p class="short_description">Extends CodeIgniter Loader</p>
+        <div class="details collapse">Loads views and files</div>
+        <a href="../classes/MY_Loader.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.html">Kwitang</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Kwitang.Libraries.html">Libraries</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="Kwitang" class="element ajax clickable class">
+        <h1>Kwitang<a href="../classes/Kwitang.html">¶</a></h1>
+        <p class="short_description">Library Kwitang, menyediakan fungsi dasar bagi Kwitang CMS</p>
+        <div class="details collapse">Hal yang ditangani oleh Library ini adalah:
+- FrontEnd
+- Tipe-Konten
+- Authentication &amp; Authorization
+
+Struktur Folder:
+&lt;pre&gt;
+[install_folder]         =&gt; ROOT_PATH
+  + frontend             =&gt; FRONT_PATH == ROOT_PATH + FRONT_FOLDER
+    + [frontend_name]
+      - assets
+      - views
+      - content_type
+        - NAME_OF_CT
+          - assets
+          - controller
+          - models
+          - views
+  + backend
+    + content_type       =&gt; KWITANG_CT_PATH
+      + NAME_OF_CT
+        - assets
+        - controller
+        - models
+        - views
+    + kwitang
+    + system
+&lt;/pre&gt;</div>
+        <a href="../classes/Kwitang.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 04 May 2014 15:45:26 +0700.<br/>
+    </footer>
+    </body>
+</html>
