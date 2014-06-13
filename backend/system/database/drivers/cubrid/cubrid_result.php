@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		Esen Sagynov
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 2.0.2
@@ -20,7 +20,6 @@
  *
  * This class extends the parent result class: CI_DB_result
  *
- * @package		CodeIgniter\Database\Drivers\Cubrid
  * @category	Database
  * @author		Esen Sagynov
  * @link		http://codeigniter.com/user_guide/database/

@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -27,20 +27,19 @@
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Declaration
+ *
+ * Creates the opening portion of the form.
+ *
+ * @access	public
+ * @param	string	the URI segments of the form destination
+ * @param	array	a key/value pair of attributes
+ * @param	array	a key/value pair hidden data
+ * @return	string
+ */
 if ( ! function_exists('form_open'))
 {
-	/**
-	 * Form Declaration
-	 *
-	 * Creates the opening portion of the form.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string	the URI segments of the form destination
-	 * @param	array	a key/value pair of attributes
-	 * @param	array	a key/value pair hidden data
-	 * @return	string
-	 */
 	function form_open($action = '', $attributes = '', $hidden = array())
 	{
 		$CI =& get_instance();
@@ -82,20 +81,19 @@ if ( ! function_exists('form_open'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Declaration - Multipart type
+ *
+ * Creates the opening portion of the form, but with "multipart/form-data".
+ *
+ * @access	public
+ * @param	string	the URI segments of the form destination
+ * @param	array	a key/value pair of attributes
+ * @param	array	a key/value pair hidden data
+ * @return	string
+ */
 if ( ! function_exists('form_open_multipart'))
 {
-	/**
-	 * Form Declaration - Multipart type
-	 *
-	 * Creates the opening portion of the form, but with "multipart/form-data".
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string	the URI segments of the form destination
-	 * @param	array	a key/value pair of attributes
-	 * @param	array	a key/value pair hidden data
-	 * @return	string
-	 */
 	function form_open_multipart($action = '', $attributes = array(), $hidden = array())
 	{
 		if (is_string($attributes))
@@ -113,20 +111,19 @@ if ( ! function_exists('form_open_multipart'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Hidden Input Field
+ *
+ * Generates hidden fields.  You can pass a simple key/value string or an associative
+ * array with multiple values.
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_hidden'))
 {
-	/**
-	 * Hidden Input Field
-	 *
-	 * Generates hidden fields.  You can pass a simple key/value string or an associative
-	 * array with multiple values.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @return	string
-	 */
 	function form_hidden($name, $value = '', $recursing = FALSE)
 	{
 		static $form;
@@ -164,18 +161,17 @@ if ( ! function_exists('form_hidden'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Text Input Field
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_input'))
 {
-	/**
-	 * Text Input Field
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_input($data = '', $value = '', $extra = '')
 	{
 		$defaults = array('type' => 'text', 'name' => (( ! is_array($data)) ? $data : ''), 'value' => $value);
@@ -186,20 +182,19 @@ if ( ! function_exists('form_input'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Password Field
+ *
+ * Identical to the input function but adds the "password" type
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_password'))
 {
-	/**
-	 * Password Field
-	 *
-	 * Identical to the input function but adds the "password" type
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_password($data = '', $value = '', $extra = '')
 	{
 		if ( ! is_array($data))
@@ -214,20 +209,19 @@ if ( ! function_exists('form_password'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Upload Field
+ *
+ * Identical to the input function but adds the "file" type
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_upload'))
 {
-	/**
-	 * Upload Field
-	 *
-	 * Identical to the input function but adds the "file" type
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_upload($data = '', $value = '', $extra = '')
 	{
 		if ( ! is_array($data))
@@ -242,18 +236,17 @@ if ( ! function_exists('form_upload'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Textarea field
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_textarea'))
 {
-	/**
-	 * Textarea field
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_textarea($data = '', $value = '', $extra = '')
 	{
 		$defaults = array('name' => (( ! is_array($data)) ? $data : ''), 'cols' => '40', 'rows' => '10');
@@ -275,19 +268,18 @@ if ( ! function_exists('form_textarea'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Multi-select menu
+ *
+ * @access	public
+ * @param	string
+ * @param	array
+ * @param	mixed
+ * @param	string
+ * @return	type
+ */
 if ( ! function_exists('form_multiselect'))
 {
-	/**
-	 * Multi-select menu
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	array
-	 * @param	mixed
-	 * @param	string
-	 * @return	type
-	 */
 	function form_multiselect($name = '', $options = array(), $selected = array(), $extra = '')
 	{
 		if ( ! strpos($extra, 'multiple'))
@@ -301,19 +293,18 @@ if ( ! function_exists('form_multiselect'))
 
 // --------------------------------------------------------------------
 
+/**
+ * Drop-down Menu
+ *
+ * @access	public
+ * @param	string
+ * @param	array
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_dropdown'))
 {
-	/**
-	 * Drop-down Menu
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	array
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_dropdown($name = '', $options = array(), $selected = array(), $extra = '')
 	{
 		if ( ! is_array($selected))
@@ -370,19 +361,18 @@ if ( ! function_exists('form_dropdown'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Checkbox Field
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	bool
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_checkbox'))
 {
-	/**
-	 * Checkbox Field
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	bool
-	 * @param	string
-	 * @return	string
-	 */
 	function form_checkbox($data = '', $value = '', $checked = FALSE, $extra = '')
 	{
 		$defaults = array('type' => 'checkbox', 'name' => (( ! is_array($data)) ? $data : ''), 'value' => $value);
@@ -416,19 +406,18 @@ if ( ! function_exists('form_checkbox'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Radio Button
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	bool
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_radio'))
 {
-	/**
-	 * Radio Button
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	bool
-	 * @param	string
-	 * @return	string
-	 */
 	function form_radio($data = '', $value = '', $checked = FALSE, $extra = '')
 	{
 		if ( ! is_array($data))
@@ -443,18 +432,17 @@ if ( ! function_exists('form_radio'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Submit Button
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_submit'))
 {
-	/**
-	 * Submit Button
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_submit($data = '', $value = '', $extra = '')
 	{
 		$defaults = array('type' => 'submit', 'name' => (( ! is_array($data)) ? $data : ''), 'value' => $value);
@@ -465,18 +453,17 @@ if ( ! function_exists('form_submit'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Reset Button
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_reset'))
 {
-	/**
-	 * Reset Button
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_reset($data = '', $value = '', $extra = '')
 	{
 		$defaults = array('type' => 'reset', 'name' => (( ! is_array($data)) ? $data : ''), 'value' => $value);
@@ -487,18 +474,17 @@ if ( ! function_exists('form_reset'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Button
+ *
+ * @access	public
+ * @param	mixed
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_button'))
 {
-	/**
-	 * Form Button
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_button($data = '', $content = '', $extra = '')
 	{
 		$defaults = array('name' => (( ! is_array($data)) ? $data : ''), 'type' => 'button');
@@ -515,18 +501,17 @@ if ( ! function_exists('form_button'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Label Tag
+ *
+ * @access	public
+ * @param	string	The text to appear onscreen
+ * @param	string	The id the label applies to
+ * @param	string	Additional attributes
+ * @return	string
+ */
 if ( ! function_exists('form_label'))
 {
-	/**
-	 * Form Label Tag
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string	The text to appear onscreen
-	 * @param	string	The id the label applies to
-	 * @param	string	Additional attributes
-	 * @return	string
-	 */
 	function form_label($label_text = '', $id = '', $attributes = array())
 	{
 
@@ -552,21 +537,19 @@ if ( ! function_exists('form_label'))
 }
 
 // ------------------------------------------------------------------------
-
+/**
+ * Fieldset Tag
+ *
+ * Used to produce <fieldset><legend>text</legend>.  To close fieldset
+ * use form_fieldset_close()
+ *
+ * @access	public
+ * @param	string	The legend text
+ * @param	string	Additional attributes
+ * @return	string
+ */
 if ( ! function_exists('form_fieldset'))
 {
-	/**
-	 * Fieldset Tag
-	 *
-	 * Used to produce <fieldset><legend>text</legend>.  To close fieldset
-	 * use form_fieldset_close()
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string	The legend text
-	 * @param	string	Additional attributes
-	 * @return	string
-	 */
 	function form_fieldset($legend_text = '', $attributes = array())
 	{
 		$fieldset = "<fieldset";
@@ -586,16 +569,15 @@ if ( ! function_exists('form_fieldset'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Fieldset Close Tag
+ *
+ * @access	public
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_fieldset_close'))
 {
-	/**
-	 * Fieldset Close Tag
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @return	string
-	 */
 	function form_fieldset_close($extra = '')
 	{
 		return "</fieldset>".$extra;
@@ -604,16 +586,15 @@ if ( ! function_exists('form_fieldset_close'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Close Tag
+ *
+ * @access	public
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_close'))
 {
-	/**
-	 * Form Close Tag
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @return	string
-	 */
 	function form_close($extra = '')
 	{
 		return "</form>".$extra;
@@ -622,18 +603,17 @@ if ( ! function_exists('form_close'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Prep
+ *
+ * Formats text so that it can be safely placed in a form field in the event it has HTML tags.
+ *
+ * @access	public
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_prep'))
 {
-	/**
-	 * Form Prep
-	 *
-	 * Formats text so that it can be safely placed in a form field in the event it has HTML tags.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @return	string
-	 */
 	function form_prep($str = '', $field_name = '')
 	{
 		static $prepped_fields = array();
@@ -679,20 +659,19 @@ if ( ! function_exists('form_prep'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Value
+ *
+ * Grabs a value from the POST array for the specified field so you can
+ * re-populate an input field or textarea.  If Form Validation
+ * is active it retrieves the info from the validation class
+ *
+ * @access	public
+ * @param	string
+ * @return	mixed
+ */
 if ( ! function_exists('set_value'))
 {
-	/**
-	 * Form Value
-	 *
-	 * Grabs a value from the POST array for the specified field so you can
-	 * re-populate an input field or textarea.  If Form Validation
-	 * is active it retrieves the info from the validation class
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @return	mixed
-	 */
 	function set_value($field = '', $default = '')
 	{
 		if (FALSE === ($OBJ =& _get_validation_object()))
@@ -711,21 +690,20 @@ if ( ! function_exists('set_value'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Set Select
+ *
+ * Let's you set the selected value of a <select> menu via data in the POST array.
+ * If Form Validation is active it retrieves the info from the validation class
+ *
+ * @access	public
+ * @param	string
+ * @param	string
+ * @param	bool
+ * @return	string
+ */
 if ( ! function_exists('set_select'))
 {
-	/**
-	 * Set Select
-	 *
-	 * Let's you set the selected value of a <select> menu via data in the POST array.
-	 * If Form Validation is active it retrieves the info from the validation class
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	string
-	 * @param	bool
-	 * @return	string
-	 */
 	function set_select($field = '', $value = '', $default = FALSE)
 	{
 		$OBJ =& _get_validation_object();
@@ -767,21 +745,20 @@ if ( ! function_exists('set_select'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Set Checkbox
+ *
+ * Let's you set the selected value of a checkbox via the value in the POST array.
+ * If Form Validation is active it retrieves the info from the validation class
+ *
+ * @access	public
+ * @param	string
+ * @param	string
+ * @param	bool
+ * @return	string
+ */
 if ( ! function_exists('set_checkbox'))
 {
-	/**
-	 * Set Checkbox
-	 *
-	 * Let's you set the selected value of a checkbox via the value in the POST array.
-	 * If Form Validation is active it retrieves the info from the validation class
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	string
-	 * @param	bool
-	 * @return	string
-	 */
 	function set_checkbox($field = '', $value = '', $default = FALSE)
 	{
 		$OBJ =& _get_validation_object();
@@ -823,21 +800,20 @@ if ( ! function_exists('set_checkbox'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Set Radio
+ *
+ * Let's you set the selected value of a radio field via info in the POST array.
+ * If Form Validation is active it retrieves the info from the validation class
+ *
+ * @access	public
+ * @param	string
+ * @param	string
+ * @param	bool
+ * @return	string
+ */
 if ( ! function_exists('set_radio'))
 {
-	/**
-	 * Set Radio
-	 *
-	 * Let's you set the selected value of a radio field via info in the POST array.
-	 * If Form Validation is active it retrieves the info from the validation class
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	string
-	 * @param	bool
-	 * @return	string
-	 */
 	function set_radio($field = '', $value = '', $default = FALSE)
 	{
 		$OBJ =& _get_validation_object();
@@ -879,21 +855,20 @@ if ( ! function_exists('set_radio'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Form Error
+ *
+ * Returns the error for a specific form field.  This is a helper for the
+ * form validation class.
+ *
+ * @access	public
+ * @param	string
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('form_error'))
 {
-	/**
-	 * Form Error
-	 *
-	 * Returns the error for a specific form field.  This is a helper for the
-	 * form validation class.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function form_error($field = '', $prefix = '', $suffix = '')
 	{
 		if (FALSE === ($OBJ =& _get_validation_object()))
@@ -907,20 +882,19 @@ if ( ! function_exists('form_error'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Validation Error String
+ *
+ * Returns all the errors associated with a form submission.  This is a helper
+ * function for the form validation class.
+ *
+ * @access	public
+ * @param	string
+ * @param	string
+ * @return	string
+ */
 if ( ! function_exists('validation_errors'))
 {
-	/**
-	 * Validation Error String
-	 *
-	 * Returns all the errors associated with a form submission.  This is a helper
-	 * function for the form validation class.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	string
-	 * @param	string
-	 * @return	string
-	 */
 	function validation_errors($prefix = '', $suffix = '')
 	{
 		if (FALSE === ($OBJ =& _get_validation_object()))
@@ -934,19 +908,18 @@ if ( ! function_exists('validation_errors'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Parse the form attributes
+ *
+ * Helper function used by some of the form helpers
+ *
+ * @access	private
+ * @param	array
+ * @param	array
+ * @return	string
+ */
 if ( ! function_exists('_parse_form_attributes'))
 {
-	/**
-	 * Parse the form attributes
-	 *
-	 * Helper function used by some of the form helpers
-	 *
-	 * @access	private
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	array
-	 * @param	array
-	 * @return	string
-	 */
 	function _parse_form_attributes($attributes, $default)
 	{
 		if (is_array($attributes))
@@ -984,19 +957,18 @@ if ( ! function_exists('_parse_form_attributes'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Attributes To String
+ *
+ * Helper function used by some of the form helpers
+ *
+ * @access	private
+ * @param	mixed
+ * @param	bool
+ * @return	string
+ */
 if ( ! function_exists('_attributes_to_string'))
 {
-	/**
-	 * Attributes To String
-	 *
-	 * Helper function used by some of the form helpers
-	 *
-	 * @access	private
-	 * @package	CodeIgniter\Helpers\Form
-	 * @param	mixed
-	 * @param	bool
-	 * @return	string
-	 */
 	function _attributes_to_string($attributes, $formtag = FALSE)
 	{
 		if (is_string($attributes) AND strlen($attributes) > 0)
@@ -1045,18 +1017,17 @@ if ( ! function_exists('_attributes_to_string'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Validation Object
+ *
+ * Determines what the form validation class was instantiated as, fetches
+ * the object and returns it.
+ *
+ * @access	private
+ * @return	mixed
+ */
 if ( ! function_exists('_get_validation_object'))
 {
-	/**
-	 * Validation Object
-	 *
-	 * Determines what the form validation class was instantiated as, fetches
-	 * the object and returns it.
-	 *
-	 * @access	private
-	 * @package	CodeIgniter\Helpers\Form
-	 * @return	mixed
-	 */
 	function &_get_validation_object()
 	{
 		$CI =& get_instance();

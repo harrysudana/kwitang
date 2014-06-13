@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -27,19 +27,18 @@
 
 // ------------------------------------------------------------------------
 
+/**
+ * Force Download
+ *
+ * Generates headers that force a download to happen
+ *
+ * @access	public
+ * @param	string	filename
+ * @param	mixed	the data to be downloaded
+ * @return	void
+ */
 if ( ! function_exists('force_download'))
 {
-	/**
-	 * Force Download
-	 *
-	 * Generates headers that force a download to happen
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Download
-	 * @param	string	filename
-	 * @param	mixed	the data to be downloaded
-	 * @return	void
-	 */
 	function force_download($filename = '', $data = '')
 	{
 		if ($filename == '' OR $data == '')

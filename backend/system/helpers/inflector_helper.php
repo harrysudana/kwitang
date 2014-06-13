@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -28,18 +28,17 @@
 
 // --------------------------------------------------------------------
 
+/**
+ * Singular
+ *
+ * Takes a plural word and makes it singular
+ *
+ * @access	public
+ * @param	string
+ * @return	str
+ */
 if ( ! function_exists('singular'))
 {
-	/**
-	 * Singular
-	 *
-	 * Takes a plural word and makes it singular
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Inflector
-	 * @param	string
-	 * @return	str
-	 */
 	function singular($str)
 	{
 		$result = strval($str);
@@ -89,19 +88,18 @@ if ( ! function_exists('singular'))
 
 // --------------------------------------------------------------------
 
+/**
+ * Plural
+ *
+ * Takes a singular word and makes it plural
+ *
+ * @access	public
+ * @param	string
+ * @param	bool
+ * @return	str
+ */
 if ( ! function_exists('plural'))
 {
-	/**
-	 * Plural
-	 *
-	 * Takes a singular word and makes it plural
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Inflector
-	 * @param	string
-	 * @param	bool
-	 * @return	str
-	 */
 	function plural($str, $force = FALSE)
 	{
 		$result = strval($str);
@@ -143,18 +141,17 @@ if ( ! function_exists('plural'))
 
 // --------------------------------------------------------------------
 
+/**
+ * Camelize
+ *
+ * Takes multiple words separated by spaces or underscores and camelizes them
+ *
+ * @access	public
+ * @param	string
+ * @return	str
+ */
 if ( ! function_exists('camelize'))
 {
-	/**
-	 * Camelize
-	 *
-	 * Takes multiple words separated by spaces or underscores and camelizes them
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Inflector
-	 * @param	string
-	 * @return	str
-	 */
 	function camelize($str)
 	{
 		$str = 'x'.strtolower(trim($str));
@@ -165,18 +162,17 @@ if ( ! function_exists('camelize'))
 
 // --------------------------------------------------------------------
 
+/**
+ * Underscore
+ *
+ * Takes multiple words separated by spaces and underscores them
+ *
+ * @access	public
+ * @param	string
+ * @return	str
+ */
 if ( ! function_exists('underscore'))
 {
-	/**
-	 * Underscore
-	 *
-	 * Takes multiple words separated by spaces and underscores them
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Inflector
-	 * @param	string
-	 * @return	str
-	 */
 	function underscore($str)
 	{
 		return preg_replace('/[\s]+/', '_', strtolower(trim($str)));
@@ -185,18 +181,17 @@ if ( ! function_exists('underscore'))
 
 // --------------------------------------------------------------------
 
+/**
+ * Humanize
+ *
+ * Takes multiple words separated by underscores and changes them to spaces
+ *
+ * @access	public
+ * @param	string
+ * @return	str
+ */
 if ( ! function_exists('humanize'))
 {
-	/**
-	 * Humanize
-	 *
-	 * Takes multiple words separated by underscores and changes them to spaces
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Inflector
-	 * @param	string
-	 * @return	str
-	 */
 	function humanize($str)
 	{
 		return ucwords(preg_replace('/[_]+/', ' ', strtolower(trim($str))));

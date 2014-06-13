@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -27,17 +27,16 @@
 
 // ------------------------------------------------------------------------
 
+/**
+ * Get "now" time
+ *
+ * Returns time() or its GMT equivalent based on the config file preference
+ *
+ * @access	public
+ * @return	integer
+ */
 if ( ! function_exists('now'))
 {
-	/**
-	 * Get "now" time
-	 *
-	 * Returns time() or its GMT equivalent based on the config file preference
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @return	integer
-	 */
 	function now()
 	{
 		$CI =& get_instance();
@@ -64,26 +63,25 @@ if ( ! function_exists('now'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Convert MySQL Style Datecodes
+ *
+ * This function is identical to PHPs date() function,
+ * except that it allows date codes to be formatted using
+ * the MySQL style, where each code letter is preceded
+ * with a percent sign:  %Y %m %d etc...
+ *
+ * The benefit of doing dates this way is that you don't
+ * have to worry about escaping your text letters that
+ * match the date codes.
+ *
+ * @access	public
+ * @param	string
+ * @param	integer
+ * @return	integer
+ */
 if ( ! function_exists('mdate'))
 {
-	/**
-	 * Convert MySQL Style Datecodes
-	 *
-	 * This function is identical to PHPs date() function,
-	 * except that it allows date codes to be formatted using
-	 * the MySQL style, where each code letter is preceded
-	 * with a percent sign:  %Y %m %d etc...
-	 *
-	 * The benefit of doing dates this way is that you don't
-	 * have to worry about escaping your text letters that
-	 * match the date codes.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	string
-	 * @param	integer
-	 * @return	integer
-	 */
 	function mdate($datestr = '', $time = '')
 	{
 		if ($datestr == '')
@@ -99,19 +97,18 @@ if ( ! function_exists('mdate'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Standard Date
+ *
+ * Returns a date formatted according to the submitted standard.
+ *
+ * @access	public
+ * @param	string	the chosen format
+ * @param	integer	Unix timestamp
+ * @return	string
+ */
 if ( ! function_exists('standard_date'))
 {
-	/**
-	 * Standard Date
-	 *
-	 * Returns a date formatted according to the submitted standard.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	string	the chosen format
-	 * @param	integer	Unix timestamp
-	 * @return	string
-	 */
 	function standard_date($fmt = 'DATE_RFC822', $time = '')
 	{
 		$formats = array(
@@ -137,20 +134,19 @@ if ( ! function_exists('standard_date'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Timespan
+ *
+ * Returns a span of seconds in this format:
+ *	10 days 14 hours 36 minutes 47 seconds
+ *
+ * @access	public
+ * @param	integer	a number of seconds
+ * @param	integer	Unix timestamp
+ * @return	integer
+ */
 if ( ! function_exists('timespan'))
 {
-	/**
-	 * Timespan
-	 *
-	 * Returns a span of seconds in this format:
-	 *	10 days 14 hours 36 minutes 47 seconds
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	integer	a number of seconds
-	 * @param	integer	Unix timestamp
-	 * @return	integer
-	 */
 	function timespan($seconds = 1, $time = '')
 	{
 		$CI =& get_instance();
@@ -255,20 +251,19 @@ if ( ! function_exists('timespan'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Number of days in a month
+ *
+ * Takes a month/year as input and returns the number of days
+ * for the given month/year. Takes leap years into consideration.
+ *
+ * @access	public
+ * @param	integer a numeric month
+ * @param	integer	a numeric year
+ * @return	integer
+ */
 if ( ! function_exists('days_in_month'))
 {
-	/**
-	 * Number of days in a month
-	 *
-	 * Takes a month/year as input and returns the number of days
-	 * for the given month/year. Takes leap years into consideration.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	integer a numeric month
-	 * @param	integer	a numeric year
-	 * @return	integer
-	 */
 	function days_in_month($month = 0, $year = '')
 	{
 		if ($month < 1 OR $month > 12)
@@ -296,16 +291,15 @@ if ( ! function_exists('days_in_month'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Converts a local Unix timestamp to GMT
+ *
+ * @access	public
+ * @param	integer Unix timestamp
+ * @return	integer
+ */
 if ( ! function_exists('local_to_gmt'))
 {
-	/**
-	 * Converts a local Unix timestamp to GMT
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	integer Unix timestamp
-	 * @return	integer
-	 */
 	function local_to_gmt($time = '')
 	{
 		if ($time == '')
@@ -317,22 +311,21 @@ if ( ! function_exists('local_to_gmt'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Converts GMT time to a localized value
+ *
+ * Takes a Unix timestamp (in GMT) as input, and returns
+ * at the local value based on the timezone and DST setting
+ * submitted
+ *
+ * @access	public
+ * @param	integer Unix timestamp
+ * @param	string	timezone
+ * @param	bool	whether DST is active
+ * @return	integer
+ */
 if ( ! function_exists('gmt_to_local'))
 {
-	/**
-	 * Converts GMT time to a localized value
-	 *
-	 * Takes a Unix timestamp (in GMT) as input, and returns
-	 * at the local value based on the timezone and DST setting
-	 * submitted
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	integer Unix timestamp
-	 * @param	string	timezone
-	 * @param	bool	whether DST is active
-	 * @return	integer
-	 */
 	function gmt_to_local($time = '', $timezone = 'UTC', $dst = FALSE)
 	{
 		if ($time == '')
@@ -353,16 +346,15 @@ if ( ! function_exists('gmt_to_local'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Converts a MySQL Timestamp to Unix
+ *
+ * @access	public
+ * @param	integer Unix timestamp
+ * @return	integer
+ */
 if ( ! function_exists('mysql_to_unix'))
 {
-	/**
-	 * Converts a MySQL Timestamp to Unix
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	integer Unix timestamp
-	 * @return	integer
-	 */
 	function mysql_to_unix($time = '')
 	{
 		// We'll remove certain characters for backward compatibility
@@ -387,20 +379,19 @@ if ( ! function_exists('mysql_to_unix'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Unix to "Human"
+ *
+ * Formats Unix timestamp to the following prototype: 2006-08-21 11:35 PM
+ *
+ * @access	public
+ * @param	integer Unix timestamp
+ * @param	bool	whether to show seconds
+ * @param	string	format: us or euro
+ * @return	string
+ */
 if ( ! function_exists('unix_to_human'))
 {
-	/**
-	 * Unix to "Human"
-	 *
-	 * Formats Unix timestamp to the following prototype: 2006-08-21 11:35 PM
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	integer Unix timestamp
-	 * @param	bool	whether to show seconds
-	 * @param	string	format: us or euro
-	 * @return	string
-	 */
 	function unix_to_human($time = '', $seconds = FALSE, $fmt = 'us')
 	{
 		$r  = date('Y', $time).'-'.date('m', $time).'-'.date('d', $time).' ';
@@ -430,18 +421,17 @@ if ( ! function_exists('unix_to_human'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Convert "human" date to GMT
+ *
+ * Reverses the above process
+ *
+ * @access	public
+ * @param	string	format: us or euro
+ * @return	integer
+ */
 if ( ! function_exists('human_to_unix'))
 {
-	/**
-	 * Convert "human" date to GMT
-	 *
-	 * Reverses the above process
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	string	format: us or euro
-	 * @return	integer
-	 */
 	function human_to_unix($datestr = '')
 	{
 		if ($datestr == '')
@@ -500,20 +490,19 @@ if ( ! function_exists('human_to_unix'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Timezone Menu
+ *
+ * Generates a drop-down menu of timezones.
+ *
+ * @access	public
+ * @param	string	timezone
+ * @param	string	classname
+ * @param	string	menu name
+ * @return	string
+ */
 if ( ! function_exists('timezone_menu'))
 {
-	/**
-	 * Timezone Menu
-	 *
-	 * Generates a drop-down menu of timezones.
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	string	timezone
-	 * @param	string	classname
-	 * @param	string	menu name
-	 * @return	string
-	 */
 	function timezone_menu($default = 'UTC', $class = "", $name = 'timezones')
 	{
 		$CI =& get_instance();
@@ -545,19 +534,18 @@ if ( ! function_exists('timezone_menu'))
 
 // ------------------------------------------------------------------------
 
+/**
+ * Timezones
+ *
+ * Returns an array of timezones.  This is a helper function
+ * for various other ones in this library
+ *
+ * @access	public
+ * @param	string	timezone
+ * @return	string
+ */
 if ( ! function_exists('timezones'))
 {
-	/**
-	 * Timezones
-	 *
-	 * Returns an array of timezones.  This is a helper function
-	 * for various other ones in this library
-	 *
-	 * @access	public
-	 * @package	CodeIgniter\Helpers\Date
-	 * @param	string	timezone
-	 * @return	string
-	 */
 	function timezones($tz = '')
 	{
 		// Note: Don't change the order of these even though

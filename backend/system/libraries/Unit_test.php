@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.3.1
@@ -366,27 +366,13 @@ class CI_Unit_test {
  * Helper functions to test boolean true/false
  *
  *
- * @access		private
- * @package		CodeIgniter
- * @subpackage	Libraries
- * @category	Unit_test
- * @return		bool
+ * @access	private
+ * @return	bool
  */
 function is_true($test)
 {
 	return (is_bool($test) AND $test === TRUE) ? TRUE : FALSE;
 }
-
-/**
- * Helper functions to test boolean true/false
- *
- *
- * @access		private
- * @package		CodeIgniter
- * @subpackage	Libraries
- * @category	Unit_test
- * @return		bool
- */
 function is_false($test)
 {
 	return (is_bool($test) AND $test === FALSE) ? TRUE : FALSE;
