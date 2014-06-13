@@ -441,7 +441,7 @@ and whether to allow the $_GET array</p></div>
                                             <a id="method_post"></a>
                         <div class="element clickable method public  method_post" data-toggle="collapse" data-target=".method_post .collapse">
                             <h2>Fetch an item from the POST array</h2>
-                            <pre>post($index = NULL, $xss_clean = NULL) : string</pre>
+                            <pre>post($index = NULL, $xss_clean = FALSE) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -908,7 +908,7 @@ array in the first parameter containing all the values.</p></div>
                                             <a id="method__clean_input_data"></a>
                         <div class="element clickable method public  method__clean_input_data" data-toggle="collapse" data-target=".method__clean_input_data .collapse">
                             <h2>Clean Input Data</h2>
-                            <pre>_clean_input_data($str, $xss_clean = TRUE) : string</pre>
+                            <pre>_clean_input_data($str) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -938,10 +938,6 @@ standardizes newline characters to \n</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$str</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$xss_clean</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -1380,7 +1376,7 @@ Set automatically based on config setting</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 04 May 2014 15:45:33 +0700.<br/>
+            generated on Fri, 13 Jun 2014 07:34:36 +0700.<br/>
     </footer>
     </body>
 </html>

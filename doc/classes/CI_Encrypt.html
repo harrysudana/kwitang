@@ -154,12 +154,6 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method__xor_encode" title="_xor_encode :: XOR Encode">
-            <span class="description">XOR Encode</span><pre>_xor_encode</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
         <a href="#method__xor_decode" title="_xor_decode :: XOR Decode">
             <span class="description">XOR Decode</span><pre>_xor_decode</pre>
         </a>
@@ -247,11 +241,11 @@ _add_cipher_noise()</span><pre>_remove_cipher_noise</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -271,7 +265,7 @@ _add_cipher_noise()</span><pre>_remove_cipher_noise</pre>
                 <p class="short_description">CodeIgniter Encryption Class</p>
                 <div class="details">
                     <div class="long_description">
-                        <p>Provides two-way keyed encoding using XOR Hashing and Mcrypt</p>
+                        <p>Provides two-way keyed encoding using Mcrypt</p>
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
@@ -450,10 +444,10 @@ Mcrypt is sensitive to keys that are not the correct length</p></div>
                                     <div class="long_description"><p>Encodes the message string using bitwise XOR encoding.
 The key is combined with a random hash, and then it
 too gets converted using XOR. The whole thing is then run
-through mcrypt (if supported) using the randomized key.
-The end result is a double-encrypted message string
-that is randomized with each call to this function,
-even if the supplied message and key are the same.</p></div>
+through mcrypt using the randomized key. The end result
+is a double-encrypted message string that is randomized
+with each call to this function, even if the supplied
+message and key are the same.</p></div>
 
                                     <table class="table">
                                                                                     <tr>
@@ -573,51 +567,6 @@ new encryption algorithms.</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$legacy_mode</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$key</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method__xor_encode"></a>
-                        <div class="element clickable method public  method__xor_encode" data-toggle="collapse" data-target=".method__xor_encode .collapse">
-                            <h2>XOR Encode</h2>
-                            <pre>_xor_encode($string, $key) : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Takes a plain-text string and key as input and generates an
-encoded bit-string using XOR</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    access
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>private</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$string</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -1385,7 +1334,7 @@ _add_cipher_noise()</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 04 May 2014 15:45:46 +0700.<br/>
+            generated on Fri, 13 Jun 2014 07:34:51 +0700.<br/>
     </footer>
     </body>
 </html>
