@@ -45,7 +45,7 @@ $js_files = array(
     body {
         margin: 0;
         padding: 0;
-        background-color: #2F4F4F;
+        background-color: #3e3e3f;
         color: #FFFFFF;
     }
 

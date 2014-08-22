@@ -112,7 +112,7 @@ $lang['k_select']           = 'Pilih';
 $lang['k_item_per_page']    = 'Data per Halaman';
 $lang['k_admin_setting']    = 'Admin Setting';
 $lang['k_admin_footer']     = 'Teks footer';
-$lang['k_admin_footer_text']= 'Didukung oleh <strong>@kwit<span style="color:#d00000">ang</span>CMS</strong>';
+$lang['k_admin_footer_text']= 'Didukung oleh <strong>@kwitang CMS</strong>';
 $lang['k_cache_lifetime']   = 'Waktu Cache';
 $lang['k_cache_disabled']   = 'Cache non-aktif';
 $lang['k_minutes']          = 'Menit';
