@@ -1,14 +1,14 @@
 <?php if ( ! defined ('FRONT_PATH')) exit ('Kwitang ERROR..!!!');
 $css_files = array(
     asset_url ('css/bootstrap.min.css', false),
-    asset_url ('css/admin.css', false)
+    asset_url ('css/admin.min.css', false)
 );
 
 $js_files = array(
     asset_url ('js/jquery-1.7.2.min.js', false),
     asset_url ('js/modernizr-2.6.1-respond-1.1.0.min.js', false),
     asset_url ('js/bootstrap.min.js', false),
-    asset_url ('js/admin.js', false)
+    asset_url ('js/admin.min.js', false)
 );
 ?>
 <!DOCTYPE html>

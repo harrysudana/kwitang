@@ -51,7 +51,7 @@ h4 { font-size: 18px; }
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle {
     color: #fff;
-    background-color: #ff1919;
+    background-color: #000;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret {
     border-top-color: #FFFFFF;
@@ -59,15 +59,17 @@ h4 { font-size: 18px; }
 }
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
 }
 .navbar .nav>li:hover>a, .navbar .nav>li:hover>a:hover, .navbar .nav>li:hover>a:focus {
-    background-color: #ff1919;
+    background-color: #000;
 }
-.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
-    color: #777 !important;
-    background-color: #efefef !important;
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    color: #fff;
+    background-color: #555;
 }
 .form-horizontal .control-group {
     margin-bottom: 10px;
@@ -107,7 +109,7 @@ h4 { font-size: 18px; }
 }
 .navbar-kwitang .navbar-inner {
     border-radius: 0;
-    background: #CC0000 !important;
+    background: #3e3e3f !important;
     border-left: 0;
     border-right: 0;
     padding: 0 10px;
@@ -115,8 +117,8 @@ h4 { font-size: 18px; }
 }
 .navbar-kwitang .brand {
     background: #FFFFFF;
-    color: #007AA3;
-    letter-spacing: -1px;
+    color: #000;
+    text-transform: uppercase;
 }
 .footer {
     margin-top: 20px;

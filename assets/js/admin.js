@@ -29,8 +29,6 @@ $(document).scroll(function(){
 });
 
 
-
-
 $(document).ready(function() {
     fix_body_margin();
     $(window).resize(function() {

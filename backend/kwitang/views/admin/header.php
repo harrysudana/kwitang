@@ -5,7 +5,7 @@ $admin_css_files = array(
     asset_url ('css/bootstrap.min.css', false),
     asset_url ('css/bootstrap-responsive.min.css', false),
     asset_url ('css/bootstrap-datetimepicker.min.css', false),
-    asset_url ('css/admin.css', false)
+    asset_url ('css/admin.min.css', false)
 );
 
 $admin_js_files = array(
@@ -16,7 +16,7 @@ $admin_js_files = array(
     asset_url ('js/bootstrap-datetimepicker.min.js', false),
     asset_url ('dtables/js/jquery.dataTables.min.js', false),
     asset_url ('js/dtablebootstrap.js', false),
-    asset_url ('js/admin.js', false)
+    asset_url ('js/admin.min.js', false)
 );
 
 if (isset ($js_files) AND is_array($js_files)) {
