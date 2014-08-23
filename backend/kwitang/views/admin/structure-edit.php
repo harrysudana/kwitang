@@ -25,7 +25,7 @@ function structure_dropdown($structure, $current_id, $deep = 1)
     return $retval;
 }
 ?>
-<div class="container-fluid">
+<div class="container">
     <div class="page-header">
         <h1>Struktur &rarr; <?php echo var_lang($data->title); ?></h1>
     </div>

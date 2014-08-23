@@ -15,7 +15,7 @@ class Menu_detail extends CI_Model
     public static $title     = '';
     public static $icon      = '';
     public static $url       = '';
-    public static $parent_id = 0;
+    public static $parent_id = null;
     public static $order     = 0;
 
     /**

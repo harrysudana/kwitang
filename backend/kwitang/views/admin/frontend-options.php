@@ -13,7 +13,7 @@ include 'header.php';
 echo form_open('admin/common_update', 'class="form-horizontal" id="form-common"');
 echo form_hidden('return_url', current_url());
 ?>
-<div class="container-fluid">
+<div class="container">
     <h1><?php echo lang('k_frontend_options'); ?></h1>
 
     <div class="row-fluid">

@@ -70,7 +70,7 @@ if (isset ($css_files) AND is_array($css_files)) {
     <div id="notify" class="alert" style="display:none"></div>
 
     <div class="container">
-        <div class="navbar subnav cybersubnav">
+        <div class="navbar subnav">
             <?php
                 $current_ctid = 0;
                 if (isset ($current_sct))

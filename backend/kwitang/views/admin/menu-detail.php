@@ -2,7 +2,7 @@
 
 include 'header.php';
 
-function menu_detail($menu_detail, $parent = 0, $depth = 0)
+function menu_detail($menu_detail, $parent = null, $depth = 0)
 {
     $ret = '';
 

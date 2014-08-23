@@ -669,7 +669,7 @@ class Admin extends CI_Controller
         if ($parent_id !== null) {
             $this->vars['parent_data'] = $this->Structure->get($parent_id);
         } else {
-            $parent_id = 0;
+            $parent_id = null;
         }
 
         $this->vars['neworderval']   = $this->Structure->maxOrder($parent_id) + 1;
@@ -692,7 +692,8 @@ class Admin extends CI_Controller
         $data['title']      = $this->input->post('title');
         $data['description'] = $this->input->post('description');
         $data['order']      = $this->input->post('order');
-        $data['parent_id']  = $this->input->post('parent_id');
+        $parent_id = $this->input->post('parent_id');
+        $data['parent_id']  = empty($parent_id) ? null : $parent_id;
         $in_menu = $this->input->post('in_menu');
         $data['in_menu']    =($in_menu == 'on' or $in_menu == '1' ? 1 : 0);
         $icon_uploaded      = $this->__upload_image('icon', 'structure');
@@ -796,7 +797,8 @@ class Admin extends CI_Controller
         $data['title']      = $this->input->post('title');
         $data['description']= $this->input->post('description');
         $data['order']      = $this->input->post('order');
-        $data['parent_id']  = $this->input->post('parent_id');
+        $parent_id = $this->input->post('parent_id');
+        $data['parent_id']  = empty($parent_id) ? null : $parent_id;
         $data['in_menu']    =($this->input->post('in_menu') == 'on' ? 1 : 0);
         $data['view_file']  = $this->input->post('view_file');
         $data['view_sct']   = $this->input->post('view_sct');
@@ -1108,7 +1110,7 @@ class Admin extends CI_Controller
 
     // menu detail
 
-    public function menu_detail_add($menu_id, $parent_id = 0)
+    public function menu_detail_add($menu_id, $parent_id = null)
     {
         $this->__prevent_non_admin();
 
@@ -1134,13 +1136,13 @@ class Admin extends CI_Controller
     {
         $this->__prevent_non_admin();
 
-        $id         = $this->input->post('id');
-        $menu_id    = $this->input->post('menu_id');
-        $title       = $this->input->post('title');
-        $icon       = $this->__upload_image('icon', 'menu');
-        $url        = $this->input->post('url');
-        $parent_id  = $this->input->post('parent_id');
-        $order      = $this->input->post('order');
+        $id        = $this->input->post('id');
+        $menu_id   = $this->input->post('menu_id');
+        $title     = $this->input->post('title');
+        $icon      = $this->__upload_image('icon', 'menu');
+        $url       = $this->input->post('url');
+        $parent_id = $this->input->post('parent_id');
+        $order     = $this->input->post('order');
 
         if (! empty($id)) {
             $data['id'] = $id;

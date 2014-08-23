@@ -41,7 +41,7 @@ class Structure extends CI_Model
      * @param   Boolean  Set true untuk menampilkan semuanya
      * @return  Array
      */
-    public function allTree($parent_id = 0, $show_all = false)
+    public function allTree($parent_id = null, $show_all = false)
     {
         if ($this->__cache_structure === null) {
             $this->all();
@@ -49,7 +49,7 @@ class Structure extends CI_Model
 
         $retval = $this->__allTreeRecrusive($parent_id, $show_all);
 
-        if ($parent_id > 0) {
+        if (! empty($parent_id)) {
             $childs = $retval;
             $retval = $this->get($parent_id);
             $retval->childs = $childs;
@@ -65,7 +65,7 @@ class Structure extends CI_Model
      * @param   Boolean  Set true untuk menampilkan semuanya
      * @return  Array
      */
-    private function __allTreeRecrusive($parent_id = 0, $show_all = false)
+    private function __allTreeRecrusive($parent_id = null, $show_all = false)
     {
         if ($this->__cache_structure === null) {
             $this->all();
@@ -149,7 +149,7 @@ class Structure extends CI_Model
      * @param  Integer  ID struktur parent nya
      * @return Integer  Nomor urut paling tinggi
      */
-    public function maxOrder($sructure_id = 0)
+    public function maxOrder($sructure_id = null)
     {
         $this->db->select_max('order', 'maxorder');
         $this->db->from('structure');

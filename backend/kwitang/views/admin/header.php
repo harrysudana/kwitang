@@ -65,7 +65,7 @@ if (isset ($css_files) AND is_array($css_files)) {
     <div id="notify" class="alert" style="display:none"></div>
     <div class="navbar navbar-kwitang navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -191,7 +191,7 @@ if (isset ($css_files) AND is_array($css_files)) {
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="subnav" style="background-color: #f5f5f5">
             <?php
                 // Generate Bredcrumb
