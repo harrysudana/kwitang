@@ -237,7 +237,7 @@ table.table thead .sorting_desc_disabled { background: url('../dtables/images/so
 table.dataTable tr.odd td.sorting_1 {background-color: #e7e7e7;}
 table.dataTable tr.even td.sorting_1 {background-color: #f2f2f2;}
 .dataTable thead th {
-    background-color: #007AA3 !important;
+    background-color: #2b579a !important;
     color: #fff !important;
     border-color:#448888;
     display: table-cell !important;
