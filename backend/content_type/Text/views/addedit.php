@@ -96,8 +96,7 @@ if ($can_edit) {
     var oEditor;
     $(document).ready(function() {
         oEditor = CKEDITOR.replace( 'bodyWow', {
-            filebrowserBrowseUrl : "<?php echo site_url('admin/elfinder'); ?>",
-            height: "418"
+            filebrowserBrowseUrl : "<?php echo site_url('admin/elfinder'); ?>"
         });
 
         var tags = $("#tags").val();

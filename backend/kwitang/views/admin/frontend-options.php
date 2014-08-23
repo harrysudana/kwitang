@@ -52,8 +52,7 @@ if (@file_exists ($options_file)) {
                 $(this).attr("id", "tmpId" + parseInt(Math.random()*10000).toString());
             }
             CKEDITOR.replace($(this).attr("id"), {
-                filebrowserBrowseUrl : "<?php echo site_url ('admin/elfinder'); ?>",
-                height: "418"
+                filebrowserBrowseUrl : "<?php echo site_url ('admin/elfinder'); ?>"
             });
         });
         $(".simple-editor").each(function () {
@@ -62,8 +61,7 @@ if (@file_exists ($options_file)) {
             }
             CKEDITOR.replace($(this).attr("id"), {
                 toolbar: "Basic",
-                filebrowserBrowseUrl : "<?php echo site_url ('admin/elfinder'); ?>",
-                height: "120"
+                filebrowserBrowseUrl : "<?php echo site_url ('admin/elfinder'); ?>"
             });
         });
 

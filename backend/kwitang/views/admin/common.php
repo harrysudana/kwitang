@@ -222,8 +222,7 @@ echo form_open('admin/common_update', 'class="form-horizontal" id="form-common"'
         $("body").scrollspy();
 
         CKEDITOR.replace('dashboard_text', {
-            filebrowserBrowseUrl : "<?php echo site_url ('admin/elfinder'); ?>",
-            height: "418"
+            filebrowserBrowseUrl : "<?php echo site_url ('admin/elfinder'); ?>"
         });
 
         $("#openlogo").click(function() {

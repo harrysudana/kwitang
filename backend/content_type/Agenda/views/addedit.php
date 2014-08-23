@@ -228,8 +228,7 @@ if ($can_edit) {
       }
 
       CKEDITOR.replace( 'body', {
-        filebrowserBrowseUrl : "<?php echo site_url('admin/elfinder'); ?>",
-        height: "320"
+        filebrowserBrowseUrl : "<?php echo site_url('admin/elfinder'); ?>"
       });
     });
 

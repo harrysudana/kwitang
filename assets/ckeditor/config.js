@@ -1,26 +1,23 @@
 /**
- * CKEditor Custom Configuration
+ * CKEditor KwitangCMS Configuration
  */
 
 CKEDITOR.editorConfig = function( config ) {
-    config.language = 'id';
+    config.language       = 'id';
     config.allowedContent = true;
-    config.toolbarGroups = [
-        { name: 'mode',        groups: ['mode', 'undo' ] },
-        { name: 'clipboard',   groups: [ 'clipboard' ] },
-        { name: 'editing',     groups: [ 'selection', 'spellchecker' ] },
-        { name: 'insert' },
-        '/',
-        { name: 'basicstyles', groups: [ 'align', 'basicstyles' ] },
-        { name: 'colors',      groups: [ 'colors', 'cleanup' ] },
-        { name: 'paragraph',   groups: [ 'list', 'indent', 'blocks' ] },
-        '/',
-        { name: 'links' },
-        { name: 'styles' },
-        { name: 'tools' },
-        { name: 'others' }
-    ];
+    config.skin           = 'office2013';
+    config.extraPlugins   = 'autogrow';
+    config.toolbar        = 'Kwitang';
     config.toolbar_Basic =  [
-        [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'Bold', 'Italic', 'Underline', 'Strike', '-', 'Link', 'Image', 'Flash', '-', 'Source' ]
+        [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'Bold', 'Italic',
+        'Underline', 'Strike', '-', 'Link', 'Image', 'Flash', '-', 'Source' ]
     ];
+    config.toolbar_Kwitang = [
+        ['Copy','Paste','-','Undo','Redo','Font','FontSize','-','Outdent','Indent','-'],
+        ['HorizontalRule','Blockquote','Table','-','Flash','Image','-','Source'],
+        '/',
+        ['PasteText','PasteFromWord','-','NumberedList','BulletedList','-','Bold','Italic','Underline','-'],
+        ['Strike','TextColor','BGColor','-','JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+        ['SpecialChar', '-','Link','Unlink','-','RemoveFormat','Maximize']
+    ]
 };
