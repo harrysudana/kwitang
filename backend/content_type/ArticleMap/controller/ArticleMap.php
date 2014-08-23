@@ -20,7 +20,7 @@ class ArticleMap extends ContentTypeController
         switch ($action) {
             case 'display':
                 $this->session->set_userdata('referrer', current_url());
-                $this->vars['css_files'][] = asset_url('dtables/css/jquery.dataTables.css');
+                $this->vars['css_files'][] = asset_url('dtables/css/jquery.dataTables.min.css');
                 $this->vars['js_files'][]  = asset_url('dtables/js/jquery.dataTables.min.js');
                 break;
             case 'save':

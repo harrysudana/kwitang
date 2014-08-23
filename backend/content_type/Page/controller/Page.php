@@ -31,7 +31,7 @@ class Page extends ContentTypeController
                 $this->vars['js_files'][]  = asset_url('dtables/js/jquery.dataTables.min.js');
                 $this->vars['js_files'][] = asset_url('ckeditor/ckeditor.js');
                 $this->vars['js_files'][] = asset_url('js/bootstrap-tagmanager.js');
-                $this->vars['css_files'][] = asset_url('dtables/css/jquery.dataTables.css');
+                $this->vars['css_files'][] = asset_url('dtables/css/jquery.dataTables.min.css');
                 $this->vars['css_files'][] = asset_url('css/bootstrap-tagmanager.css');
                 break;
         }
