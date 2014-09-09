@@ -144,9 +144,9 @@ class MY_Loader extends CI_Loader
     public function ci_autoloader($basepath = null)
     {
         if ($basepath !== null) {
-            $autoload_path = $basepath.'config/autoload'.EXT;
+            $autoload_path = $basepath.'config/autoload.php';
         } else {
-            $autoload_path = APPPATH.'config/autoload'.EXT;
+            $autoload_path = APPPATH.'config/autoload.php';
         }
 
         if (! file_exists($autoload_path)) {
@@ -313,6 +313,7 @@ class MY_Loader extends CI_Loader
      *
      * @return string
      */
+    /*
     public function dbforge()
     {
         if (! class_exists('CI_DB')) {
@@ -323,7 +324,7 @@ class MY_Loader extends CI_Loader
 
         require_once BASEPATH.'database/DB_forge.php';
         require_once BASEPATH.'database/drivers/'.$CI->db->dbdriver.'/'.$CI->db->dbdriver.'_forge.php';
-        /* Look for overload files in the /application/core folder */
+        // Look for overload files in the /application/core folder
         if (file_exists(APPPATH.'core/MY_CI_DB_'.$CI->db->dbdriver.'_forge.php')) {
             require_once APPPATH.'core/MY_CI_DB_'.$CI->db->dbdriver.'_forge.php';
             $class = 'MY_CI_DB_'.$CI->db->dbdriver.'_forge';
@@ -333,4 +334,5 @@ class MY_Loader extends CI_Loader
 
         $CI->dbforge = new $class();
     }
+    */
 }
