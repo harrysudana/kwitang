@@ -80,11 +80,11 @@ abstract class ContentTypeController
      * @param   String  Method yang dipanggil
      * @return  void
      */
-    public function prepare($action)
-    {
+    //public function prepare($action)
+    //{
         // disini Anda bisa men-disable admin_header
         // menambahkan js_files/css_files untuk ditampilkan pada admin_header
-    }
+    //}
 
 
     /**
@@ -116,11 +116,11 @@ abstract class ContentTypeController
      *
      * @return  void
      */
-    public function setting()
-    {
+    //public function setting()
+    //{
         // Silakan buat halaman setting
         // jika hasSetting() Anda setting true
-    }
+    //}
 
 
     /**
@@ -128,11 +128,11 @@ abstract class ContentTypeController
      *
      * @return  void
      */
-    public function settingSave()
-    {
+    //public function settingSave()
+    //{
         // Silakan buat halaman setting
         // jika hasSetting() Anda setting true
-    }
+    //}
 
 
     /**
