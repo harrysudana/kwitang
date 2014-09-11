@@ -54,6 +54,8 @@ class Kwitang
     {
         $this->CI =& get_instance();
         $this->CI->load->model('KConfig');
+        $this->CI->load->driver('Session');
+
         $this->counter_file = BACK_PATH.'counter.raw';
 
         if (empty ($this->frontend)) {
