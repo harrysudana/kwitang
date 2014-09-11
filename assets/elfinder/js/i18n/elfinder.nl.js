@@ -1,13 +1,15 @@
 /**
  * Dutch translation
  * @author Barry vd. Heuvel <barry@fruitcakestudio.nl>
- * @version 2011-10-07
+ * @version 2012-04-02
  */
 if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object') {
 	elFinder.prototype.i18.nl = {
 		translator : 'Barry vd. Heuvel &lt;barry@fruitcakestudio.nl&gt;',
 		language   : 'Nederlands',
 		direction  : 'ltr',
+		dateFormat : 'd-m-Y H:i',
+		fancyDateFormat : '$1 H:i',
 		messages   : {
 			
 			/********************************** errors **********************************/
@@ -66,10 +68,23 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'errNoArchive'         : 'Bestand is geen archief of geen ondersteund archief type.',
 			'errCmdNoSupport'      : 'Backend ondersteund dit commando niet.',
 			'errReplByChild'       : 'De map "$1" kan niet vervangen worden door een item uit die map.',
-			'errArcSymlinks'       : 'Om veiligheidsredenen kan een bestand met symlinks niet worden uitgepakt .',
+			'errArcSymlinks'       : 'Om veiligheidsredenen kan een bestand met symlinks of bestanden met niet toegestane namen niet worden uitgepakt .',
 			'errArcMaxSize'        : 'Archief overschrijdt de maximale bestandsgrootte.',
 			'errResize'            : 'Kan het formaat van "$1" niet wijzigen.',
-    			'errUsupportType'      : 'Bestandstype wordt niet ondersteund.',
+			'errUsupportType'      : 'Bestandstype wordt niet ondersteund.',
+			'errNotUTF8Content'    : 'Bestand "$1" is niet in UTF-8 and kan niet aangepast worden.', 
+			'errNetMount'          : 'Kan "$1" niet mounten.',   
+			'errNetMountNoDriver'  : 'Niet ondersteund protocol.',   
+			'errNetMountFailed'    : 'Mount mislukt.',    
+			'errNetMountHostReq'   : 'Host is verplicht.',
+			'errSessionExpires'    : 'Uw sessie is verlopen vanwege inactiviteit.',
+			'errCreatingTempDir'   : 'Kan de tijdelijke map niet aanmaken: "$1" ',
+			'errFtpDownloadFile'   : 'Kan het bestand niet downloaden vanaf FTP: "$1"',
+			'errFtpUploadFile'     : 'Kan het bestand niet uploaden naar FTP: "$1"',
+			'errFtpMkdir'          : 'Kan het externe map niet aanmaken op de FTP-server: "$1"',
+			'errArchiveExec'       : 'Er is een fout opgetreden bij het archivering van de bestanden: "$1" ',
+			'errExtractExec'       : 'Er is een fout opgetreden bij het uitpakken van de bestanden: "$1" ',
+			'errUploadFile'        : 'Kan "$1" niet uploaden',
 			
 			/******************************* commands names ********************************/
 			'cmdarchive'   : 'Maak archief',
@@ -99,6 +114,7 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'cmdview'      : 'Bekijk',
 			'cmdresize'    : 'Formaat wijzigen',
 			'cmdsort'      : 'Sorteren',
+			'cmdnetmount'  : 'Mount netwerk volume',
 			
 			/*********************************** buttons ***********************************/ 
 			'btnClose'  : 'Sluit',
@@ -108,25 +124,28 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'btnCancel' : 'Annuleren',
 			'btnNo'     : 'Nee',
 			'btnYes'    : 'Ja',
+			'btnMount'  : 'Mount',
 			
 			/******************************** notifications ********************************/
 			'ntfopen'     : 'Bezig met openen van map',
 			'ntffile'     : 'Bezig met openen bestand',
-			'ntfreload'   : 'Bezig met inhoud map vernieuwen',
+			'ntfreload'   : 'Herladen map inhoud',
 			'ntfmkdir'    : 'Bezig met map maken',
 			'ntfmkfile'   : 'Bezig met Bestanden maken',
-			'ntfrm'       : 'Bezig met verwijderen bestanden',
+			'ntfrm'       : 'Verwijderen bestanden',
 			'ntfcopy'     : 'Kopieer bestanden',
 			'ntfmove'     : 'Verplaats bestanden',
-			'ntfprepare'  : 'Voorbereiden om bestanden te kopiëren',
+			'ntfprepare'  : 'Voorbereiden kopiëren',
 			'ntfrename'   : 'Hernoem bestanden',
-			'ntfupload'   : 'Bezig met uploaden bestanden',
-			'ntfdownload' : 'Bezig met downloaden bestanden',
+			'ntfupload'   : 'Bestanden uploaden actief',
+			'ntfdownload' : 'Bestanden downloaden actief',
 			'ntfsave'     : 'Bestanden opslaan',
 			'ntfarchive'  : 'Archief aan het maken',
-			'ntfextract'  : 'Bestanden uit het archief aan het uitpakken',
+			'ntfextract'  : 'Bestanden uitpakken actief',
 			'ntfsearch'   : 'Zoeken naar bestanden',
-			'ntfsmth'     : 'Iets aan het doen >_<',
+			'ntfsmth'     : 'Iets aan het doen',
+			'ntfloadimg'  : 'Laden van plaatje',
+			'ntfnetmount' : 'Verhogen netwerk volume',
 			
 			/************************************ dates **********************************/
 			'dateUnknown' : 'onbekend',
@@ -144,16 +163,39 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'Oct'         : 'Okt',
 			'Nov'         : 'Nov',
 			'Dec'         : 'Dec',
+			'January'     : 'Januari',
+			'February'    : 'Februari',
+			'March'       : 'Maart',
+			'April'       : 'April',
+			'May'         : 'Mei',
+			'June'        : 'Juni',
+			'July'        : 'Juli',
+			'August'      : 'Augustus',
+			'September'   : 'September',
+			'October'     : 'Oktober',
+			'November'    : 'November',
+			'December'    : 'December',
+			'Sunday'      : 'Zondag', 
+			'Monday'      : 'Maandag', 
+			'Tuesday'     : 'Dinsdag', 
+			'Wednesday'   : 'Woensdag', 
+			'Thursday'    : 'Donderdag', 
+			'Friday'      : 'Vrijdag', 
+			'Saturday'    : 'Zaterdag',
+			'Sun'         : 'Zo', 
+			'Mon'         : 'Ma', 
+			'Tue'         : 'Di', 
+			'Wed'         : 'Wo', 
+			'Thu'         : 'Do', 
+			'Fri'         : 'Vr', 
+			'Sat'         : 'Za',
 			
 			/******************************** sort variants ********************************/
-			'sortnameDirsFirst' : 'op naam (mappen eerst)', 
-			'sortkindDirsFirst' : 'op type (mappen eerst)', 
-			'sortsizeDirsFirst' : 'op grootte (mappen eerst)', 
-			'sortdateDirsFirst' : 'op datum (mappen eerst)', 
 			'sortname'          : 'op naam', 
 			'sortkind'          : 'op type', 
 			'sortsize'          : 'op grootte',
 			'sortdate'          : 'op datum',
+			'sortFoldersFirst'  : 'Mappen eerst',
 
 			/********************************** messages **********************************/
 			'confirmReq'      : 'Bevestiging nodig',
@@ -195,7 +237,7 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'help'            : 'Help',
 			'webfm'           : 'Web bestandsmanager',
 			'ver'             : 'Versie',
-			'protocol'        : 'protocol versie',
+			'protocolver'     : 'protocol versie',
 			'homepage'        : 'Project home',
 			'docs'            : 'Documentatie',
 			'github'          : 'Fork ons op Github',
@@ -222,6 +264,19 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'scale'           : 'Schaal',
 			'width'           : 'Breedte',
 			'height'          : 'Hoogte',
+			'mode'		  : 'Modus',
+			'resize'	  : 'Verkleinen', //Or: Vergroten/verkleinen
+			'crop'		  : 'Bijsnijden',
+			'rotate'	  : 'Draaien',
+			'rotate-cw'	  : 'Draai 90 graden rechtsom',
+			'rotate-ccw'	  : 'Draai 90 graden linksom',
+			'degree'	  : '°',
+			'netMountDialogTitle' : 'Mount network volume',
+			'protocol'        : 'Protocol', 
+			'host'            : 'Host', 
+			'port'            : 'Poort',
+			'user'            : 'Gebruikersnaams', 
+			'pass'            : 'Wachtwoord', 
 			
 			/********************************** mimetypes **********************************/
 			'kindUnknown'     : 'Onbekend',
