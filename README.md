@@ -2,6 +2,7 @@ Kwitang Content Management System
 =================================
 Just another OpenSource CMS
 
+Please consider using the new version here https://github.com/iyank4/Kwitang2
 
 License
 -------
